@@ -4,10 +4,11 @@
 
 Overall information about the course; use this repository for general scheduling, syllabus questions, or anything else that doesn't fit into a particular project repository.
 
+---
 
 ### Course Syllabus
 
-You can find a PDF of the syllabus [here](http://isites.harvard.edu/fs/docs/icb.topic1361475.files/DGMD%20E-15%20Syllabus.pdf); it is reproduced below in its entirety.
+You can find a PDF of the syllabus [here](http://isites.harvard.edu/fs/docs/icb.topic1361475.files/DGMD%20E-15%20Syllabus.pdf); it is reproduced below in its entirety.  This copy of the syllabus is the canonical one since we may revise it throughout the course.
 
 
 #### COURSE DESCRIPTION
