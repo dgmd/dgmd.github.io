@@ -1,5 +1,6 @@
-# Creative Explorations in Screen-Based and Physical Computing
-## Course DGMD E-15, Spring 2014, Harvard University Extension School
+### Creative Explorations in Screen-Based and Physical Computing
+
+#### Course DGMD E-15, Spring 2014, Harvard University Extension School
 
 Overall information about the course; use this repository for general scheduling, syllabus questions, or anything else that doesn't fit into a particular project repository.
 
