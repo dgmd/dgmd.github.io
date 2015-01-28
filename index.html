@@ -2,22 +2,125 @@
 layout: default
 ---
 
-<div class="home">
+<script>
+window.onload = function() {
+        var weeks = Array.prototype.slice.call(document.querySelectorAll('section.week'));
+        weeks.forEach(function(week) {
+                var weekDate = new Date(week.getAttribute('data-date');
+                    var today = new Date();
+                    if (weekDate >= today) {
+                        week.className += ' upcoming';
+                    } else if (weekDate < today) {
+                        week.className += ' past';
+                    }
 
-  <h1 class="page-heading">Posts</h1>
+                    var nextWeek = document.getElementsByClassName('upcoming')[0];
+                    document.getElementById('weeks').appendChild(nextWeek);
+                    nextWeek.className += ' active';
+                });
+        };
+</script>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<h1>DGMD E-15</h1>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<section id='summary'>
+    <blockquote>
+        People need not only to obtain things, they need above all the freedom to make things among which they can live, to give shape to them according to their own tastes, and to put them to use in caring for and about others. Prisoners in rich countries often have access to more things and services than members of their families, but they have no say in how things are to be made and cannot decide what to do with them. Their punishment consists in being deprived of what I shall call "conviviality." They are degraded to the status of mere consumers.
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <footer>
+            <cite>
+                <a href='http://www.davidtinapple.com/illich/1970_deschooling.html'>Ivan Illich</a>
+            </cite>
+        </footer>
+    </blockquote>
 
-</div>
+    <p>
+        In recent years, the tools and materials needed to create interactive digital and physical projects have become vastly more accessible through the rise of hardware like the Arduino, JavaScript as a first-class citizen in the world of software development, and the exploding community of libraries and tools to support people beginning to learn these skills. We think that
+    </p>
+    <p>
+        Our program will be structured around the creation of four gifts. Throughout the program, we will consistently return to the empathy at the core of good design. To us, gifts are among the most charming realizations of that impulse. For each project, we'll focus on the driving questions of "For whom am I making this, and why?" (and its corollary, "What defines quality?") for each genre.
+    </p>
+    <p>
+        The first gift will be an interactive story (developed over weeks 1–4); the next will be a computational art piece (developed during weeks 5–8); the third be a game (developed over weeks 9–12); and the final gift is one of your own conception and creation. Each of these represents a deeply human activity: we have been telling stories and playing games and making art and giving gifts since time immemorial.
+    </p>
+    <p>
+        Every project will have digital and physical components and suggested extensions. You're encouraged to use each sample project as a jumping-off point, but should not feel constrained by what's provided.
+    </p>
+</section>
+
+<nav>
+    <a href="/faq">FAQ</a>
+    <a href="/tools-and-materials">Tools &amp; Materials</a>
+    <a href="/program-description">Program Description</a>
+    <a href="/schedule-and-directions">Schedule &amp; Directions</a>
+    <a href="/people">People</a>
+</nav>
+
+<section id='weeks'>
+    <section class='week' data-date='2015-01-29'>
+        <h2>Introduction (29 January 2015)</h2>
+        <p>
+        </p>
+    </section>
+
+    <section class='week' data-date='2015-02-05'>
+        <h2>Story (5 February 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-02-12'>
+        <h2>Story (12 February 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-02-19'>
+        <h2>Story (19 February 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-02-26'>
+        <h2>Art (26 February 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-03-05'>
+        <h2>Art (5 March 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-03-12'>
+        <h2>Art (12 March 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-03-19'>
+        <h2>Spring Break (19 March 2015)</h2>
+<!--         <iframe width="560" height="315" src="//www.youtube.com/embed/oaeVPdsVkyA" frameborder="0" allowfullscreen></iframe> -->
+    </section>
+
+    <section class='week' data-date='2015-03-26'>
+        <h2>Game (26 March 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-04-02'>
+        <h2>Game (2 April 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-04-09'>
+        <h2>Game (9 April 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-04-16'>
+        <h2>Final project work (16 April 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-04-23'>
+        <h2>Final project work (23 April 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-04-30'>
+        <h2>Final project work (30 April 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-05-07'>
+        <h2>Small group demos and feedback (7 May 2015)</h2>
+    </section>
+
+    <section class='week' data-date='2015-05-14'>
+        <h2>Final Presentations (14 May 2015)</h2>
+    </section>
+</section>
