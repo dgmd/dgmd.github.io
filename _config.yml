@@ -1,0 +1,15 @@
+# Site settings
+title: DGMD E-15
+email: dgmde15@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Digital Media — Creative Explorations in Screen-Based and Physical Computing at the  Harvard Extension School
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dgmde15.github.io" # the base hostname & protocol for your site
+twitter_username: dgmde15
+github_username:  dgmde15
+
+# Build settings
+markdown: kramdown
+
+# Extras
+highlighter: rouge
