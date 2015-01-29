@@ -10,6 +10,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+body > .page-content {
+    min-height: 1000px;
+}
 h1 {
     font-size: 2em;
 }
