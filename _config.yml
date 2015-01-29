@@ -11,4 +11,4 @@ github_username:  dgmde15
 markdown: kramdown
 
 # Extras
-highlighter: rouge
+highlighter: pygments
