@@ -1,0 +1,9 @@
+[submodule "lib/reveal.js"]
+	path = lib/reveal.js
+	url = https://github.com/hakimel/reveal.js.git
+[submodule "extern/reveal.js"]
+	path = extern/reveal.js
+	url = https://github.com/hakimel/reveal.js.git
+[submodule "sessions/1"]
+	path = sessions/1
+	url = https://github.com/hakimel/reveal.js.git
