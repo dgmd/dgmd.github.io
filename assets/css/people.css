@@ -55,12 +55,12 @@
 
 /* Rachel Boyce */
 #rachelboyce .headshot {
-    background-image:url(http://cdn1.sph.harvard.edu/wp-content/uploads/sites/1266/2014/07/boyce_rachel_2014_1.jpg);
+    background-image:url(http://demo.arebe.us/images/metamoss_dj.jpg);
     border-radius:50px;
 }
 #rachelboyce .headshot:hover {
     transform: rotate(360deg);  
-    transition:1s;  
+    transition:3s;  
 }
 
 
