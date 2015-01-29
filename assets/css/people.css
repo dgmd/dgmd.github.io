@@ -10,7 +10,7 @@
 }
 /* Alec Resnick */
 
-#alecresnick.headshot {
+#alecresnick .headshot {
     background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
 }
 /****************************************************************************/
@@ -36,6 +36,8 @@
     font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
     line-height: 1em;
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
     width: 100%;
     margin: 0;
     padding: 0;
