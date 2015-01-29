@@ -13,19 +13,14 @@
 #alecresnick .headshot {
     background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
 }
-#alecresnick .headshot:hover {
-    height:300px;
-    width:300px;
-    transition:1s;
-}
+
 #alecresnick .back.card li {
 	font-size: 0.75em;
 }
-#alecresnick .card:hover {
-    height:400px;
-    width:400px;
-    transition:1s;
+#alecresnick .card {
+    border-radius:none;
 }
+
 
 /* Shaunalynn Duffy */
 #shaunalynn {
