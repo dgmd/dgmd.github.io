@@ -13,8 +13,18 @@
 #alecresnick .headshot {
     background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
 }
+#alecresnick .headshot:hover {
+    height:300px;
+    width:300px;
+    transition:1s;
+}
 #alecresnick .back.card li {
 	font-size: 0.75em;
+}
+#alecresnick .card:hover {
+    height:400px;
+    width:400px;
+    transition:1s;
 }
 
 /* Shaunalynn Duffy */
@@ -45,6 +55,17 @@
 }
 #bakhtiar .card:hover a {
     color:white;
+}
+
+
+/* Rachel Boyce */
+#rachelboyce .headshot {
+    background-image:url(http://cdn1.sph.harvard.edu/wp-content/uploads/sites/1266/2014/07/boyce_rachel_2014_1.jpg);
+    border-radius:50px;
+}
+#rachelboyce .headshot:hover {
+    transform: rotate(360deg);  
+    transition:1s;  
 }
 
 
