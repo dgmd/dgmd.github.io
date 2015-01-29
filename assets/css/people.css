@@ -16,6 +16,41 @@
 #alecresnick .back.card li {
 	font-size: 0.75em;
 }
+
+/* Shaunalynn Duffy */
+#shaunalynn {
+    z-index: 1000;
+    position:relative;
+    background-size: contain;
+}
+#shaunalynn .headshot {
+    background-image: url(https://s3.amazonaws.com/dgmde15/shduff-tuba2.jpg);
+
+}
+#shaunalynn #img-wrapper {
+    position: relative;
+}
+#shaunalynn #picture {
+    width: 200px;
+}
+#shaunalynn #pic-credit {
+    color: white;
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    width: 200px;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+#shaunalynn a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
 /****************************************************************************/
