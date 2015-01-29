@@ -1,3 +1,18 @@
+/* Kanye West */
+
+#kanyewest .headshot {
+    background-image: url(http://media.cmgdigital.com/shared/img/photos/2014/10/27/2d/9e/kanye-west-smile.jpg);
+}
+/* Kim Kardashian */
+
+#kimkardashian .headshot {
+    background-image: url(http://famouswives.org/wp-content/uploads/2014/01/Kim-Kardashian-2.jpg);
+}
+/* Alec Resnick */
+
+#alecresnick.headshot {
+    background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
+}
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
 /****************************************************************************/
@@ -58,9 +73,6 @@
     margin-right: auto;
     position: relative;
     top: 3.75%;
-}
-.headshot {
-    background-image: url(http://media.cmgdigital.com/shared/img/photos/2014/10/27/2d/9e/kanye-west-smile.jpg);
 }
 /*********************/
 /* back of the cards */
