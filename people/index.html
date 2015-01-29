@@ -5,29 +5,6 @@ layout: default
 <div id='people' style='position: relative;'>
     {% for num in (1..21) %}
     <div id='kanyewest-{{ num }}' class='person flip-container'>
-        <style scoped>
-        /* To use this, you must "Enable experimental web platform features" in Chrome by going to chrome://flags and clicking 'Enable' on the appropriate feature. */;
-            .front {
-                background-color: #aaa;
-            }
-            .back {
-                background-color: #ccc;
-            }
-            .back li {
-                list-style-type: none;
-                padding-left: 1ex;
-            }
-            .back li i.fa {
-                margin-right: 1ex;
-            }
-            .headshot {
-                background-image: url(http://media.cmgdigital.com/shared/img/photos/2014/10/27/2d/9e/kanye-west-smile.jpg);
-            }
-            a {
-                text-decoration: none;
-                font-family: 'Inconsolata', monospace;
-            }
-        </style>
         <div class='flipper'>
             <div class='front card'>
                 <h2>Kanye West</h2>
