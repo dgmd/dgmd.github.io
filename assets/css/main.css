@@ -229,7 +229,7 @@ i.flip {
 blockquote p a {
 	text-decoration: none;
 }
-ul {
+#faq-wrapper ul {
 	margin-left: 2em;
 	margin-bottom: 1em;
 }
