@@ -1,27 +1,33 @@
-<footer class="site-footer">
+<footer id='site-footer'>
+    <div id='about' class='column col-1'>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
-      </div>
     </div>
 
-  </div>
+    <div id='location' class='column col-2'>
+        <p>
+        Our class sessions will be hosted 6:30–9:30PM in Room 202 of <a href='http://map.harvard.edu/?bld=02121&level=9'>One Brattle Square</a>. The simplest entry is to go into <a href='https://maps.google.com/maps?q=One+Brattle+Square+in+Cambridge,+MA&hl=en&ll=42.373035,-71.121165&spn=0.002196,0.010557&sll=42.373279,-71.121308&layer=c&cbp=11,326.13,,0,0.46&cbll=42.373037,-71.121168&hnear=1+Brattle+Square,+Cambridge,+Massachusetts+02138&t=m&z=17&panoid=4WkhB4ITGccjq539Myw69g'>the street level entrance</a> to the Easterm Mountain Sports, go up the escalators, and then take a right, entering into Harvard's space on the second floor. Room 202 is in the back-left of the floor.
+        </p>
+    </div>
 
+    <div id='contact' class='column col-3'>
+        <ul>
+            <li>Email us at <a class='email' href='mailto:dgmde15@gmail.com'>dgmde15@gmail.com</a>
+            </li>
+            <li>Find us on twitter at <a href='https://twitter.com/dgmde15'>@dgmde15</a>
+            </li>
+            <li>We're <a href='https://github.com/dgmde15'>dgmde15</a> on GitHub</li>
+            <li>Or create a post on <a href=''>our Discourse</a> forum</li>
+        </ul>
+    </div>
 </footer>
+<script>
+window.addEventListener('load', function(){
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav.site-nav a'));
+    var currentPageId = navLinks.map(function(navLink) { return navLink.id; }).filter(function(navLinkId) {
+        return window.location.pathname.split('/').indexOf(navLinkId) != -1;        
+    });
+    var currentPage = document.getElementById(currentPageId);
+    currentPage.style.textDecoration = 'underline';
+
+});
+</script>
