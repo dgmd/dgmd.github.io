@@ -84,16 +84,21 @@ layout: default
         blackout.style.height = "100%";
         blackout.style.width = "100%";
         blackout.style.position = "absolute";
-        blackout.style.zIndex = 3;
+        blackout.style.zIndex = -1;
         blackout.style.top = 0;
         blackout.style.left = 0;
         blackout.style.backgroundColor = "rgba(0,0,0,.9)";
 
+        h=document.getElementsByClassName('site-header');
+        h[0].style.zIndex=100;
+
         shaunalynn.onmouseover=function(){
             blackout.style.opacity = 1;
+            blackout.style.zIndex = 0;
         };
         shaunalynn.onmouseout=function(){
             blackout.style.opacity = 0;
+            blackout.style.zIndex = -1;
         };
         </script>
     </div>
