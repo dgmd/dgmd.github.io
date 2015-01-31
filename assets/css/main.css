@@ -23,6 +23,10 @@ h2 {
     margin-top: 1.25em;
     margin-bottom: 0.375em;
 }
+ul > li, ol > li {
+    margin-left: 4ex;
+    margin-bottom: 0.625em;
+}
 .week h2 {
     font-variant: small-caps;
 }
@@ -40,6 +44,7 @@ blockquote {
     margin-top: 1em;
 }
 blockquote cite {
+    font-style: normal;
     padding-left: 75%;
 }
 blockquote cite:before {
@@ -60,7 +65,7 @@ p {
     color: #666;
 }
 section.week {
-    margin-top: 2em;
+    margin-top: 6em;
     opacity: 0.375;
 }
 section.week.active {
@@ -133,8 +138,6 @@ header nav span {
 }
 header nav li a {
     text-decoration: none;
-    /*	text-transform: lowercase;
-	font-variant: small-caps;*/
 }
 .title-wrapper a {
     font-size: 2em;
@@ -151,9 +154,6 @@ body > .page-content {
 #faq-wrapper section {
     margin-top: 3em;
 }
-blockquote p a {
-    text-decoration: none;
-}
 #faq-wrapper ul {
     margin-left: 2em;
     margin-bottom: 1em;
@@ -163,11 +163,9 @@ em {
 }
 a {
     text-decoration: none;
-    font-family: 'Inconsolata', monospace;
 }
-code {
+nav a, code, .code {
     font-family: 'Inconsolata', monospace;
-
 }
 .upcoming:not(.active) {
     display: none;
