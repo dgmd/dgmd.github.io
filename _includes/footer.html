@@ -26,7 +26,9 @@ window.addEventListener('load', function(){
     var currentPageId = navLinks.map(function(navLink) { return navLink.id; }).filter(function(navLinkId) {
         return window.location.pathname.split('/').indexOf(navLinkId) != -1;        
     })[0];
-    var currentPage = document.getElementById(currentPageId);
-    if (currentPage) { currentPage.style.textDecoration = 'underline'; }
+    if (currentPageId) {
+        var currentPage = document.getElementById(currentPageId);
+        currentPage.classList.add('active');
+    }
 });
 </script>
