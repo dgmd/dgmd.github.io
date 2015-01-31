@@ -63,7 +63,10 @@ section.week {
     margin-top: 2em;
     opacity: 0.375;
 }
-section.week.upcoming.active {
+section.week.active {
+    opacity: 0.875;
+}
+section.week.past {
     opacity: 1.0;
 }
 span.initial {
@@ -161,4 +164,11 @@ em {
 a {
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
+}
+code {
+    font-family: 'Inconsolata', monospace;
+
+}
+.upcoming:not(.active) {
+    display: none;
 }

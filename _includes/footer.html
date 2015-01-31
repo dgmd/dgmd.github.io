@@ -25,9 +25,8 @@ window.addEventListener('load', function(){
     var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav.site-nav a'));
     var currentPageId = navLinks.map(function(navLink) { return navLink.id; }).filter(function(navLinkId) {
         return window.location.pathname.split('/').indexOf(navLinkId) != -1;        
-    });
+    })[0];
     var currentPage = document.getElementById(currentPageId);
-    currentPage.style.textDecoration = 'underline';
-
+    if (currentPage) { currentPage.style.textDecoration = 'underline'; }
 });
 </script>

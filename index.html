@@ -2,26 +2,6 @@
 layout: default
 ---
 
-<script>
-window.onload = function() {
-    var weeks = Array.prototype.slice.call(document.querySelectorAll('section.week'));
-    weeks.forEach(function(week) {
-        var dateArray = week.getAttribute('data-date').split('-');
-        var weekDate = new Date(dateArray[0], dateArray[1], dateArray[2]);
-        var today = new Date();
-        if (weekDate >= today) {
-            week.className += ' upcoming';
-        } else if (weekDate < today) {
-            week.className += ' past';
-        }
-    });
-    var weekContainer = document.getElementById('weeks');
-    var nextWeek = document.getElementsByClassName('upcoming')[0];
-    weekContainer.insertBefore(nextWeek, weekContainer.firstChild);
-    nextWeek.className += ' active';
-};
-</script>
-
 <section id='summary'>
     <blockquote>
         People need not only to obtain things, they need above all the freedom to make things among which they can live, to give shape to them according to their own tastes, and to put them to use in caring for and about others. Prisoners in rich countries often have access to more things and services than members of their families, but they have no say in how things are to be made and cannot decide what to do with them. Their punishment consists in being deprived of what I shall call "conviviality." They are degraded to the status of mere consumers.
@@ -48,121 +28,27 @@ window.onload = function() {
 </section>
 
 <section id='weeks'>
-    <section class='week' data-date='2015-01-29'>
-        <h2 id="january-29-2015">1: getting situated <div class='meta'>29 January 2015</div></h2>
-        <p>Our first session will be spent investigating the question: Why do people code?  We will spend out time &bull; getting a sense of the people in the room and why <i>we</i> want to code &bull; getting our machines set up with <a href="tools-and-materials">the tools we’ll need</a> to work throughout the semester &bull; taking our first stab at building something using HTML, CSS, and Javascript by designing our own digital business card to live on <a href="people">the people page</a> of our course site with information about who we are.
-        </p>
-        <p>For next week, we hope you'll have made it through the following steps:
-            <ul>
-                <li>
-                    Set up up your local development environment by <a href="https://gist.github.com/aresnick/ec3e2f68b9ab8b2614a1">the steps here</a> - this is the process we began in the first class session.
-                </li>
-                <li>
-                    Make sure that you have <em>forked</em> the <a href="https://github.com/dgmde15/dgmde15.github.io">class website repo</a> to your own Github account. More info on how to fork can be found <a href="https://help.github.com/articles/fork-a-repo/">here</a> with a video walkthrough <a href="https://www.youtube.com/watch?v=_jGUFpWYm60">here</a>.
-                </li>
-                <li>
-                    Once you have forked the class website repo, <em>clone</em> a copy to your computer so you can run a local version of the site and make changes to the site files. Instructions for this are part of <a href="https://gist.github.com/aresnick/ec3e2f68b9ab8b2614a1">the steps here</a>. You should be able to open Google Chrome, navigate to <a href="http://localhost:4000">http://localhost:4000</a> and see the course site pages (and any changes you may make to them).
-                </li>
-                <li>
-                    After following the above steps, you are prepared to contribute to the site! During next week's session we'll walk through the process of adding yourself to the <a href="http://dgmde15.github.io/people/">People</a> page on the course website. 
-                </li>
-                <li>
-                    If you want to go ahead with the next steps: you'll be modifying the <em>people/index.html</em> file by adding a <em>div</em> element with an <em>id</em> specific to your name. Then, you'll modify the <em>assets/css/people.css</em> file and add styling to your <em>id</em>. You can use the existing code as as a template. 
-                </li>
-                <li>
-                    Participate in the <a href="http://dgmde15.github.io/forum">Discourse forum</a> conversation by posting projects that inspire you, or starting a new topic!
-                </li>
-            </ul>
+    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %}
+    <section id="{{ session.date | slugify }}" class='week'>
+        <h2>{{ forloop.index }}: {{ session.title }} <div class='meta'>{{ session.date }}</div></h2> {{ session.content | markdownify }}
     </section>
 
-    <section class='week' data-date='2015-02-05'>
-        <h2 id="february-5-2015">2: telling a story <div class='meta'>5 February 2015</div></h2>
-        <p>Our second session will be spent &bull; looking at some of the challenges and successes people had creating their business cards &bull; starting to dig into <a href=“https://github.com/dgmde15/Story-Project-1“>our first, story-telling project</a>, &bull; and walking through <a href="http://dgmde15.github.io/Story-Project-1/">an example story project</a> that can serve as the basis for your own work on this first project, either as inspiration or a code base.
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-02-12'>
-        <h2 id="february-12-2015">3: telling a story <div class='meta'>12 February 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-02-19'>
-        <h2 id="february-19-2015">4: telling a story <div class='meta'>19 February 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-02-26'>
-        <h2 id="february-26-2015">5: making art <div class='meta'>26 February 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-03-05'>
-        <h2 id="march-5-2015">6: making art <div class='meta'>5 March 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-03-12'>
-        <h2 id="march-12-2015">7: making art <div class='meta'>12 March 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-03-19'>
-        <h2 id="march-19-2015">8: spring break <div class='meta'>19 March 2015</div></h2>
-        <p>
-        </p>
-        <!--         <iframe width="560" height="315" src="//www.youtube.com/embed/oaeVPdsVkyA" frameborder="0" allowfullscreen></iframe> -->
-    </section>
-
-    <section class='week' data-date='2015-03-26'>
-        <h2 id="march-26-2015">9: playing a game <div class='meta'>26 March 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-04-02'>
-        <h2 id="april-2-2015">10: playing a game <div class='meta'>2 April 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-04-09'>
-        <h2 id="april-9-2015">11: playing a game <div class='meta'>9 April 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-04-16'>
-        <h2 id="april-16-2015">12: working on your final project <div class='meta'>16 April 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-04-23'>
-        <h2 id="april-23-2015">13: working on your final project <div class='meta'>23 April 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-04-30'>
-        <h2 id="april-30-2015">14: working on your final project <div class='meta'>30 April 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-05-07'>
-        <h2 id="may-7-2015">15: demos, critiques of final drafts <div class='meta'>7 May 2015</div></h2>
-        <p>
-        </p>
-    </section>
-
-    <section class='week' data-date='2015-05-14'>
-        <h2 id="may-14-2015">16: final presentations <div class='meta'>14 May 2015</div></h2>
-        <p>
-        </p>
-    </section>
+    {% endfor %}
 </section>
+
+<script>
+window.onload = function() {
+    var weeks = Array.prototype.slice.call(document.querySelectorAll('section.week'));
+    weeks.forEach(function(week) {
+        var weekDate = new Date(week.id);
+        var today = new Date();
+        if (weekDate >= today) {
+            week.classList.add('upcoming');
+        } else if (weekDate < today) {
+            week.classList.add('past');
+        }
+    });
+    var nextWeek = document.querySelectorAll('section.upcoming')[0];
+    nextWeek.classList.add('active');
+};
+</script>
