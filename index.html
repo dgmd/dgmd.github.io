@@ -41,7 +41,6 @@ window.onload = function() {
     var weeks = Array.prototype.slice.call(document.querySelectorAll('section.week'));
     weeks.forEach(function(week) {
         var weekDate = new Date(week.id);
-        console.log(week.id, weekDate);
         var today = new Date();
         if (weekDate >= today) {
             week.classList.add('upcoming');
