@@ -63,7 +63,10 @@ section.week {
     margin-top: 2em;
     opacity: 0.375;
 }
-section.week.upcoming.active {
+section.week.active {
+    opacity: 0.75;
+}
+section.week.past {
     opacity: 1.0;
 }
 span.initial {
