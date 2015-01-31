@@ -12,3 +12,6 @@ markdown: kramdown
 
 # Extras
 highlighter: pygments
+
+collections:
+- sessions
