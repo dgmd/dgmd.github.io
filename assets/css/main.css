@@ -1,3 +1,6 @@
+html {
+    font-size: 1.375em;
+}
 @font-face {
     font-family: 'Latin Modern Roman';
     src: url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.eot');
@@ -17,23 +20,36 @@ h1 {
     font-size: 2em;
 }
 h2 {
-    font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
-    font-variant: small-caps;
+    /*font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;*/
+    /*font-variant: small-caps;*/
     font-size: 1.5em;
     margin-top: 1.25em;
     margin-bottom: 0.375em;
 }
+
+h2, h3, .meta {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+}
 .page-content ul > li, .page-content ol > li {
-    margin-left: 4ex;
+    margin-left: 6ex;
     margin-bottom: 0.625em;
 }
-.week h2 {
+/*.week h2 {
     font-variant: small-caps;
-}
+}*/
 .week h2 div.meta {
+    font-size: 0.375em;
+    text-transform: uppercase;
+    color: #666;
     display: inline;
     float: right;
-    margin-top: 0.625em
+    margin-top: 0.625em;
+    line-height: 1.5em;
 }
 blockquote {
     padding: 0.25em 1.5em 0.25em 1.5em;
@@ -55,17 +71,17 @@ body {
     color: #333;
 }
 p {
-    font-size: 18px;
     margin-bottom: 1.125em;
 }
-.meta {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    color: #666;
+hr {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+section.week:first-child {
+    margin-top: 0em;
 }
 section.week {
-    margin-top: 6em;
+    margin-top: 5em;
     opacity: 0.375;
 }
 section.week.active {
@@ -134,7 +150,6 @@ header nav li {
     text-transform: lowercase;
     list-style-type: none;
     display: inline-block;
-    font-family: 'Inconsolata', monospace;
     padding-right: 1.75em;
 }
 header nav span {
@@ -168,8 +183,14 @@ em {
 a {
     text-decoration: none;
 }
-nav a, code, .code {
+nav a {
+    font-size: 1em;
+}
+header nav li, .pre {
     font-family: 'Inconsolata', monospace;
+}
+nav li i.fa {
+    margin-right: 1ex;
 }
 .upcoming:not(.active) {
     display: none;
