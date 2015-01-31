@@ -27,6 +27,8 @@ layout: default
     </p>
 </section>
 
+<hr>
+
 <section id='weeks'>
     {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %}
     <section id="{{ session.date | slugify }}" class='week'>
