@@ -25,6 +25,7 @@ h2 {
     font-size: 1.5em;
     margin-top: 1.25em;
     margin-bottom: 0.375em;
+    color: #666;
 }
 
 h2, h3, .meta {
@@ -34,6 +35,7 @@ h3 {
     margin-top: 1.25em;
     margin-bottom: 0.5em;
     font-size: 1.25em;
+    color: #888;
 }
 .page-content ul > li, .page-content ol > li {
     margin-left: 6ex;
@@ -45,11 +47,11 @@ h3 {
 .week h2 div.meta {
     font-size: 0.375em;
     text-transform: uppercase;
-    color: #666;
+    color: #888;
     display: inline;
     float: right;
     margin-top: 0.625em;
-    line-height: 1.5em;
+    line-height: 2.5em;
 }
 blockquote {
     padding: 0.25em 1.5em 0.25em 1.5em;
