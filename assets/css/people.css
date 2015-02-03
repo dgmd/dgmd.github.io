@@ -14,9 +14,6 @@
     background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
 }
 
-#alecresnick .back.card li {
-	font-size: 0.75em;
-}
 #alecresnick .card {
     border-radius:none;
 }
@@ -34,9 +31,6 @@
 }
 #shaunalynn #img-wrapper {
     position: relative;
-}
-#shaunalynn #picture {
-    width: 200px;
 }
 
 /* Bakhtiar Mikhak */
@@ -56,7 +50,7 @@
 /* Rachel Boyce */
 #rachelboyce .headshot {
     background-image:url(http://demo.arebe.us/images/metamoss_dj.jpg);
-    border-radius:50px;
+    border-radius:calc(6.5em/2);
 }
 #rachelboyce .headshot:hover {
     transform: rotate(360deg);  
@@ -119,8 +113,8 @@
 }
 .person .headshot {
     box-shadow: inset 0 0 0.625em #000;
-    width: 100px;
-    height: 100px;
+    width: 6.5em;
+    height: 6.5em;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
@@ -140,6 +134,20 @@
 }
 .back li i.fa {
     margin-right: 1ex;
+}
+#people .back {
+    padding: 0.25em;
+}
+#people .back li {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+}
+#people .back li a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.875em;
+}
+#people .back li {
+    line-height: 0.75em;
 }
 /***********************************/
 /* Flipping behavior for the cards */
