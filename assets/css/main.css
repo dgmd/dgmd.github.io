@@ -16,6 +16,9 @@ body {
 body > .page-content {
     min-height: 1000px;
 }
+a {
+    color: cadetblue;
+}
 h1 {
     font-size: 2em;
 }
@@ -50,8 +53,9 @@ h3 {
     color: #888;
     display: inline;
     float: right;
-    margin-top: 0.625em;
-    line-height: 2.5em;
+    margin-top: calc(2.5em/4);
+    line-height: calc(2.5em/2);
+    text-align: right;
 }
 blockquote {
     padding: 0.25em 1.5em 0.25em 1.5em;
