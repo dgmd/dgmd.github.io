@@ -31,8 +31,16 @@ layout: default
 
 <section id='weeks'>
     {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %}
-    <section id="{{ session.date | slugify }}" class='week'>
-        <h2>{{ forloop.index }}: {{ session.title }} <div class='meta'>{{ session.date }}</div></h2> {{ session.content | markdownify }}
+    {% assign slug = session.date | slugify %}
+    <section id="{{ slug }}" class='week'>
+        <h2>
+            {{ forloop.index }}: {{ session.title }}
+            <div class='meta'>
+            <a class='date' href='#{{ slug }}'>{{ session.date }}</a> <br> 
+            <i class='fa fa-external-link'></i> <a class='slides' href='./sessions/1'>Slides for Session {{ session.number }}</a></div>
+        </h2>
+
+        {{ session.content | markdownify }}
     </section>
 
     {% endfor %}
