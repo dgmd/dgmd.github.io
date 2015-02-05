@@ -8,3 +8,12 @@
 .reveal .slides li {
 	margin-bottom: 0.5em;
 }
+
+.reveal .slides ol {
+	font-size: 75%;
+}
+
+.reveal .slides p {
+	text-align: left;
+	font-size: 75%;
+}
