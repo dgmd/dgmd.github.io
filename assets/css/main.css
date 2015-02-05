@@ -170,9 +170,9 @@ header nav span {
 header nav li a {
     text-decoration: none;
 }
-.title-wrapper a {
+.title-wrapper div {
     font-size: 2em;
-    line-height: 2.25em;
+    line-height: calc(5em/2);
     text-decoration: none;
     font-family: 'Codystar', cursive;
 }
