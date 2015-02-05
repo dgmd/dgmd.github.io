@@ -1,3 +1,6 @@
+.reveal .slides code {
+	opacity: 0.75;
+}
 .reveal .slides code.block {
     display: block;
 }
