@@ -16,6 +16,9 @@ body {
 body > .page-content {
     min-height: 1000px;
 }
+a {
+    color: cadetblue;
+}
 h1 {
     font-size: 2em;
 }
@@ -50,8 +53,9 @@ h3 {
     color: #888;
     display: inline;
     float: right;
-    margin-top: 0.625em;
-    line-height: 2.5em;
+    margin-top: calc(2.5em/4);
+    line-height: calc(2.5em/2);
+    text-align: right;
 }
 blockquote {
     padding: 0.25em 1.5em 0.25em 1.5em;
@@ -127,8 +131,11 @@ header .title-wrapper {
     display: inline-block;
     float: left;
     display: block;
-    line-height: 5.75em;
     text-align: center;
+    line-height: 5em;
+}
+header .title-wrapper a {
+    line-height: calc(5em/2);
 }
 header nav {
     width: calc(100% - (100% - 70ex)/2);
@@ -147,12 +154,15 @@ footer ul {
 footer li {
     list-style-type: none;
 }
+header nav li#home {
+    width: 0.5em;
+}
 header nav li {
     font-size: 1.125em;
     text-transform: lowercase;
     list-style-type: none;
     display: inline-block;
-    padding-right: 1.75em;
+    padding-right: 1.25em;
 }
 header nav span {
     font-size: 0.75em;
