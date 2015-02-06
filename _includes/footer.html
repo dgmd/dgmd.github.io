@@ -9,25 +9,26 @@
         </p>
     </div>
 
-    <div id='contact' class='column col-3'>
+    <nav id='contact' class='column col-3'>
         <ul>
-            <li>Email us at <a class='email' href='mailto:dgmde15@gmail.com'>dgmde15@gmail.com</a>
+            <li><i class='fa fa-envelope'></i><a class='pre' href='mailto:dgmde15@gmail.com'>dgmde15@gmail.com</a>
             </li>
-            <li>Find us on twitter at <a href='https://twitter.com/dgmde15'>@dgmde15</a>
+            <li><i class='fa fa-twitter'></i><a class='pre' href='https://twitter.com/dgmde15'>@dgmde15</a>
             </li>
-            <li>We're <a href='https://github.com/dgmde15'>dgmde15</a> on GitHub</li>
-            <li>Or create a post on <a href=''>our Discourse</a> forum</li>
+            <li><i class='fa fa-github'></i><a class='pre' href='https://github.com/dgmde15'>dgmde15</a></li>
+            <li><i class='fa fa-question'></i> <a href='/forum'>Discourse forum</a></li>
         </ul>
-    </div>
+    </nav>
 </footer>
 <script>
 window.addEventListener('load', function(){
     var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav.site-nav a'));
     var currentPageId = navLinks.map(function(navLink) { return navLink.id; }).filter(function(navLinkId) {
         return window.location.pathname.split('/').indexOf(navLinkId) != -1;        
-    });
-    var currentPage = document.getElementById(currentPageId);
-    currentPage.style.textDecoration = 'underline';
-
+    })[0];
+    if (currentPageId) {
+        var currentPage = document.getElementById(currentPageId);
+        currentPage.classList.add('active');
+    }
 });
 </script>

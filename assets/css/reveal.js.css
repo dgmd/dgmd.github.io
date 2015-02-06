@@ -1,0 +1,19 @@
+.reveal .slides code {
+	opacity: 0.75;
+}
+.reveal .slides code.block {
+    display: block;
+}
+
+.reveal .slides li {
+	margin-bottom: 0.5em;
+}
+
+.reveal .slides ol {
+	font-size: 75%;
+}
+
+.reveal .slides p {
+	text-align: left;
+	font-size: 75%;
+}
