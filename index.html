@@ -37,7 +37,7 @@ layout: default
             {{ forloop.index }}: {{ session.title }}
             <div class='meta'>
             <a class='date' href='#{{ slug }}'>{{ session.date }}</a> <br> 
-            <i class='fa fa-external-link'></i> <a class='slides' href='./sessions/1'>Slides for Session {{ session.number }}</a></div>
+            <i class='fa fa-external-link'></i> <a class='slides' href='./sessions/{{ session.number }}'>Slides for Session {{ session.number }}</a></div>
         </h2>
 
         {{ session.content | markdownify }}
