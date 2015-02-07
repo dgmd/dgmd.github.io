@@ -57,6 +57,70 @@
     transition:3s;  
 }
 
+/* Matt Phillips */
+
+#mattphillips .headshot {
+    background-image: url(https://avatars3.githubusercontent.com/u/196089?v=3&s=460);
+    box-shadow: none;
+}
+
+#mattphillips:hover .headshot {
+     animation: vibrate-wide 200ms linear 0s 1;
+    -webkit-animation: vibrate-wide 200ms linear 0s 1;
+    -moz-animation: vibrate-wide 200ms linear 0s 1;
+    -o-animation: vibrate-wide 200ms linear 0s 1;
+}
+
+#mattphillips .card {
+    border-radius:none;
+}
+
+@keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-moz-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-webkit-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-o-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+
 
 /* Michelle */
 #michelleb .headshot {
