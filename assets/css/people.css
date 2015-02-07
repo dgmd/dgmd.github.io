@@ -18,6 +18,18 @@
     border-radius:none;
 }
 
+/*Galvin Widjaja's Card */
+#galvinwidjaja .headshot {
+    background-image: url(https://0.academia-photos.com/5047690/2198575/2575914/s200_galvin.widjaja.jpg);
+}
+
+#galvinwidjaja .card:hover {
+    /* To be added */
+}
+#galvinwidjaja .card:hover a {
+    /* To be added */
+}
+
 
 /* Shaunalynn Duffy */
 #shaunalynn {
