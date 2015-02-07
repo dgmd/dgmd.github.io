@@ -58,6 +58,27 @@
 }
 
 
+/* Michelle */
+#michelleb .headshot {
+    background-image: url('http://i.imgur.com/VLMjEqU.jpg');
+    border-radius:calc(2em/2);
+    transition: 0.5s;
+    transform: translate(0rem, .6rem) rotate(45deg);
+}
+#michelleb .headshot:hover {
+    transition: 1s;
+    transform: translate(0rem, 0rem) rotate(0deg);
+}
+#michelleb .card:hover a {
+    color: firebrick;
+}
+#michelleb .card:hover a:visited {
+    color: maroon;
+}
+#michelleb .card:hover a:hover {
+    text-decoration: underline;
+}
+
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
 /****************************************************************************/
@@ -171,3 +192,6 @@ i.flip {
     width: 100%;
     height: 100%;
 }
+
+/*You use a library to accomplish what you want, a framework uses your code to accomplish what you want.*/
+
