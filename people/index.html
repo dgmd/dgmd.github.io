@@ -250,5 +250,40 @@ layout: default
         });
         </script>
     </div>
+
+    <div id='karlalemos' class='person flip-container'>
+        <div class='flipper'>
+            <div class='front card'>
+                <h2>Karla Lemos</h2>
+                <div class='headshot'></div>
+                <i class="fa fa-undo flip"></i>
+            </div>
+            <div class='back card'>
+                <ul>
+                    <li><i class="fa fa-home"></i><a href='http://karla-lemos.github.io/'>coming soon</a>
+                    </li>
+                    <li><i class="fa fa-github"></i><a href='https://github.com/Karla-Lemos'>karlalemos</a>
+                    </li>
+                  
+                    <li><i class="fa fa-envelope"></i><a href='mailto:karla.lemos@live.com'>e-mail me</a>
+                    </li>
+                    
+                </ul>
+                <i class="fa fa-undo flip"></i>
+            </div>
+
+        </div>
+        <script>
+        window.addEventListener('load', function() {
+            var myCard = document.querySelector('#karlalemos');
+            var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+            flipButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    myCard.classList.toggle('flipped');
+                });
+            });
+        });
+        </script>
+    </div>
     <div style='clear:both;'></div>
 </div>

@@ -57,6 +57,21 @@
     transition:3s;  
 }
 
+/* Karla Lemos */
+#karlalemos .headshot {
+    background-image:url(https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/75252_10151250562568070_1187940525_n.jpg?oh=82e4cf992dee8cb8fa0645ea25d1fea0&oe=556AA210&__gda__=1431290047_1a7259ee0b2a8c3639a958624027ae31
+        );
+    border-radius:calc(6.5em/2);
+}
+
+#karlalemos .headshot:hover {
+    transition: 5s;
+        transform: rotate(360deg); /* This tells CSS to rotate our element 180 degrees */
+    }
+
+#karlalemos h2{ 
+
+}
 
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
