@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id='summary'>
+<!-- <section id='summary'>
     <blockquote>
         People need not only to obtain things, they need above all the freedom to make things among which they can live, to give shape to them according to their own tastes, and to put them to use in caring for and about others. Prisoners in rich countries often have access to more things and services than members of their families, but they have no say in how things are to be made and cannot decide what to do with them. Their punishment consists in being deprived of what I shall call "conviviality." They are degraded to the status of mere consumers.
 
@@ -27,20 +27,31 @@ layout: default
     </p>
 </section>
 
+<hr> -->
+
+<div id='table-of-contents-container'>
+    <h3>Session Descriptions</h3>
+    <ol id='table-of-contents'>
+        {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %} {% if session.title != null %}
+        <li><a href='#{{ slug }}'>{{ session.title }}</a>
+        </li>
+        {% endif %} {% endfor %}
+    </ol>
+</div>
+
 <hr>
 
 <section id='weeks'>
-    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %}
-    {% assign slug = session.date | slugify %}
+    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %}
     <section id="{{ slug }}" class='week'>
         <h2>
-            {{ forloop.index }}: {{ session.title }}
+            <div class='session-title'>{{ forloop.index }}: {{ session.title }}</div>
             <div class='meta'>
-            <a class='date' href='#{{ slug }}'>{{ session.date }}</a> <br> 
-            <i class='fa fa-external-link'></i> <a class='slides' href='./sessions/{{ session.number }}'>Slides for Session {{ session.number }}</a></div>
-        </h2>
+                <a class='date' href='#{{ slug }}'>{{ session.date }}</a> <br> 
+                <i class='fa fa-external-link'></i> <a class='slides' href='./sessions/{{ session.number }}'>Slides for Session {{ session.number }}</a>
+            </div>
 
-        {{ session.content | markdownify }}
+        </h2> {{ session.content | markdownify }}
     </section>
 
     {% endfor %}

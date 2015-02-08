@@ -22,15 +22,18 @@ a {
 h1 {
     font-size: 2em;
 }
+
 h2 {
-    /*font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;*/
+/*    font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
     /*font-variant: small-caps;*/
     font-size: 1.5em;
     margin-top: 1.25em;
     margin-bottom: 0.375em;
     color: #666;
 }
-
+#table-of-contents-container {
+    opacity: 0.75;
+}
 h2, h3, .meta {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -44,18 +47,25 @@ h3 {
     margin-left: 6ex;
     margin-bottom: 0.625em;
 }
-/*.week h2 {
-    font-variant: small-caps;
-}*/
+
+.session-container {
+    display: table;
+}
 .week h2 div.meta {
     font-size: 0.375em;
     text-transform: uppercase;
     color: #888;
-    display: inline;
-    float: right;
     margin-top: calc(2.5em/4);
     line-height: calc(2.5em/2);
     text-align: right;
+}
+
+.week h2 .meta-container {
+    width: 25%;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    height: 100%;
 }
 blockquote {
     padding: 0.25em 1.5em 0.25em 1.5em;
