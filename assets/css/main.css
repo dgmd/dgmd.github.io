@@ -31,9 +31,37 @@ h2 {
     margin-bottom: 0.375em;
     color: #666;
 }
-#table-of-contents-container {
-    opacity: 0.75;
+#table-of-contents-container li {
+    margin-left: 0;
 }
+/*Using leaders workaround from http://www.w3.org/Style/Examples/007/leaders.en.html */
+ol.leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ol.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ol.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white;
+}
+ol.leaders span + span {
+    padding-left: 0.33em;
+    background: white;
+}
+
+ol.leaders a:last-child {
+    float: right;
+}
+
 h2, h3, .meta {
     font-family: Arial, Helvetica, sans-serif;
 }
