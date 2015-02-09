@@ -409,13 +409,11 @@
 #people .back li {
     margin-bottom: 0.5em;
     margin-left: 0;
+    line-height: 0.75em;
 }
 #people .back li a {
     font-family: 'Inconsolata', monospace;
     font-size: 0.875em;
-}
-#people .back li {
-    line-height: 0.75em;
 }
 /***********************************/
 /* Flipping behavior for the cards */
