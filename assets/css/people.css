@@ -159,6 +159,13 @@
 #michelleb .card:hover a:hover {
     text-decoration: underline;
 }
+/* Brendan Keegan */
+#brendankeegan .headshot {
+    background-image: url(https://farm4.staticflickr.com/3943/15384547600_8430d2802b_n.jpg);
+}
+#brendankeegan .headshot:hover {
+
+}
 
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
