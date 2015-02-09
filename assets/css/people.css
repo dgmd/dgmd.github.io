@@ -18,6 +18,56 @@
     border-radius:none;
 }
 
+/* David Chouinard */
+
+#davidchouinard .front {
+  background-color: #aaa;
+  z-index: 2;
+}
+
+#davidchouinard-headshot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.5em;
+  z-index: -1;
+}
+
+#davidchouinard-headshot image {
+  clip-path: url(#davidchouinard-clip);
+}
+
+#davidchouinard-content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.5em;
+}
+#davidchouinard-content h2 {
+  margin-bottom: 12px !important;
+}
+
+#davidchouinard-back {
+  padding-top: 0.5em;
+}
+#davidchouinard-back li {
+  list-style-type: none;
+  line-height: 0.75em;
+  padding-left: 1ex;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+}
+#davidchouinard-back li i.fa {
+  margin-right: 1ex;
+}
+#davidchouinard-back li a {
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.85em;
+}
+
 /*Galvin Widjaja's Card */
 #galvinwidjaja .headshot {
     background-image: url(https://0.academia-photos.com/5047690/2198575/2575914/s200_galvin.widjaja.jpg);
@@ -259,48 +309,7 @@
 
 }
 
-/* David Chouinard */
 
-#davidchouinard .front {
-  background-color: #aaa;
-  z-index: 2;
-}
-
-#davidchouinard-headshot {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 0.5em;
-  z-index: -1;
-}
-
-#davidchouinard-headshot image {
-  clip-path: url(#davidchouinard-clip);
-}
-
-#davidchouinard-content {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 0.5em;
-}
-#davidchouinard-content h2 {
-  margin-bottom: 12px !important;
-}
-
-#davidchouinard-back {
-  font-size: 0.68em;
-}
-#davidchouinard-back li {
-  list-style-type: none;
-  padding-left: 1ex;
-}
-#davidchouinard-back li i.fa {
-  margin-right: 1ex;
-}
 /* Karla Lemos */
 #karlalemos .headshot {
     background-image:url(https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/75252_10151250562568070_1187940525_n.jpg?oh=82e4cf992dee8cb8fa0645ea25d1fea0&oe=556AA210&__gda__=1431290047_1a7259ee0b2a8c3639a958624027ae31
