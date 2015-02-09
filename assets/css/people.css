@@ -64,14 +64,106 @@
 }
 
 
+/* Amir Mikhak */
+/* -- these effects may nauseate you -- */
+/* and flipping makes for funky positioning */
+@keyframes breath {
+    0% {opacity: 1.0; transform: rotate(0deg);}
+    25% {opacity: 0.2; transform: rotate(360deg);}
+    100% {opacity: 1.0;  transform: rotate(0deg);}
+}
+
+@keyframes spinny {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@-webkit-keyframes breath {
+    0% {opacity: 1.0;}
+    25% {opacity: 0.2;}
+    100% {opacity: 1.0;}
+}
+
+@-webkit-keyframes spinny {
+    0% {-webkit-transform: rotate(0deg);}
+    25% {-webkit-transform: rotate(360deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+
+#amirmikhak .headshot {
+    height:70%;
+    width:70%;
+    background-image: url(https://scontent-b-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10849895_10100415118011978_6727498086113574237_n.jpg?oh=5c128bbebda338bcaa0d98eeb7ccb4a7&oe=554971D1);
+    transition: height 2s, width 2s;
+
+    -webkit-transition: height 2s, width 2s;
+}
+
+#amirmikhak {
+    transition: background-color 4.5s, width 2.5s, height 0.5s;
+
+    -webkit-transition: background-color 4.5s, width 2.5s, height 0.5s;
+}
+
+#amirmikhak:hover:focus {
+    outline: none;
+    animation: none;
+
+    -webkit-animation: none;
+}
+
+#amirmikhak:hover {
+    width:326px;
+    height:326px;
+
+    animation: spinny 2.1s ease-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: spinny 2.1s ease-out;
+    -webkit-animation-delay: 0.3s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#amirmikhak:hover .card {
+    background-color:rgb(200, 0, 10);
+    color:white;
+}
+
+#amirmikhak .card:hover .headshot {
+    animation: breath 4s ease-out;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: breath 4s ease-out;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#amirmikhak .card:hover a {
+    color:white;
+}
+
+#amirmikhak .flip {
+    bottom: 5%;
+    right: 5%;
+    top: auto;
+    left: auto;
+}
+
+#amirmikhak .email-address a {
+    word-break: break-all;
+}
+
 /* Rachel Boyce */
 #rachelboyce .headshot {
     background-image:url(http://demo.arebe.us/images/metamoss_dj.jpg);
     border-radius:calc(6.5em/2);
 }
 #rachelboyce .headshot:hover {
-    transform: rotate(360deg);  
-    transition:3s;  
+    transform: rotate(360deg);
+    transition:3s;
 }
 
 /* Matt Phillips */
