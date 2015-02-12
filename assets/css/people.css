@@ -366,6 +366,15 @@ font-size: 0.75em;
 
 }
 
+#stevenmcdevitt .headshot {
+    background-image:url(http://p1.iitbotftbd.com/img/mcdevitt01.jpg);
+    border-radius:50px;
+}
+
+#stevenmcdevitt .back.card li {
+    font-size: 0.75em;
+}
+
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
 /****************************************************************************/

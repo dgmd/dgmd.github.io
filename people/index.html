@@ -74,7 +74,6 @@ layout: default
                 });
             });
         });
-
         var shaunalynn = document.getElementById('shaunalynn');
         var blackout = document.createElement('div');
         document.body.appendChild(blackout);
@@ -88,10 +87,8 @@ layout: default
         blackout.style.top = 0;
         blackout.style.left = 0;
         blackout.style.backgroundColor = "rgba(0,0,0,.9)";
-
         h=document.getElementsByClassName('site-header');
         h[0].style.zIndex=100;
-
         shaunalynn.onmouseover=function(){
             blackout.style.opacity = 1;
             blackout.style.zIndex = 0;
@@ -280,16 +277,13 @@ layout: default
 
       <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
       <script>
-
       var dc = {}  // namespace
       dc.svg = d3.select("#davidchouinard svg");
-
       d3.select("#davidchouinard .flipper").on("mouseenter", function() {
           dc.svg.selectAll(".davidchouinard-clip-ear")
             .transition()
             .attr("rx", 28)
             .attr("ry", 22);
-
           // Make sure to offer an affordance that the element is clickable, but
           // only after the transition is complete
           setTimeout(function() {
@@ -300,29 +294,24 @@ layout: default
             .transition()
             .attr("rx", 0)
             .attr("ry", 0);
-
           dc.svg
             .style("cursor", null);
       }).on("click", function() {
         // TODO: make an additional click toggle between states
           d3.select("#davidchouinard-content")
             .style("height", "100%");
-
           dc.svg.select("#davidchouinard-clip-main")
             .transition()
             .attr("r", 120);
-
           d3.select("#davidchouinard-content > h2")
             .transition()
             .delay(500)
             .style("display", "none");
-
           d3.select("#davidchouinard-back")
             .style("display", null)
             .transition()
             .delay(500)
             .style("opacity", 1);
-
           d3.select("#davidchouinard-content")
             .transition()
             .delay(500)
@@ -629,6 +618,39 @@ layout: default
         <script>
         window.addEventListener('load', function() {
             var myCard = document.querySelector('#juang');
+            var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+            flipButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    myCard.classList.toggle('flipped');
+                });
+            });
+        });
+        </script>
+    </div>
+
+    <div id='stevenmcdevitt' class='person flip-container'>
+        <div class='flipper'>
+            <div class='front card'>
+                <h2>Steven McDevitt</h2>
+                <div class='headshot'></div>
+                <i class="fa fa-undo flip"></i>
+            </div>
+            <div class='back card'>
+                <ul>
+                    <li><i class="fa fa-home"></i><a href='http://neuvox.io/'>neuvox.io</a>
+                    </li>
+                    <li><i class="fa fa-home"></i><a href='http://iitbotftbd.com/'>iitbotftbd.com</a>
+                    </li>
+                    <li><i class="fa fa-github"></i><a href='https://github.com/stevenMcDevitt'>stevenMcDevitt</a>
+                    </li>
+                    <li><i class="fa fa-envelope"></i><a href='mailto:steven.mcdevitt@gmail.com'>steven.mcdevitt@gmail.com</a>
+                </ul>
+                <i class="fa fa-undo flip"></i>
+            </div>
+        </div>
+        <script>
+        window.addEventListener('load', function() {
+            var myCard = document.querySelector('#stevenmcdevitt');
             var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
             flipButtons.forEach(function(button) {
                 button.addEventListener('click', function() {
