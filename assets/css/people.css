@@ -3,6 +3,34 @@
 #kanyewest .headshot {
     background-image: url(http://media.cmgdigital.com/shared/img/photos/2014/10/27/2d/9e/kanye-west-smile.jpg);
 }
+
+/* Julia Angley */
+
+#juliaangley .headshot {
+    background-image: url(https://pbs.twimg.com/profile_images/498659993483087872/cS6hF5Bi_400x400.jpeg);
+}
+
+#juliaangley .headshot:hover {
+    background-image: url(https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/60477_10151400142044234_58641353_n.jpg?oh=f5d3886836ec83bda8b9c3fdf193ded7&oe=5560D793&__gda__=1431117260_b302c5ed55ea1ef4da8c596082ca3b33);
+    transition:1s;
+}
+
+#juliaangley .card:hover {
+    background-color:mediumpurple;
+    transition:1s;
+}
+
+#juliaangley .card:hover {
+    color:white;
+    transition:1s;
+}
+
+#juliaangley .card:hover h2 {
+    color:white;
+    transition:1s;
+}
+
+
 /* Kim Kardashian */
 
 #kimkardashian .headshot {
