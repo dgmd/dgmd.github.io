@@ -255,8 +255,10 @@ layout: default
             <div class='front card'>
                 <h2>Galvin Widjaja</h2>
                 <div class='headshot'></div>
-                <i class="fa fa-undo flip"></i>
+				<audio id='GalvinSound' src='http://movie-sounds.org/quotes/yogi64/[CHUCKLES-SOUND-EFFECT]-Right.mp3'/>
+
             </div>
+                <i class="fa fa-undo flip"></i>
             <div class='back card'>
                 <ul>
                     <li><i class="fa fa-home"></i><a href='http://tranquility-analytics.com/'>Personal Projects</a>
@@ -285,6 +287,18 @@ layout: default
                 });
             });
         });
+		
+		var galvinaudio = document.getElementById('GalvinSound');
+        var galvinwidjaja = document.getElementById('galvinwidjaja');
+
+        galvinwidjaja.onmouseover=function(){
+            galvinaudio.play();
+        };
+        galvinwidjaja.onmouseout=function(){
+            galvinaudio.pause();
+			galvinaudio.currentTime = 0;
+        };
+		
         </script>
     </div>    
 
