@@ -58,6 +58,15 @@
 }
 
 
+/* Kenny Boyle */
+#kennyboyle .headshot {
+    background-image:url(https://www.dropbox.com/s/ana6dn5b1ua72fv/IMG_2162.JPG?dl=0);
+    
+}
+#kennyboyle .card {
+    border-radius:none;
+
+
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
 /****************************************************************************/
