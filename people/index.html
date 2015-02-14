@@ -695,6 +695,37 @@ layout: default
         </div>
     </div>
 
+    <div id='lujaen-basri' class='person flip-container'>
+        <div class='flipper'>
+            <div class='front card'>
+                <h2>Lujaen Basri</h2>
+                <div class='headshot'></div>
+                <i class="fa fa-undo flip"></i>
+            </div>
+            <div class='back card'>
+                <ul>
+                    <li><i class="fa fa-github"></i><a href='https://github.com/lbasri'>lbasri</a>
+                    </li>                    
+                    <li><i class="fa fa-envelope"></i><a href='mailto:basri.la@gmail.com'>basri.la<br>@gmail.com</a>
+                    </li> 
+                </ul>
+                <i class="fa fa-undo flip"></i>
+            </div>
+
+        </div>
+        <script>
+        window.addEventListener('load', function() {
+            var myCard = document.querySelector('#lujaen-basri');
+            var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+            flipButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    myCard.classList.toggle('flipped');
+                });
+            });
+        });
+        </script>
+    </div>
+
     <!-- ----------------------------------------- -->
     <!-- insert additional people BEFORE this line -->
     <div style='clear:both;'></div>
