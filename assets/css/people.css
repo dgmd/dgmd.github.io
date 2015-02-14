@@ -375,6 +375,11 @@ font-size: 0.75em;
     font-size: 0.75em;
 }
 
+/* Beth */
+#bethalt .headshot {
+    background-image: url(http://www.seas.harvard.edu/sites/default/files/images/Directory/Altringer%20SEAS%20profile%20pic%20bw.jpg);
+}
+
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
 /****************************************************************************/
