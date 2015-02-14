@@ -277,6 +277,16 @@ font-size: 0.75em;
     word-break: break-all;
 }
 
+/* Takeo Kuwabara */
+#takeokuwabara .headshot {
+    background-image: url(https://s3.amazonaws.com/takeodgmde15/kobe-1030775.jpeg);
+    position: absolute;
+}
+#takeokuwabara .card:hover a{
+    transform: color:blue;
+
+}
+
 /* Rachel Boyce */
 #rachelboyce .headshot {
     background-image:url(http://demo.arebe.us/images/metamoss_dj.jpg);
