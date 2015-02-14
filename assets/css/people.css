@@ -396,10 +396,10 @@ font-size: 0.75em;
 }
 /* Brendan Keegan */
 #brendankeegan .headshot {
-    background-image: url(https://farm4.staticflickr.com/3943/15384547600_8430d2802b_n.jpg);
+    background-image: url(https://s3.amazonaws.com/brendankeegan/brendan-camera-mural.jpg);
 }
 #brendankeegan .headshot:hover {
-
+    
 }
 
 
