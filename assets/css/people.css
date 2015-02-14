@@ -227,7 +227,7 @@ font-size: 0.75em;
 #amirmikhak .headshot {
     height:70%;
     width:70%;
-    background-image: url(https://scontent-b-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10849895_10100415118011978_6727498086113574237_n.jpg?oh=5c128bbebda338bcaa0d98eeb7ccb4a7&oe=554971D1);
+    background-image: url(https://s3.amazonaws.com/dgmde15-amirmikhak/feelsgoodman.jpg);
     transition: height 2s, width 2s;
 
     -webkit-transition: height 2s, width 2s;
