@@ -1,8 +1,88 @@
+/* Gabe Russell */
+
+#gaberussell .headshot {
+    background-image: url(https://dl-web.dropbox.com/get/Photos/headshot2.jpg?_subject_uid=85203&w=AAAKM1fcnRYsiGb2vNSa5A6G_UTu1sAl44zd7sXaTAVl7A);
+    transition: 1s;
+}
+
+#gaberussell .headshot:hover {
+    transition: 3s;
+    -webkit-filter: brightness(2);
+}
+
+/* Juan G */
+#juang .headshot {
+    background-image: url(http://onemstudio.com/wp-content/uploads/2015/02/onemboreal.jpg);
+}
+#juang .headshot {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#juang .headshot:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+} 
+ #juang h2 {
+    z-index: 100;
+    position:relative;
+    background-size: contain;   
+    text-align: center;
+    text-transform: lowercase;
+    font-family: Helvetica'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    line-height: 1em;
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#juang .back.card li {
+font-size: 0.75em;
+}
+
+
 /* Kanye West */
 
 #kanyewest .headshot {
     background-image: url(http://media.cmgdigital.com/shared/img/photos/2014/10/27/2d/9e/kanye-west-smile.jpg);
 }
+
+/* Julia Angley */
+
+#juliaangley .headshot {
+    background-image: url(https://pbs.twimg.com/profile_images/498659993483087872/cS6hF5Bi_400x400.jpeg);
+}
+
+#juliaangley .headshot:hover {
+    background-image: url(https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/60477_10151400142044234_58641353_n.jpg?oh=f5d3886836ec83bda8b9c3fdf193ded7&oe=5560D793&__gda__=1431117260_b302c5ed55ea1ef4da8c596082ca3b33);
+    transition:1s;
+}
+
+#juliaangley .card:hover {
+    background-color:mediumpurple;
+    transition:1s;
+}
+
+#juliaangley .card:hover {
+    color:white;
+    transition:1s;
+}
+
+#juliaangley .card:hover h2 {
+    color:white;
+    transition:1s;
+}
+
+
 /* Kim Kardashian */
 
 #kimkardashian .headshot {
@@ -14,18 +94,80 @@
     background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
 }
 
-#alecresnick .back.card li {
-	font-size: 0.75em;
-}
 #alecresnick .card {
     border-radius:none;
 }
 
-/* Katie Korngold */
-#katiekorngold .headshot {
-    background-image: url(https://scontent-iad.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10978518_10152535640700806_2636457344660718336_n.jpg?oh=37526a3f186411a46babcb04bf3ea13e&oe=558CCA31);
+/* David Chouinard */
+
+#davidchouinard .front {
+  background-color: #aaa;
+  z-index: 2;
 }
 
+#davidchouinard-headshot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.5em;
+  z-index: -1;
+}
+
+#davidchouinard-headshot image {
+  clip-path: url(#davidchouinard-clip);
+}
+
+#davidchouinard-content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.5em;
+}
+#davidchouinard-content h2 {
+  margin-bottom: 12px !important;
+}
+
+#davidchouinard-back {
+  padding-top: 0.5em;
+}
+#davidchouinard-back li {
+  list-style-type: none;
+  line-height: 0.75em;
+  padding-left: 1ex;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+}
+#davidchouinard-back li i.fa {
+  margin-right: 1ex;
+}
+#davidchouinard-back li a {
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.85em;
+}
+
+/*Galvin Widjaja's Card */
+#galvinwidjaja .headshot {
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/galvin-dgmd/2014-12-29+10.38.34.jpg);
+}
+
+#galvinwidjaja .card:hover {
+	/* background-image: url(http://bit.ly/1vm9cfA); */
+	
+}
+
+#galvinwidjaja .headshot:hover {
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/galvin-dgmd/the-tiniest-polar-bear-315-1294974841-1.jpg);
+    transition:3s; 
+}
+
+/* Sarah Ledoux */
+
+#sarahledoux .headshot {
+    background-image: url(http://sarahledoux.com/hes/dgmd27/asst3/assets/images/profilepics/sl.jpg);
+}
 
 /* Shaunalynn Duffy */
 #shaunalynn {
@@ -39,9 +181,6 @@
 }
 #shaunalynn #img-wrapper {
     position: relative;
-}
-#shaunalynn #picture {
-    width: 200px;
 }
 
 /* Bakhtiar Mikhak */
@@ -58,16 +197,272 @@
 }
 
 
+/* Amir Mikhak */
+/* -- these effects may nauseate you -- */
+/* and flipping makes for funky positioning */
+@keyframes breath {
+    0% {opacity: 1.0; transform: rotate(0deg);}
+    25% {opacity: 0.2; transform: rotate(360deg);}
+    100% {opacity: 1.0;  transform: rotate(0deg);}
+}
+
+@keyframes spinny {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@-webkit-keyframes breath {
+    0% {opacity: 1.0;}
+    25% {opacity: 0.2;}
+    100% {opacity: 1.0;}
+}
+
+@-webkit-keyframes spinny {
+    0% {-webkit-transform: rotate(0deg);}
+    25% {-webkit-transform: rotate(360deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+
+#amirmikhak .headshot {
+    height:70%;
+    width:70%;
+    background-image: url(https://s3.amazonaws.com/dgmde15-amirmikhak/feelsgoodman.jpg);
+    transition: height 2s, width 2s;
+
+    -webkit-transition: height 2s, width 2s;
+}
+
+#amirmikhak {
+    transition: background-color 4.5s, width 2.5s, height 0.5s;
+
+    -webkit-transition: background-color 4.5s, width 2.5s, height 0.5s;
+}
+
+#amirmikhak:hover:focus {
+    outline: none;
+    animation: none;
+
+    -webkit-animation: none;
+}
+
+#amirmikhak:hover {
+    width:326px;
+    height:326px;
+
+    animation: spinny 2.1s ease-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: spinny 2.1s ease-out;
+    -webkit-animation-delay: 0.3s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#amirmikhak:hover .card {
+    background-color:rgb(200, 0, 10);
+    color:white;
+}
+
+#amirmikhak .card:hover .headshot {
+    animation: breath 4s ease-out;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: breath 4s ease-out;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#amirmikhak .card:hover a {
+    color:white;
+}
+
+#amirmikhak .flip {
+    bottom: 5%;
+    right: 5%;
+    top: auto;
+    left: auto;
+}
+
+#amirmikhak .email-address a {
+    word-break: break-all;
+}
+
+/* Takeo Kuwabara */
+#takeokuwabara .headshot {
+    background-image: url(https://s3.amazonaws.com/takeodgmde15/kobe-1030775.jpeg);
+    position: absolute;
+}
+#takeokuwabara .card:hover a{
+    transform: color:blue;
+
+}
+
 /* Rachel Boyce */
 #rachelboyce .headshot {
     background-image:url(http://demo.arebe.us/images/metamoss_dj.jpg);
-    border-radius:50px;
+    border-radius:calc(6.5em/2);
 }
 #rachelboyce .headshot:hover {
-    transform: rotate(360deg);  
-    transition:3s;  
+    transform: rotate(360deg);
+    transition:3s;
 }
 
+/* Matt Phillips */
+
+#mattphillips .headshot {
+    background-image: url(https://s3.amazonaws.com/dgmde/about-image-cropped.jpg);
+    box-shadow: none;
+}
+
+#mattphillips:hover .headshot {
+     animation: vibrate-wide 200ms linear 0s 1;
+    -webkit-animation: vibrate-wide 200ms linear 0s 1;
+    -moz-animation: vibrate-wide 200ms linear 0s 1;
+    -o-animation: vibrate-wide 200ms linear 0s 1;
+}
+
+#mattphillips .card {
+    border-radius:none;
+}
+
+@keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-moz-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-webkit-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-o-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+
+
+/* Michelle */
+#michelleb .headshot {
+    background-image: url('https://dl.dropboxusercontent.com/s/0n0ixkwvr21jghc/michelle-pic.jpg?dl=0');
+    border-radius:calc(2em/2);
+    transition: 0.5s;
+    transform: translate(0rem, .6rem) rotate(45deg);
+}
+#michelleb .headshot:hover {
+    transition: 1s;
+    transform: translate(0rem, 0rem) rotate(0deg);
+}
+#michelleb .card:hover a {
+    color: firebrick;
+}
+#michelleb .card:hover a:visited {
+    color: maroon;
+}
+#michelleb .card:hover a:hover {
+    text-decoration: underline;
+}
+/* Brendan Keegan */
+#brendankeegan .headshot {
+    background-image: url(https://s3.amazonaws.com/brendankeegan/brendan-camera-mural.jpg);
+}
+#brendankeegan .headshot:hover {
+    
+}
+
+
+/* Karla Lemos */
+#karlalemos .headshot {
+    background-image:url(https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/75252_10151250562568070_1187940525_n.jpg?oh=82e4cf992dee8cb8fa0645ea25d1fea0&oe=556AA210&__gda__=1431290047_1a7259ee0b2a8c3639a958624027ae31
+        );
+    border-radius:calc(6.5em/2);
+}
+
+#karlalemos .headshot:hover {
+    transition: 5s;
+        transform: rotate(360deg); /* This tells CSS to rotate our element 180 degrees */
+    }
+
+#karlalemos h2{ 
+
+}
+
+#stevenmcdevitt .headshot {
+    background-image:url(http://p1.iitbotftbd.com/img/mcdevitt01.jpg);
+    border-radius:50px;
+}
+
+#stevenmcdevitt .back.card li {
+    font-size: 0.75em;
+}
+
+/* Beth */
+#bethalt .headshot {
+    background-image: url(http://www.seas.harvard.edu/sites/default/files/images/Directory/Altringer%20SEAS%20profile%20pic%20bw.jpg);
+}
+
+    /* Lujaen Basri */
+#lujaen-basri .headshot {
+    background-image:url(http://www1.coe.neu.edu/~lbasri/pic/me.JPG);
+    transition: width 1s, height 1s;  
+}
+#lujaen-basri .headshot:hover {
+    width: 170px;
+    height: 170px;
+}
+/* Elias Polcheira */
+
+#eliaspolcheira .headshot {
+    background-image: url(https://scontent-a-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10978642_10152698078034716_2479973241008161826_n.jpg?oh=817742aedd7469f06efe2578b18b9d1c&oe=5565F4D5);
+}
+#eliaspolcheira .headshot:hover {
+        -webkit-animation: wave-animate 1s steps(10);
+    }
+    @-webkit-keyframes wave-animate {
+        from {
+            background-position: 0px;
+        }
+        to {
+            background-position: calc(-1*10*50px);
+        }
+}
+
+/* Katie Korngold */
+#katiekorngold .headshot {
+    background-image: url(https://scontent-iad.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10978518_10152535640700806_2636457344660718336_n.jpg?oh=37526a3f186411a46babcb04bf3ea13e&oe=558CCA31);
+}
 
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
@@ -124,8 +519,8 @@
 }
 .person .headshot {
     box-shadow: inset 0 0 0.625em #000;
-    width: 100px;
-    height: 100px;
+    width: 6.5em;
+    height: 6.5em;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
@@ -145,6 +540,18 @@
 }
 .back li i.fa {
     margin-right: 1ex;
+}
+#people .back {
+    padding: 0.25em;
+}
+#people .back li {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    line-height: 0.75em;
+}
+#people .back li a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.875em;
 }
 /***********************************/
 /* Flipping behavior for the cards */
@@ -168,3 +575,6 @@ i.flip {
     width: 100%;
     height: 100%;
 }
+
+/*You use a library to accomplish what you want, a framework uses your code to accomplish what you want.*/
+
