@@ -420,6 +420,22 @@ font-size: 0.75em;
     width: 170px;
     height: 170px;
 }
+/* Elias Polcheira */
+
+#eliaspolcheira .headshot {
+    background-image: url(https://scontent-a-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10978642_10152698078034716_2479973241008161826_n.jpg?oh=817742aedd7469f06efe2578b18b9d1c&oe=5565F4D5);
+}
+#eliaspolcheira .headshot:hover {
+        -webkit-animation: wave-animate 1s steps(10);
+    }
+    @-webkit-keyframes wave-animate {
+        from {
+            background-position: 0px;
+        }
+        to {
+            background-position: calc(-1*10*50px);
+        }
+}
 
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
