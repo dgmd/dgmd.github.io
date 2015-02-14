@@ -1,3 +1,15 @@
+/* Gabe Russell */
+
+#gaberussell .headshot {
+    background-image: url(https://dl-web.dropbox.com/get/Photos/headshot2.jpg?_subject_uid=85203&w=AAAKM1fcnRYsiGb2vNSa5A6G_UTu1sAl44zd7sXaTAVl7A);
+    transition: 1s;
+}
+
+#gaberussell .headshot:hover {
+    transition: 3s;
+    -webkit-filter: brightness(2);
+}
+
 /* Juan G */
 #juang .headshot {
     background-image: url(http://onemstudio.com/wp-content/uploads/2015/02/onemboreal.jpg);
