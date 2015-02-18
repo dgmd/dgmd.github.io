@@ -1,7 +1,7 @@
 /* Gabe Russell */
 
 #gaberussell .headshot {
-    background-image: url(https://dl-web.dropbox.com/get/Photos/headshot2.jpg?_subject_uid=85203&w=AAAKM1fcnRYsiGb2vNSa5A6G_UTu1sAl44zd7sXaTAVl7A);
+    background-image: url(https://s3.amazonaws.com/grussell-storage/RegularStorage/headshot2.jpg);
     transition: 1s;
 }
 
