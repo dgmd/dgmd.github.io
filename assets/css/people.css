@@ -158,12 +158,11 @@
 
 /* Takeo Kuwabara */
 #takeokuwabara .headshot {
-    background-image: url(https://s3.amazonaws.com/takeodgmde15/kobe-1030775.jpeg);
-    position: absolute;
+    background-image: url(https://s3.amazonaws.com/takeodgmde15/1045230_10102529684209397_994285401_n.jpg);
 }
-#takeokuwabara .card:hover a{
-    transform: color:blue;
-
+#takeokuwabara .headshot:hover {
+    background-image: url(https://s3.amazonaws.com/takeodgmde15/kobe-1030775.jpeg);
+    transition:1s;
 }
 
 /* Rachel Boyce */
