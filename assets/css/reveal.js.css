@@ -17,3 +17,12 @@
 	text-align: left;
 	font-size: 75%;
 }
+
+blockquote {
+	box-shadow: none !important;
+	opacity: 0.875;
+}
+
+blockquote.full {
+	width: 100%;
+}
