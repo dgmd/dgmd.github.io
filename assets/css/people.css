@@ -464,6 +464,21 @@ font-size: 0.75em;
     background-image: url(https://scontent-iad.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10978518_10152535640700806_2636457344660718336_n.jpg?oh=37526a3f186411a46babcb04bf3ea13e&oe=558CCA31);
 }
 
+/* Kenny Boyle */
+#kennyboyle .headshot {
+    background-image:url(https://s3.amazonaws.com/kboyle-photos/kpb.JPG);
+    
+}
+#kennyboyle .card:hover {
+    background-color: red;
+    color:black;
+    transition:1s;
+}
+#kennyboyle .card:hover a {
+    color:black;
+} 
+
+
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
 /****************************************************************************/
