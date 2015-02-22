@@ -63,8 +63,14 @@
     background-image:url(https://s3.amazonaws.com/kboyle-photos/kpb.JPG);
     
 }
-#kennyboyle .card {
-    border-radius:none;
+#kennyboyle .card:hover {
+    background-color: red;
+    color:black;
+    transition:1s;
+}
+#kennyboyle .card:hover a {
+    color:black;
+} 
 
 
 /****************************************************************************/
