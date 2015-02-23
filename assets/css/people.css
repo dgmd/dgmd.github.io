@@ -405,15 +405,26 @@ font-size: 0.75em;
 
 /* Karla Lemos */
 #karlalemos .headshot {
-    background-image:url(https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/75252_10151250562568070_1187940525_n.jpg?oh=82e4cf992dee8cb8fa0645ea25d1fea0&oe=556AA210&__gda__=1431290047_1a7259ee0b2a8c3639a958624027ae31
-        );
-    border-radius:calc(6.5em/2);
+    background-image:url(https://scontent-lga.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10014888_10152302579893070_2705026094955304717_n.jpg?oh=571aab8bc968bf9e03f55a93b8648825&oe=55958787);
+    
 }
 
 #karlalemos .headshot:hover {
-    transition: 5s;
-        transform: rotate(360deg); /* This tells CSS to rotate our element 180 degrees */
+    width: 150px;
+    height: 150px;
+    background-image:url(https://scontent-lga.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1459948_10152025432568070_2002372627_n.jpg?oh=cb8b7f906bb9c940132065d4c8f4ba90&oe=5589A82D);
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+
     }
+ #karlalemos .card:hover {
+    background-color:black;
+    color:white;
+    transition:5s;
+}
 
 #karlalemos h2{ 
 
