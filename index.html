@@ -42,7 +42,7 @@ layout: default
 <hr>
 
 <section id='weeks'>
-    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %}
+    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %} {% if session.title != null %}
     <section id="{{ slug }}" class='week'>
         <h2>
             <div class='session-title'>{{ forloop.index }}: {{ session.title }}</div>
@@ -53,8 +53,7 @@ layout: default
 
         </h2> {{ session.content | markdownify }}
     </section>
-
-    {% endfor %}
+    {% endif %} {% endfor %}
 </section>
 
 <script>
