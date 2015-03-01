@@ -15,6 +15,3 @@ highlighter: pygments
 
 collections:
 - sessions
-
-gems:
-  - octopress-autoprefixer
