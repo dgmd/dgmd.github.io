@@ -57,6 +57,15 @@
     transition:3s;  
 }
 
+/* Tim Savas */
+
+#timsavas .headshot {
+    background-image: url(http://arboretum.harvard.edu/wp-content/uploads/Tim-Savas.jpg);
+}
+
+#timsavas .card {
+    border-radius:none;
+}
 
 /****************************************************************************/
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
