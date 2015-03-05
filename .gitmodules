@@ -1,3 +1,6 @@
-[submodule "lib/reveal.js"]
-	path = lib/reveal.js
+[submodule "lib/normalize-css"]
+	path = lib/normalize-css
+	url = https://github.com/necolas/normalize.css.git
+[submodule "lib/reveal-js"]
+	path = lib/reveal-js
 	url = https://github.com/hakimel/reveal.js.git
