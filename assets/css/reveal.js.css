@@ -18,6 +18,10 @@
 	font-size: 75%;
 }
 
+.reveal .slides img {
+	border: none;
+}
+
 blockquote {
 	box-shadow: none !important;
 	opacity: 0.875;
