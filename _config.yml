@@ -1,11 +1,11 @@
 # Site settings
-title: DGMD E-15
-email: dgmde15@gmail.com
+title: DGMD S-15
+email: dgmds15@gmail.com
 description: "Digital Media — Creative Explorations in Screen-Based and Physical Computing at the  Harvard Extension School"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://dgmde15.github.io" # the base hostname & protocol for your site
-twitter_username: dgmde15
-github_username:  dgmde15
+url: "http://dgmds15.github.io" # the base hostname & protocol for your site
+twitter_username: dgmds15
+github_username:  dgmds15
 
 # Build settings
 markdown: kramdown
