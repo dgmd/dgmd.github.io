@@ -1,7 +1,7 @@
 # Site settings
 title: DGMD S-15
 email: dgmds15@gmail.com
-description: "Digital Media — Creative Explorations in Screen-Based and Physical Computing at the  Harvard Extension School"
+description: "Digital Media — Creative Explorations in Screen-Based and Physical Computing at the  Harvard Summer School"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dgmds15.github.io" # the base hostname & protocol for your site
 twitter_username: dgmds15
