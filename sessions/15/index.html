@@ -1,0 +1,155 @@
+---
+layout: slide
+---
+<section>
+    <h1><code>&lt; 15 &gt;</code></h1>
+</section>
+<section>
+    <h3><a href='http://dgmde15.github.io'>Creative Explorations in Screen-Based and Physical Computing</a></h3>
+    <h4>Course DGMD E-15, Spring 2015
+    <br>Harvard University Extension School</h4>
+</section>
+<section>
+    <h2>7 May 2015</h2>
+    <ol>
+        <li>…final project demos</li>
+        <li>…open studio time with consultations</li>
+    </ol>
+    <hr>
+</section>
+<section>
+    <h2><code>10m</code> to <span style='color: lightgreen'>present</span>;<br/><code>20m</code> to <span style='color: orange'>feedback</span></h2>
+    <div id='demo-timer' data-status='paused' data-time='30'>
+        <style scoped>
+        #demo-timer {
+            width: 10em;
+            height: 2em;
+            margin-right: auto;
+            margin-left: auto;
+            opacity: 0.75;
+            cursor: pointer;
+            border-radius: 10em;
+        }
+
+        #demo-timer {
+            transition: background-color 1s;
+        }
+        
+        #demo-timer:hover {
+            opacity: 1;
+        }
+        
+        #demo-timer[data-status=presentation] {
+            background-color: lightgreen;
+        }
+        
+        #demo-timer[data-status=paused] {
+            background-color: grey;
+        }
+        
+        #demo-timer[data-status=feedback] {
+            background-color: orange;
+        }
+        
+        #demo-timer[data-status=ending] {
+            background-color: lightpink;
+        }
+        
+        #demo-timer[data-status=expired] {
+            background-color: red;
+        }
+        
+        #time-remaining {
+            height: 100%;
+            vertical-align: middle;
+            line-height: 2em;
+        }
+        </style>
+        <span id='time-remaining'></span>
+    </div>
+    <script>
+    var updateTimerDisplay = function(timer) {
+        var currentTime = parseInt(timer.getAttribute('data-time'));
+        timer.querySelector('#time-remaining').innerHTML = [currentTime, 'minutes'].join(' ');
+        if (currentTime > 20) {
+            timer.setAttribute('data-status', 'presentation');
+        } else if (5 < currentTime && currentTime <= 20) {
+            timer.setAttribute('data-status', 'feedback');
+        } else if (currentTime <= 5 && 0 < currentTime) {
+            timer.setAttribute('data-status', 'ending');
+        } else if (currentTime == 0) {
+            timer.setAttribute('data-status', 'expired');
+        }
+
+    };
+
+
+    var decrementTimer = function(timer) {
+        var currentTime = parseInt(timer.getAttribute('data-time'));
+        if (currentTime > 0) {
+            timer.setAttribute('data-time', timer.getAttribute('data-time') - 1);
+            updateTimerDisplay(timer);
+        }
+    };
+
+    var chimeIn = function(timer) {
+        var chime = document.createElement('audio');
+        chime.setAttribute('src', './chime.mp3');
+        chime.setAttribute('autoplay', 'true');
+        chime.style.visibility = 'hidden';
+        chime.addEventListener('ended', function(event) {
+            chime.parentNode.removeChild(chime);
+        });
+        timer.appendChild(chime);
+    };
+
+
+    var reset = function(timer) {
+        timer.setAttribute('data-time', 30);
+        timer.setAttribute('data-status', 'presentation');
+        updateTimerDisplay(timer);
+        var timerUpdate = setInterval(function() {
+            decrementTimer(timer);
+            var currentTime = parseInt(timer.getAttribute('data-time'));
+            if (currentTime == 0) {
+                chimeIn(timer);
+                clearInterval(timerUpdate);
+            } else if (currentTime == 20) {
+                chimeIn(timer);
+            }
+        }, 60*1000);
+    };
+
+
+    var timer = document.getElementById('demo-timer');
+    updateTimerDisplay(timer);
+
+    timer.addEventListener('click', function(event) {
+        reset(timer);
+    });
+    </script>
+    <p style='font-size: 0.875em'>
+        You'll have <em>8 minutes</em> next week. Tell the story of your project; it's not just about the finished product…One possibile layout:
+        <ol style='font-size: 0.75em'>
+            <li>Who is the audience (totally cool if it's you!)?</li>
+            <li>What do you hope they'll get out of it?</li>
+            <li>Why was it an interesting project to you?</li>
+            <li>What can it do now?</li>
+            <li>What do you want it to be able to do next, eventually?</li>
+        </ol>
+    </p>
+</section>
+<section>
+    <h2>For next week:</h2>
+    <hr>
+    <ol style="font-size: 0.65em;">
+        <li style='background-color: lightpink; padding: 1em;'>Send us a link to <a href='https://help.github.com/articles/user-organization-and-project-pages/#user--organization-pages'>your GitHub User Page</a> (or some other, online document) with a listing of <em>all the materials</em> you think sum up your time with us by <b>11:59PM on Tuesday, 12 May 2015</b>.</li>
+        <li>Email us your answer to, "What state would you like your project in for your final presentation?"</li>
+        <li>We know we've asked for a lot of feedback already. But, this is the last time, promise! Please go <a href='http://www.extension.harvard.edu/course-evaluations'>here</a> and fill out the evaluation by <b>11:59PM on Monday, 19 May</b>.</li>
+        <li>Next week we're going to ask you to help us out by writing out your own version of the course description…something you think would better or more effectively represent this course. So please begin thinking about this!</li>
+        <li>And finally, if you feel like you are struggling in any way and aren't sure you'll feel good about the status of your final project, <i>please</i> let one of us know. Even if you aren't sure what you need, we'd like to get together!</li>
+    </ol>
+</section>
+<section>
+    <h1><code>&lt; /15 &gt;</code></h1>
+</section>
