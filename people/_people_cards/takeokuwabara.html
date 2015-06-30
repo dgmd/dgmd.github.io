@@ -1,0 +1,32 @@
+<div id='takeokuwabara' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Takeo Kuwabara</h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='https://malaysiacities.mit.edu/takeo-kuwabara'>One of Takeo's Projects</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/takeokuwabara'>takeokuwabara</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:takeok@mit.edu'>takeok@mit.edu</a>
+            </ul>
+            </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#takeokuwabara');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>

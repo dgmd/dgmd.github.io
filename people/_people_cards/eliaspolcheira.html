@@ -1,0 +1,35 @@
+<div id='eliaspolcheira' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Elias Polcheira</h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://www.epolcheira.com/'>epolcheira.com</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/eliaspol'>eliaspol</a>
+                </li>
+                <li><i class="fa fa-twitter"></i><a href='https://twitter.com/_eliasp'>@_eliasp</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:elias.fpp@gmail.com'>elias.fpp@gmail.com</a>
+                </li>
+                <li><i class="fa fa-youtube"></i><a href='https://www.youtube.com/watch?v=y_aNNpqJYn0'>Multimedia</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#eliaspolcheira');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>

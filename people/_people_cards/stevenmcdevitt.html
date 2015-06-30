@@ -1,0 +1,32 @@
+<div id='stevenmcdevitt' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Steven McDevitt</h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://neuvox.io/'>neuvox.io</a>
+                </li>
+                <li><i class="fa fa-home"></i><a href='http://iitbotftbd.com/'>iitbotftbd.com</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/stevenMcDevitt'>stevenMcDevitt</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:steven.mcdevitt@gmail.com'>steven.mcdevitt@gmail.com</a>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#stevenmcdevitt');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>

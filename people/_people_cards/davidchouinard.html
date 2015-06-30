@@ -1,0 +1,78 @@
+<div id='davidchouinard' class='person'>
+    <div class='flipper'>
+        <div class='front'>
+            <div id='davidchouinard-content' style='background: rgba(255,255,255,0)'>
+                <h2>David Chouinard</h2>
+                <div id='davidchouinard-back' style="display: none; opacity: 0;">
+                    <ul>
+                        <li><i class="fa fa-home"></i><a href='http://davidchouinard.com/'>davidchouinard.com</a>
+                        </li>
+                        <li><i class="fa fa-github"></i><a href='https://github.com/DavidChouinard'>DavidChouinard</a>
+                        </li>
+                        <li><i class="fa fa-twitter"></i><a href='https://twitter.com/DavidChouinard'>@DavidChouinard</a>
+                        </li>
+                        <li><i class="fa fa-envelope"></i><a href='mailto:david@davidchouinard.com'>david<wbr>@davidchouinard.com</a>
+                        </li>
+                        <li><i class="fa fa-wrench"></i><a href='http://www.disneyresearch.com/'>Walt Disney Imagineering</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- This should really just be a clip-path style on an HTML img, not an SVG image.
+          However, no modern browser supports transitions on clip-paths applied to img. -->
+            <svg id="davidchouinard-headshot" viewBox="0 0 155 155" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <clipPath id="davidchouinard-clip">
+                        <circle cx="78" cy="90" r="43" id="davidchouinard-clip-main" />
+                        <ellipse transform="rotate(-50, 38, 48)" cx="38" cy="48" rx="0" ry="0" class="davidchouinard-clip-ear" />
+                        <ellipse transform="rotate(50, 116, 48)" cx="116" cy="48" rx="0" ry="0" class="davidchouinard-clip-ear" />
+                    </clipPath>
+                </defs>
+                <image xlink:href="http://static.davidchouinard.com/dgmde15/headshot.png" x="0" y="0" width="155" height="155" />
+            </svg>
+        </div>
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+    var dc = {} // namespace
+    dc.svg = d3.select("#davidchouinard svg");
+    d3.select("#davidchouinard .flipper").on("mouseenter", function() {
+        dc.svg.selectAll(".davidchouinard-clip-ear")
+            .transition()
+            .attr("rx", 28)
+            .attr("ry", 22);
+        // Make sure to offer an affordance that the element is clickable, but
+        // only after the transition is complete
+        setTimeout(function() {
+            dc.svg.style("cursor", "pointer");
+        }, 250);
+    }).on("mouseleave", function() {
+        dc.svg.selectAll(".davidchouinard-clip-ear")
+            .transition()
+            .attr("rx", 0)
+            .attr("ry", 0);
+        dc.svg
+            .style("cursor", null);
+    }).on("click", function() {
+        // TODO: make an additional click toggle between states
+        d3.select("#davidchouinard-content")
+            .style("height", "100%");
+        dc.svg.select("#davidchouinard-clip-main")
+            .transition()
+            .attr("r", 120);
+        d3.select("#davidchouinard-content > h2")
+            .transition()
+            .delay(500)
+            .style("display", "none");
+        d3.select("#davidchouinard-back")
+            .style("display", null)
+            .transition()
+            .delay(500)
+            .style("opacity", 1);
+        d3.select("#davidchouinard-content")
+            .transition()
+            .delay(500)
+            .style("background", "rgba(255,255,255,0.7)")
+    })
+    </script>
+</div>
