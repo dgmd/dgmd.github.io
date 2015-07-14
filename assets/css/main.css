@@ -170,7 +170,7 @@ header .title-wrapper {
     float: left;
     display: block;
     text-align: center;
-    line-height: 5em;
+    line-height: 5.75em;
 }
 header .title-wrapper a {
     line-height: calc(5em/2);
@@ -179,7 +179,11 @@ header nav {
     width: calc(100% - (100% - 70ex)/2);
     float: left;
     display: block;
-    line-height: 4.75em;
+    line-height: 2.75em;
+}
+
+nav ul {
+    padding-left: 0;
 }
 
 header nav .active {

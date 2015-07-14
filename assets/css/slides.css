@@ -1,3 +1,11 @@
 .reveal .slides p {
 	text-align:center;
 }
+.reveal .slides .summary {
+    opacity: 0.625;
+    text-align: left;
+}
+span.code {
+	font-family: "Courier new", monospace;
+	opacity: 0.875;
+}
