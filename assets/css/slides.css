@@ -17,3 +17,9 @@ code {
 	opacity: 0.5;
 	font-size: 0.5em;
 }
+
+.file-data table {
+	width: 100%;
+	margin-left: 3em !important;
+	margin-right: 3em !important;
+}
