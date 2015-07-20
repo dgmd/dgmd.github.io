@@ -1,0 +1,35 @@
+<div id='kamran-kiyani' class='person flip-container'>
+    <div class='flipper'>
+      <div class='front card'>
+        <h2>Kamran Kiyani</h2>
+        <div class='headshot'></div>
+        <i class="fa fa-undo flip"></i>
+      </div>
+      <div class='back card'>
+        <ul>
+          <li><i class="fa fa-home"></i><a href='http://kamrank.siteground.net'>kamrank on siteground</a>
+          </li>
+          <li><i class="fa fa-github"></i><a href='http://kamran-kiyani.github.io'>kamran-kiyani</a>
+          </li>
+          <li><i class="fa fa-twitter"></i><a href='https://twitter.com/kanyewest'>@kamrankiyani</a>
+          </li>
+          <li><i class="fa fa-envelope"></i><a href='mailto:kkiyani@gmail.com'>kkiyani@gmail.com</a>
+          </li>
+          <li><i class="fa fa-youtube"></i><a href='https://www.youtube.com/channel/UCCGlAoA5WignoBLWXv4d7Xw'>KamranKiyani-Youtube Channel</a>
+          </li>
+        </ul>
+        <i class="fa fa-undo flip"></i>
+      </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+      var myCard = document.querySelector('#kamran-kiyani');
+      var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+      flipButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          myCard.classList.toggle('flipped');
+        });
+      });
+    });
+    </script>
+  </div>

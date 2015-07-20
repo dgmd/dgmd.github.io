@@ -14,7 +14,7 @@ body {
     margin-right: auto;
 }
 body > .page-content {
-    min-height: 400px;
+    min-height: 1600px;
 }
 a {
     color: cadetblue;

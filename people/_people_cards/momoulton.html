@@ -1,0 +1,31 @@
+<div id='momoulton' class='person flip-container'>
+    <div class='flipper'>
+      <div class='front card'>
+        <h2>Mo Moulton</h2>
+        <div class='headshot'></div>
+        <i class="fa fa-undo flip"></i>
+      </div>
+      <div class='back card' id="moback">
+        <ul>
+          <li><i class="fa fa-home"></i><a href='http://www.momoulton.com/'>momoulton.com</a>
+          </li>
+          <li><i class="fa fa-github"></i><a href='https://github.com/momoulton'>momoulton</a>
+          </li>
+          <li><i class="fa fa-twitter"></i><a href='https://twitter.com/hammock_tussock'>@hammock_tussock</a>
+          </li>
+        </ul>
+        <i class="fa fa-undo flip"></i>
+      </div>
+    </div>
+	<script>
+	window.addEventListener('load', function() {
+	  var myCard = document.querySelector('#momoulton');
+	  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+	  flipButtons.forEach(function(button) {
+	    button.addEventListener('click', function() {
+	      myCard.classList.toggle('flipped');
+	    });
+	  });
+	});
+	</script>
+</div>
