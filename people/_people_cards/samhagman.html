@@ -1,0 +1,48 @@
+<div id='samhagman' class='person flip-container'>
+  <div class='flipper'>
+    <div class='front card'>
+      <h2 id='my_title'>Sam Hagman</h2>
+      <div class='headshot'></div>
+      <i class="fa fa-undo flip"></i>
+    </div>
+    <div class='back card'>
+      <ul>
+        <li><i class="fa fa-home"></i><a href='http://www.samhagman.com'>samhagman.com</a>
+        </li>
+        <li><i class="fa fa-github"></i><a href='https://github.com/samhagman'>samhagman</a>
+        </li>
+        <li><i class="fa fa-twitter"></i><a href='https://twitter.com/hagmansam'>@samhagman</a>
+        </li>
+      </ul>
+      <i class="fa fa-undo flip"></i>
+    </div>
+  </div>
+  <script>
+  window.addEventListener('load', function() {
+    var myCard = document.querySelector('#samhagman');
+    var myHeadshot = document.querySelector('#samhagman .headshot');
+    myHeadshot.addEventListener('click', function() {
+      myCard.classList.toggle('flipped');
+    });
+
+    var undoButton = document.querySelector('#samhagman .fa-undo')
+    undoButton.onmouseover = function() {
+      undoButton.style.left = (Math.random() * 200) + 'px';
+    }
+
+    undoButton.onclick = function() {
+      alert('You clicked it!  You got some fast fingers.');
+    }
+
+    var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+    flipButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        myCard.classList.toggle('flipped');
+      });
+    });
+
+    document.getElementById("blackout").style.backgroundImage = 'url(https://s3.amazonaws.com/dgmde15/sadcat.jpg)';
+
+  });
+  </script>
+</div>  

@@ -1,0 +1,34 @@
+<footer id='site-footer'>
+    <div id='about' class='column col-1'>
+
+    </div>
+
+    <div id='location' class='column col-2'>
+        <p>
+        Our class sessions will be hosted Mondays-Thursdays from 12–3PM from 13–30 July at <a href='http://imsroombook.fas.harvard.edu/room.php?rm=rm0773'>Pierce Hall, Room 301</a>.
+        </p>
+    </div>
+
+    <nav id='contact' class='column col-3'>
+        <ul>
+            <li><i class='fa fa-envelope'></i><a class='pre' href='mailto:dgmds15@gmail.com'>dgmds15@gmail.com</a>
+            </li>
+            <li><i class='fa fa-twitter'></i><a class='pre' href='https://twitter.com/dgmds15'>@dgmds15</a>
+            </li>
+            <li><i class='fa fa-github'></i><a class='pre' href='https://github.com/dgmds15'>dgmds15</a></li>
+            <li><i class='fa fa-question'></i> <a href='http://slack.com'>slack channel</a></li>
+        </ul>
+    </nav>
+</footer>
+<script>
+window.addEventListener('load', function(){
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav.site-nav a'));
+    var currentPageId = navLinks.map(function(navLink) { return navLink.id; }).filter(function(navLinkId) {
+        return window.location.pathname.split('/').indexOf(navLinkId) != -1;        
+    })[0];
+    if (currentPageId) {
+        var currentPage = document.getElementById(currentPageId);
+        currentPage.classList.add('active');
+    }
+});
+</script>

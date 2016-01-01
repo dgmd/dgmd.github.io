@@ -1,0 +1,41 @@
+<div id='adriennedebigare' class='person flip-container'>
+  <canvas onmousedown="showCoords(event)" width="300px" height="300px"></canvas>
+  <div class='flipper'>
+    <div class='front card'>
+      <h2>Adrienne Debigare</h2>
+      <div class='headshot'></div>
+      <i class="fa fa-info-circle flip"></i>
+    </div>
+    <div class='back card'>
+      <ul>
+        <li><i class="fa fa-home"></i><a href='http://www.adriennedebigare.com/'>adriennedebigare.com</a>
+        </li>
+        <li><i class="fa fa-github"></i><a href='https://github.com/adebigare'>adebigare</a>
+        </li>
+        <li><i class="fa fa-twitter"></i><a href='https://twitter.com/adebigare'>@adebigare</a>
+        </li>
+        <li><i class="fa fa-envelope"></i><a href='mailto:adebigare@gmail.com'>adebigare@gmail.com</a>
+        </li>
+      </ul>
+      <i class="fa fa-undo flip"></i>
+    </div>
+  </div>
+  <script>
+  function showCoords (evt) {
+    alert (
+      "clientX value:" + evt.clientX + "\n" + 
+      "clientY value:" + evt.clientY + "\n"
+    )
+  }
+
+  window.addEventListener('load', function() {
+    var myCard = document.querySelector('#adriennedebigare');
+    var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+    flipButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        myCard.classList.toggle('flipped');
+      });
+    });
+  });
+  </script>
+</div>

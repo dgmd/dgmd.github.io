@@ -1,0 +1,10 @@
+# Jekyll
+_site/
+.sass-cache/
+
+# Mac
+.DS_Store
+
+# emacs
+\#*\#
+*~

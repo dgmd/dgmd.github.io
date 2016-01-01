@@ -1,0 +1,58 @@
+<div id='shaunalynn' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Shaunalynn</h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-github"></i><a href='https://github.com/shduff'>duffles</a>
+                </li>
+                <li><i class="fa fa-twitter"></i><a href='https://twitter.com/shduff'>@shduff</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:shaunalynn@thesprouts.org'>shaunalynn<br>@thesprouts.org</a>
+                </li>
+                <li><i class="fa fa-volume-down"></i><a href='https://www.facebook.com/boycottbrass'>Boycott</a>
+                    <li><i class="fa fa-volume-up"></i></i><a href='http://secondlinebrassband.org'>Second Line</a>
+                    </li>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#shaunalynn');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    var shaunalynn = document.getElementById('shaunalynn');
+    var blackout = document.createElement('div');
+    document.body.appendChild(blackout);
+    blackout.id = 'blackout';
+    blackout.style.opacity = 0;
+    blackout.style.webkitTransition = "1s";
+    blackout.style.height = "1600px";
+    blackout.style.width = "100%";
+    blackout.style.position = "absolute";
+    blackout.style.zIndex = -1;
+    blackout.style.top = 0;
+    blackout.style.left = 0;
+    blackout.style.backgroundColor = "rgba(0,0,0,.9)";
+    h = document.getElementsByClassName('site-header');
+    h[0].style.zIndex = 100;
+    shaunalynn.onmouseover = function() {
+        blackout.style.opacity = 1;
+        blackout.style.zIndex = 0;
+    };
+    shaunalynn.onmouseout = function() {
+        blackout.style.opacity = 0;
+        blackout.style.zIndex = -1;
+    };
+    </script>
+</div>

@@ -1,0 +1,13 @@
+---
+layout: default
+people_ids: ['bakhtiar', 'shaunalynn', 'alecresnick', 'kanyewest', 'kimkardashian', 'klausholder', 'kamran-kiyani', 'thomasnarro', 'mb', 'adriennedebigare', 'joshuadarlington', 'joedepasquale', 'rhondamelo', 'Mike', 'momoulton', 'abhayvaliyaveettil', 'samhagman', 'eliseco']
+---
+
+<div id='people' style='position: relative;'>
+    {% for people_id in page.people_ids %}
+    {% capture path %}_people_cards/{{ people_id }}.html{% endcapture %}
+    {% include_relative {{ path }} %}
+    {% endfor %}
+    <div style='clear:both;'> </div>
+</div>
+<!-- ends .people -->
