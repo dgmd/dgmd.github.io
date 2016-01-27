@@ -196,9 +196,9 @@ footer ul {
 footer li {
     list-style-type: none;
 }
-header nav li#home {
+/*header nav li#home {
     width: 0.5em;
-}
+} Removed because messes up centering on mobile view and doesn't seem to be doing anything.*/
 header nav li {
     font-size: 1.125em;
     text-transform: lowercase;
@@ -248,4 +248,66 @@ nav li i.fa {
 }
 .upcoming:not(.active) {
     display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+body {
+    width:90%;
+}
+
+header {
+    min-height:4em;
+}
+
+header .title-wrapper {
+    width:100%;
+    display:block;
+}
+
+header nav {
+    float:none;
+    width:90%;
+    padding:0 5% 5% 5%;
+    display:block;
+    background-color:#eee;
+    line-height:1.75em;
+}
+
+header nav li #home {
+    padding:0 !important;
+}
+
+header nav li i.fa {
+    margin-right:0 !important;
+}
+
+header nav li {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+}
+
+body > .page-content {
+    margin-top: 19em;
+}
+
+.page-content ol > li, .page-content ul > li {
+    margin-left:5px;
+}
+
+#site-footer .column {
+    float:none;
+}
+
+#site-footer .col-1 {
+    display:none;
+}
+
+#site-footer .col-2, #site-footer .col-3 {
+    width:90%;
+    background-color:#eee;
+
+}
 }
