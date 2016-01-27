@@ -558,7 +558,7 @@ i.flip {
 
 .person {
   float:none;
-  padding-left:2em; /*should be replaced with relative number*/
+  /*padding-left:2em; should be replaced with relative number*/
 }
 
 }
