@@ -551,5 +551,18 @@ i.flip {
     height: 100%;
 }
 
+/***********************************/
+/* Flipping behavior for the cards */
+
+@media screen and (max-width: 480px) {
+
+.person {
+  float:none;
+  /*padding-left:2em; should be replaced with relative number*/
+}
+
+}
+
+
 /*You use a library to accomplish what you want, a framework uses your code to accomplish what you want.*/
 
