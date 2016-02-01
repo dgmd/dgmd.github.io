@@ -1,0 +1,10 @@
+<section class='nextweek'>
+    <style>
+        .reveal .slides section.nextweek ol {
+            font-size: 0.675em;
+        }
+    </style>
+
+    <h2>For next week</h2>
+    {% for week in site.nextweeks %} {% if week.number == page.number %} {{ week.content }} {% endif %} {% endfor %}
+</section>
