@@ -1,0 +1,36 @@
+<section id='break-section'>
+    <h1>&lt; break &gt;</h1>
+    <script>
+    var section = document.querySelector('#break-section');
+    var breakTitle = section.getElementsByTagName('h1')[0];
+    breakTitle.addEventListener('click', function(event) {
+        var breakMinutes = 15;
+        var breakLength = 1000 * 60 * breakMinutes;
+        var timeRemaining = breakLength;
+
+        var msToMinutesSeconds = function(ms) {
+            var time = {
+                'minutes': null,
+                'seconds': null
+            };
+            time.minutes = Math.floor(ms / 1000 / 60);
+            time.seconds = Math.floor((ms - time.minutes*60*1000)/1000);
+            return time;
+        };
+
+        var timer = setInterval(function() {
+            timeRemaining -= 1000;
+            var remaining = msToMinutesSeconds(timeRemaining);
+            breakTitle.innerHTML = remaining.minutes + ':' + remaining.seconds;
+            if (remaining.minutes == 0 && remaining.seconds <= 0) {
+                clearInterval(timer);
+                var bell = new Audio('/assets/tibetan-bell.mp3');
+                bell.play();
+            }
+            breakTitle.style.transition = '0.75s';
+            breakTitle.style.opacity = timeRemaining / breakLength;
+        }, 1000);
+
+    });
+    </script>
+</section>
