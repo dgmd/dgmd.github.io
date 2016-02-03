@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <p>
     <a href="http://www.extension.harvard.edu/academics/courses/creative-explorations-screen-based-physical-computing/24025">This semester-long Harvard Extension School course</a> introduces computing as an expressive medium. We prototype, exhibit, and critique interactive, computational stories, art, and games presented as web applications and physical prototypes. We use JavaScript as a unifying language for programmatically controlling and combining audio, video, graphics, text, sensors, and actuators in these projects. Libraries like <a href='http://processingjs.org/'>Processing.js</a>, <a href='http://d3js.org/'>D3.js</a>, and <a href='http://snapsvg.io/'>Snap.svg</a> help us create data-rich, interactive visualizations, and <a href='http://tessel.io/'>Tessel</a> serves as the microcontroller platform for our physical computing work.
 </p>
@@ -10,7 +11,7 @@ layout: default
 <div id='table-of-contents-container'>
     <h3>Session Descriptions (and slides <i class='fa fa-slideshare'></i>)</h3>
     <ol class='leaders' id='table-of-contents'>
-        {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %} {% if session.title != null %}
+        {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | date_to_string %} {% if session.title != null %}
         <li><a class='title-link' href='#{{ slug }}'><span>{{ session.title }}</span></a><a href='./sessions/{{ session.number }}'><span><i class='fa fa-slideshare'></i></span></a>
         </li>
         {% endif %} {% endfor %}
@@ -20,7 +21,7 @@ layout: default
 <hr>
 
 <section id='weeks'>
-    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %} {% if session.title != null %}
+    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | date_to_string %} {% if session.title != null %}
     <section id="{{ slug }}" class='week'>
         <h2>
             <div class='session-title'>{{ forloop.index }}: {{ session.title }}</div>
