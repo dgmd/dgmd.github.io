@@ -17,6 +17,7 @@ body {
 }
 
 body > .page-content {
+    margin-top: 7em;
     min-height: 1600px;
 }
 
