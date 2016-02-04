@@ -16,7 +16,7 @@ body {
     margin-right: auto;
 }
 
-body > .page-content {
+body .page-content {
     margin-top: 7em;
     min-height: 1600px;
 }
