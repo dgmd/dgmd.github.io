@@ -22,10 +22,10 @@ layout: default
 <hr>
 
 <section id='weeks'>
-    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | date:"%-d %B %Y" | slugify %} {% if session.title != null %}
+    {% assign sortedSessions = site.sessions | sort: 'number' | reverse %} {% for session in sortedSessions %} {% assign slug = session.date | date:"%-d %B %Y" | slugify %} {% if session.title != null %}
     <section id="{{ slug }}" class='week'>
         <h2>
-            <div class='session-title'>{{ forloop.index }}: {{ session.title }}</div>
+            <div class='session-title'>{{ session.number }}: {{ session.title }}</div>
             <div class='meta'>
                 <a class='date' href='#{{ slug }}'>{{ session.date | date:"%-d %B %Y" }}</a> <br> 
                 <i class='fa fa-external-link'></i> <a class='slides' href='./sessions/{{ session.number }}'>Slides for Session {{ session.number }}</a>
