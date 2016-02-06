@@ -5,6 +5,11 @@
         }
     </style>
 
-    <h2>For next week</h2>
-    {% for week in site.nextweeks %} {% if week.number == page.number %} {{ week.content }} {% endif %} {% endfor %}
+    {% for week in site.nextweeks %}
+		{% if week.number == page.number %}
+		    <h2 class='next-week' id='next-week-{{ week.number }}'>For next week</h2>
+			{{ week.content }}
+		{% endif %}
+
+	{% endfor %}
 </section>
