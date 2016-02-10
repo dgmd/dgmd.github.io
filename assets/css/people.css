@@ -376,13 +376,14 @@ body {
 
 /* Rachel */
 
-#rachel {
+#rachel h2 {
   color:#694489;
 }
 
-#rachel .back li a {
+#rachel .back.card li a {
     font-family: 'Arial', monospace;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    color:blue;
 }
 
 #rachel .headshot {
