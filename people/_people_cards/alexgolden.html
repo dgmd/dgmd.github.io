@@ -1,0 +1,33 @@
+<div id='alexgolden' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card' id="frontCard">
+            <h2>Alex Golden</h2>
+            <div class='headshot'></div>
+        </div>
+        <div class='back card flipped' id="backCard">
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://www.agolden.com/'>agolden.com</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/agolden'>agolden</a>
+                </li>
+                <li><i class="fa fa-twitter"></i><a href='https://twitter.com/agoldencom'>@agoldencom</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:felix@agolden.com'>felix@agolden.com</a>
+                </li>
+                <li><i class="fa fa-youtube"></i><a href='https://plus.google.com/118164032203470262080'>Google+ Profile</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#alexgolden');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>

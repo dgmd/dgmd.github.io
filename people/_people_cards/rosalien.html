@@ -1,0 +1,80 @@
+<div id='rosalien' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Rosalie Norris</h2>
+            <div class='headshot one'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://?'>home page?</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='http://rosalienorris.github.io/'>github page</a>
+                </li>
+                <li><i class="fa fa-twitter"></i><a href='https://twitter.com/?'>@?</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href=''>r@n.com</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#rosalien');
+
+        // The classes that go with the images, and the timing we want for each
+        // We already start at one, so go straight to two
+        var classNames = ['two', 'three', 'four', 'five', 'done'],
+            timing = [200, 500, 200, 500, 0];
+
+        var midAction = false; // Indicate whether we're already in an animation
+        var next = function(indexNum, totalNum) {
+            // Recursive
+
+            // If done, stop. If not, indicate that we're in the middle of the process
+            midAction = true;
+            if (classNames[indexNum] === 'done') {
+                midAction = false;
+            }
+
+            var headshot = myCard.querySelector('.headshot');
+
+            // Until we're done, do this and then repeat with a pause
+            // and the next image, etc.
+            if (indexNum < (totalNum - 1) && midAction === true) {
+
+                // Delay a bit before the next change
+                setTimeout(function() {
+                        // Give the class names that will show the next image
+                        var className = classNames[indexNum];
+                        headshot.className = 'headshot ' + className;
+                        // Go on to the next effect
+                        next(indexNum + 1, totalNum);
+                    },
+                    timing[indexNum]);
+
+            } // end if not above total images and not done
+        }; // End next()
+
+
+        myCard.addEventListener('mouseenter', function() {
+            // As long as we're not in the middle of a previous sequence
+            if (midAction === false) {
+                var headshot = myCard.querySelector('.headshot');
+                // Always go dark at the start
+                headshot.className = 'headshot one';
+                // Start the sequence
+                next(0, 5);
+            }
+        }); // end hover
+
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            }); // end add click event listener
+        }); // end for each flip button
+    });
+    </script>
+</div>

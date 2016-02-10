@@ -1,0 +1,55 @@
+<div id="potato" class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+        </div>
+        <div id='maddie' class='person flip-container'>
+            <div class='flipper'>
+                <div class='front card'>
+                    <h2>M</h2>
+                    <div class='headshot'></div>
+                    <i class="fa fa-undo flip"></i>
+                </div>
+                <div class='back card'>
+                    <ul>
+                        <font size="3">
+                            <li><i class="fa fa-female"></i>Madeline</a>
+                            </li>
+                            <li><i class="fa fa-map-marker"></i>Plano, Texas</a>
+                            </li>
+                            <li><i class="fa fa-wrench"></i>Lincoln Lab - MIT</a>
+                            </li>
+                            <li>
+                                <center><a href='https://www.linkedin.com/in/madelinechmielinski'><i class="fa fa-linkedin"></i></a></center>
+                            </li>
+                        </font>
+                    </ul>
+                    <i class="fa fa-undo flip"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    var maddie = document.getElementById('potato');
+
+    maddie.addEventListener('click', function(event) {
+        maddie.style.visibility = 'hidden';
+    });
+
+    var potato = document.getElementById('potato');
+
+    potato.addEventListener('click', function(event) {
+        potato.style.visibility = 'visible';
+    });
+
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#maddie');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+
+            });
+        });
+    });
+    </script>
+</div>

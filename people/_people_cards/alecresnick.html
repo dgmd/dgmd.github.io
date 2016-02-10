@@ -2,24 +2,46 @@
     <div class='flipper'>
         <div class='front card'>
             <h2>Alec Resnick</h2>
-            <div class='headshot'></div>
+            <div class='headshot'>
+            </div>
             <i class="fa fa-undo flip"></i>
         </div>
         <div class='back card'>
             <ul>
+                <li><i class="fa fa-home"></i><a id="aresnick-www" href='http://alecresnick.com/'>alecresnick.com</a>
+                </li>
                 <li><i class="fa fa-github"></i><a href='https://github.com/aresnick'>aresnick</a>
                 </li>
                 <li><i class="fa fa-twitter"></i><a href='https://twitter.com/aresnick'>@aresnick</a>
                 </li>
-                <li><i class="fa fa-envelope"></i><a href='mailto:alec@thesprouts.org'>alec<br>@thesprouts.org</a>
+                <li><i class="fa fa-leaf"></i><a href='http://thesprouts.org'>sprout & co.</a>
                 </li>
-                <li><i class="fa fa-wrench"></i><a href='http://thesprouts.org'>sprout &amp; co</a>
+                <li><i class="fa fa-bicycle"></i><a href='https://www.youtube.com/watch?v=xt0V0_1MS0Q'>bicycle race</a>
                 </li>
             </ul>
             <i class="fa fa-undo flip"></i>
         </div>
     </div>
     <script>
+    var aresnick = document.querySelector('#alecresnick');
+    var aresnickFrontCard = aresnick.getElementsByClassName('front')[0];
+    var aresnickHeadshot = aresnick.getElementsByClassName('headshot')[0];
+
+    // Makes headshot dis/appear on mouseover
+    aresnickFrontCard.addEventListener("mouseover", function() {
+        aresnickHeadshot.style.transition = "transform 5s";
+        aresnickHeadshot.style.backgroundImage = "url('https://s3.amazonaws.com/dgmde15/people-mockups/bikehead.png')";
+        aresnickHeadshot.style.boxShadow = "none";
+        aresnickHeadshot.style.transform = "translateX(2000px)";
+    });
+
+    aresnickFrontCard.addEventListener("mouseout", function() {
+        aresnickHeadshot.style.transition = "transform 0s";
+        aresnickHeadshot.style.backgroundImage = "url('https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg')";
+        aresnickHeadshot.style.transform = "translateX(0px)";
+    });
+
+    // Flipping function for the card
     window.addEventListener('load', function() {
         var myCard = document.querySelector('#alecresnick');
         var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));

@@ -1,353 +1,421 @@
-/*Elise Cochrane*/
-#eliseco .headshot {
-  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/076/2d4/1caa584.jpg);
+/* Shaunalynn */
+#shaunalynn h2 {
+  font-family: 'Nothing You Could Do', cursive !important;
+}
+#shaunalynn .headshot {
+  background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-static.png);
 }
 
-/*Sam Hagman*/
-#samhagman .headshot {
-  background-image: url(https://pbs.twimg.com/profile_images/583452656540065793/7AFuFnyl.jpg);
-  height:135px;
-  width:135px;
+#shaunalynn .headshot:hover {
+  background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-gif.gif);
 }
 
-#samhagman #my_title {
-  text-transform: none;
-  font-family: 'Roboto';
-  font-variant: normal;
-  font-size: 1.1em;
-  color: #000;
-  margin-top: 0.4em;
-  
-}
-
-#samhagman .headshot {
-  cursor: pointer;
-}
-
-#samhagman .front {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
- 
-#samhagman .front:hover {
-  -webkit-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-       -o-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-  
-}
-
-/*Abhay Valiyaveettil*/
-#abhayvaliyaveettil .headshot {
-  background-image: url(http://z48.imgup.net/abhay_pic8d41.jpg);
-}
-
-/*Mo Moulton*/
-#momoulton {
-    position:relative;
-}
-#momoulton .headshot {
-  background-image: url(http://www.momoulton.com/images/mo-moulton.jpg);
-  border-radius: calc(50px/2); 
-}
-
-#momoulton .front {
- background-color:#aaa;
- font-size:.9em !important;
- opacity:.75;
-}
-
-#momoulton .front:hover {
- transition:.5s;
- background-color:#aaa;
- font-size:1em !important;
- opacity:1;
-}
-
-#momoulton .back {
-  font-size: 0.85em;
-}
-
-/* Mike Mayo */
-#Mike .headshot {
-  background-image: url(http://image-store.slidesharecdn.com/0be89fee-ff2a-11e3-8f97-12313b0a34a4-large.jpeg);
-}
-
-#Mike .back.card {
-  background-color:#a4c;
-}
-
-#Mike h2 {
-  color:#c6c;
-}
-
-#Mike.flip-container.flipped .flipper {
-  transform: rotateY(900deg);
-}
-
-/*Rhonda Melo*/
-#rhondamelo .headshot {
-  background-image: url(https://farm9.staticflickr.com/8814/17073878285_a3f615fc25_q.jpg); 
-}
-
-#rhondamelo .front.card {
-  transform: rotateZ(90deg);
-  transform: matrix(1, -0.3, 0, 1, 0, 0);
-}
-
-#rhondamelo .fa-undo {
-  color:#FF6600;
-}
-
-#rhondamelo h2 {
-  color:#330033;
-}
-
-/*Joe Depasquale*/
-#joedepasquale .headshot {
-  background-image: url(https://dl.dropboxusercontent.com/u/1360537/head-shot.jpg);
-}
-
-/*Adrienne Bigare*/
-#adriennedebigare .headshot {
-  background-image: url(https://github.com/adebigare/adebigare.github.io/blob/master/img/AdrienneDebigareHeadshot.png?raw=true);
-}
-
-#adriennedebigare, #adriennedebigare .headshot {
-  -webkit-transition: opacity 1s ease, width 1s ease, height 1s ease;
-  transition: opacity 1s ease, width 1s ease, height 1s ease;
-}
-
-#adriennedebigare .headshot:hover {
-  opacity: 0.5;
-  width: 8.5em;
-  height: 8.5em; 
-}
-
-#adriennedebigare:hover {
-  width: calc((55ex - 2*1em)/2);
-  height: calc((55ex - 2*1em)/2);
-}
-
-#people #adriennedebogare h2 {
-  font-size:1.2em !important;
-}
-
-/*Joshua Darlington*/
-#joshuadarlington .headshot {
-  background: url(http://www.joshua-darlington.com/S15/John-Sprite.jpg)  left top;}
-  
-#joshuadarlington .headshot {
-        -webkit-animation: john-animate 1.7s steps(8) infinite;
-    }
-  
-  animation: john-animate 1.7s steps(8);
-  -webkit-animation: john-animate 1.7s steps(8);
-  -moz-animation: john-animate 1s steps(8);
-  -o-animation: john-animate 1.7s steps(8);
-  
-}
-
-    @keyframes john-animate {
-        from {
-            background-position: 0px;
-        }
-        to {
-            background-position: calc(-1*8*150px); /* i.e. cycle through ten steps */
-        }
-    }
-
-    @-webkit-keyframes john-animate {
-        from {
-            background-position: 0px;
-        }
-        to {
-            background-position: calc(-1*8*150px); /* i.e. cycle through ten steps */
-        }
-    }
-
-@-o-keyframes john-animate {
-        from {
-            background-position: 0px;
-        }
-        to {
-            background-position: calc(-1*8*150px); /* i.e. cycle through ten steps */
-        }
-    }
-@-mos-keyframes john-animate {
-        from {
-            background-position: 0px;
-        }
-        to {
-            background-position: calc(-1*8*150px); /* i.e. cycle through ten steps */
-        }
-    }
-
-/*Michelle Bernstein*/
-#mb .headshot {
-    background-image: url('https://dl.dropboxusercontent.com/s/0n0ixkwvr21jghc/michelle-pic.jpg?dl=0');
-  overflow: hidden;
-}
-
-/* Front effects */
-#mb .front #headshot_overlay_bond {
-  visibility: hidden;
-  position: absolute;
-  height: 9.5rem;
-  top: -1.4rem;
-  left: -1.85rem;
-  opacity: .8;
-}
-#mb .front:hover #headshot_overlay_bond {
-  visibility: visible;
-}
-#mb .front:active #headshot_overlay_bond {
-  visibility: hidden;
-}
-
-#mb #headshot_overlay_shot {
-  visibility: hidden;
-  position: absolute;
-  top: 0; left: 0;
-  /* from below */
-  box-shadow: inset 0 0 0.625em #000;
-  width: 6.5em;
-  height: 6.5em;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-#mb .front:active #headshot_overlay_shot {
-  visibility: visible;
-}
-
-/* Back of card text/icons */
-#mb .back a {
-  color: rgb(226, 50, 50);
-}
-#mb .back a:hover {
-  color: maroon;
-}
-
-#mb .back .fa {
-  color: maroon;
-}
-#mb .back .fa.fa-undo{
-  color: #333;
-}
-
-
-/*Thomas Narro*/
-#thomasnarro .headshot {
-  background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/072/16a/0de6b74.jpg');
-}
-
-#thomasnarro .front.card {
-  background-color: #bfeeb4;
-  z-index: 2;
-  transform: rotateY(0deg);
-}
-
-#thomasnarro .back li {
-  list-style-type: none;
-  padding-left: 1ex;
-}
-
-#thomasnarro .back li i.fa {
-  margin-right: 1ex;
-}
-
-#thomasnarro #people .back li a {
-  font-family: 'Inconsolata', monospace;
+#shaunalynn p {
+  text-align: center;
   font-size: 0.875em;
+  font-family: 'Codystar', cursive;
 }
 
-/*Kamran Kiyani */
-#kamran-kiyani .back ul {
-  list-style-type: none;
-  padding: 0px;
+#shaunalynn p a {
+  text-decoration: none;
 }
 
-#kamran-kiyani .headshot {
-  background-image: url(http://kamrank.siteground.net/images/kamran_closeup.jpg);
+#shaunalynn ul {
+  text-align: center;
 }
 
-#kamran-kiyani #people {
-        position: relative; /* this lets us position #people relative to its parents */;
-        width: 10%;
-        height: 10%;
-        transition: 1s; /* This is where the action happens: it tells CSS to animate any changes in the CSS styling of these elements over one second*/
-
-        text-transform: uppercase; /* capitalize everything */
-        font-size: 1em;
-/* Since we set the height to 500px, we can make the line height 1/4 to fill up four lines */
-        text-align: center;
+#shaunalynn li {
+  display: inline-block;
 }
 
-#kamran-kiyani .headshot:hover {
-  animation-name: square-to-circle;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+/* Alec Resnick */
+#alecresnick .headshot {
+  background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
+  position:relative;
 }
-@keyframes square-to-circle {
-    0% {
-        border-radius: 0 0 0 0;
-        background-color: red;
-        transform: rotate(0deg);
+
+#alecresnick #aresnick-www {
+  font-size:.8em;
+}
+
+/* Bakhtiar */
+#bakhtiar .headshot {
+  background-image: url(https://s3-us-west-2.amazonaws.com/bmcard/final+scroll+for+bm+project.jpg);
+}
+
+@keyframes play {
+   0% { background-position: 0px 0%; }
+   9% { background-position:calc(4060px);}
+  17% { background-position:calc(3700px);}
+  25% {background-position:calc(3300px);}
+  33% {background-position:calc(2900px);}
+  50% {background-position:calc(2550px);}
+/*   60% {background-position:calc(2050px);} */
+  /*16.6% { background- position:calc(2.6*8.5em);}
+   100% { background-position: calc(2.6*8.5em) 0%; } */
+}
+
+#bakhtiar .headshot {
+  animation: play 4s steps(2) infinite;
+}
+
+/* Mehvish */
+
+#mehvish .headshot {
+  background-image: url(https://lh4.googleusercontent.com/-vQu938qCzhk/VpMFXP_V4WI/AAAAAAAABH4/Evu932_MRrs/w898-h1196-no/image.jpeg);
+    transition: 0.30s;
+}
+
+#mehvish .headshot:hover {
+  /*width: 250px;
+  height: 250px;*/
+  background-size:cover;
+  background-image: url(http://shcantrell.com/dgmd15/images/head1.png);
+}
+
+#mehvish a {
+  text-decoration: none;
+  target: blank;
+  color:#066;
+}
+
+#mehvish a:hover {
+  color:#8ff;
+}
+
+#mehvish a:visited {
+  color:#066;
+}
+
+#mehvish ul {
+  margin: 5px 0px 0px 2px;
+}
+
+#mehvish .front.card {
+    background-color: #2aa;
+    z-index: 2;
+}
+
+#mehvish h2{
+  color: #fff;
+}
+
+#mehvish .back.card {
+    background-color: #acc;
+}
+
+#mehvish .back li {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    line-height: 0.75em;
+}
+
+#mehvish .back li a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.875em;
+}
+
+#mehvish .back ul {
+    padding:0;
+}
+
+#mehvish .font1 {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Katie Broida */
+
+#katiebroida h2 {
+  font-family: 'Indie Flower', cursive !important;
+  font-weight: bold !important;
+  font-variant: normal !important;
+  margin-top: 5px !important;
+  margin-bottom: -5px !important;
+  text-transform: none !important;
+}
+
+#katiebroida .headshot {
+  background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAOHAAAAJDUzYjBhNzFiLTc3YjAtNGJhOC1hNDM5LWU1NmIxYjYwMWEzNw.jpg');
+  border-radius: 5px;
+}
+
+#katiebroida i.flip {
+  color: green;
+}
+
+#katiebroida .front {
+  background-color: black;
+  color: white;
+}
+
+#katiebroida p.intro {
+  font-size: .8em;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  margin-top: 30px;
+  opacity: 0;
+  padding: .25em;
+  text-align: center;
+  transition: 10s;
+}
+
+#katiebroida.flipped .back.card {
+  background-image: url(https://openclipart.org/image/750px/svg_to_png/170066/IsoWeaveBlack.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: -40% -40%;
+  font-weight: bold;
+  transition: 5s;
+}
+
+#katiebroida.flipped .intro {
+  opacity: 1;
+  color: white;
+}
+
+#katiebroida ul {
+  text-align: center;
+}
+
+#katiebroida li {
+  display: inline-block;
+}
+
+#katiebroida i {
+  color: green;
+  font-size: 1em;
+}
+
+/* Michelle */
+#michelle .headshot {
+  background-image: url(https://scontent.fphl1-1.fna.fbcdn.net/hphotos-xpf1/v/t34.0-12/12713909_10100541054818731_1652246374_n.jpg?oh=4e4bb1b63ab4d5adb3e6786029d1aa1e&oe=56BA8FEB);
+}
+
+#michelle .headshot {width: 50%;}
+
+/* Susan Cantrell */
+#susancantrell .headshot {
+  background-image: url(https://lh3.googleusercontent.com/16IOG7eNmKpCcgFBiqB8xkiyZzLGTn4X-zsJgW17kt_pRRjnjeh3jM6fNyP_chBJTxeRBIw=s85);
+  width: 50%;
+}
+
+#susancantrell .front.card {
+    background-color:white;
+}
+
+#susancantrell .back.card {
+    background-color: #ffa366;
+}
+
+#susancantrell a:hover { 
+    background-color:lightgrey;
+}
+
+#susancantrell, #susancantrell a {
+    color: #0a0a0f;
+    text-shadow: 0 0 3px #e6e6e6;
+}
+
+#susancantrell {
+        opacity:.5;
+}
+
+#susancantrell:hover {
+        opacity:1;
+}
+
+/* Alex Golden */
+#alexgolden .headshot {
+  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/6/000/288/122/2d080c4.jpg);
+}
+
+#frontCard {
+        background-color: lightblue;
     }
-    25% {
-        border-radius: 50% 0 0 0;
-        transform: rotate(45deg);
+    #frontCard:hover {
+        transition: 1s;         
+        background-color: lightgreen;
     }
-    50% {
-        border-radius: 50% 50% 0 0;
-        transform: rotate(90deg);
-    }
-    75% {
-        border-radius: 50% 50% 50% 0;
-        transform: rotate(135deg);
-    }
-    100% {
-        border-radius: 50% 50% 50% 50%;
-        background-color: blue;
-        transform: rotate(180deg);
-    }
+
+#alexgolden:hover .back {
+  transform: rotateY(0deg);
+  position: relative;
+  left: calc((70ex - 2*1em)/3 * 1);
 }
 
-#kamran-kiyani #people  {
-    font-family: 'Nunito', Georgia, 'Times New Roman', Times, serif;
-      
-} 
-
-/* Klaus Holder */
-#klausholder .headshot {
-  background-image: url(http://i.imgur.com/txKWcYH.png);
-  border-radius: 20px;
+#alexgolden .back {
+  transform: rotateY(0deg);
+  transition: 1s;
+  position: relative;
+  left: 0;
 }
+
+/* Maddie */
+#maddie .front {
+  background-color:white;
+}
+
+#maddie .headshot {
+  background-image: url(https://pbs.twimg.com/profile_images/3312794762/c199f5e33aac33ec3d8512e90a3236dd.jpeg);
+}
+
+#potato {
+  height:100px;
+  width:100px;
+  background-color:rgba(0,0,0,0) !important;
+  background-image:url(https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/24/1411574454561/03085543-87de-47ab-a4eb-58e7e39d022e-620x372.jpeg);
+}
+
+/* Rosalie */
+#rosalien .headshot.one {
+  background-image: url(https://www.dropbox.com/s/ksl622j943pvy4x/mysterious0.png?raw=1);
+}
+
+#rosalien .headshot.two {
+  background-image: url(https://www.dropbox.com/s/v476inwaftsgfqu/mysterious1.png?raw=1);
+}
+
+#rosalien .headshot.three {
+  background-image: url(https://www.dropbox.com/s/553zmzbxaz23bh7/mysterious2.png?raw=1);
+}
+
+#rosalien .headshot.four {
+  background-image: url(https://www.dropbox.com/s/lfh5twrjks0x2s4/mysterious3.png?raw=1);
+}
+
+#rosalien .headshot.five {
+  background-image: url(https://www.dropbox.com/s/ezxmeobb6qi59nx/mysterious4.png?raw=1);
+}
+
+/* Tyler Machado */
+#tylermachado .headshot {
+  background-image: url(http://i328.photobucket.com/albums/l355/laura-guillen/tyler-portrait_zpszw8qwcff.jpg);
+}
+
+#tylermachado .headshot:hover {
+  transition: 1s;
+  top:47px;
+  width: 2.7em;
+  height:2.7em;
+  border-radius: calc(500px/2);
+  border: 7px solid white;
+      -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate; 
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.circle img {
+    position: absolute;
+    left: 78px;
+    top:-50px;
+    width:70%;
+    height:auto;
+    z-index: 1
+}
+
+.circle {
+    display: none;
+    position: absolute;
+    background-color: #2c2c2c;
+    top: 40px;
+    left: 31px;
+    height: 70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:
+      0 0 0 10px hsl(0, 5%, 25%),
+      0 0 0 15px hsl(0, 5%, 20%),
+      0 0 0 20px hsl(0, 5%, 10%),
+      0 0 0 25px hsl(0, 5%, 5%),
+      0 0 0 30px hsl(0, 5%, 0%);
+    border-radius: calc(500px/2);
+}
+
+#tylermachado .front:hover .circle {
+    display: block;
+}
+
+/* Laura */
+#laura .headshot {
+  background-image: url(http://www.tylermachado.com/dgmd/assets/laura.jpg);
+}
+
+body {
+    -webkit-transition: background-color 0.7s ease-in-out;
+    -moz-transition: background-color 0.7s ease-in-out;
+    -o-transition: background-color 0.7s ease-in-out;
+    -khtml-transition: background-color 0.7s ease-in-out;
+    transition: background-color 0.7s ease-in-out;
+}
+
+/* Rachel */
+
+#rachel {
+  color:#694489;
+}
+
+#rachel .back li a {
+    font-family: 'Arial', monospace;
+    font-size: 0.7em;
+}
+
+#rachel .headshot {
+  background-image: url(http://s27.postimg.org/9xs6uk31f/image1.jpg);
+}
+
+#rachel .front {
+    background-color: #D8BFD8;
+}
+
+#rachel .back {
+    background-color: #BDA0CB;
+}
+
+#rachel #box {
+  position: relative;
+  left: 50px;
+  top: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  overflow: hidden; /* Make sure anything inside the box that extends out of its edges is clipped/hidden */ 
+}
+
+#rachel #image {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(http://s12.postimg.org/7mrz01wcp/CT8s1_copy.png);
+  position: relative;
  
-#klausholder .headshot:hover {
-    -webkit-animation: thumbs-up 2s steps(4) infinite;
-    transform: scale(1.5);
-}
- 
-@-webkit-keyframes thumbs-up {
-  from {
-    background-position: 0px;
-  }
-  to {
- background-position: calc(416px);
-  }
-}
- 
-#people #klausholder .headshot {
-  height: 104px;
-  width: 104px;
-  margin-top: 1.5em;
+  top: 100%; /* Set the top of the image to be at the bottom (100%) of its parent container (#box) */
+  transition: 1s;
 }
 
 /* Kanye West */
@@ -360,80 +428,6 @@
 
 #kimkardashian .headshot {
     background-image: url(http://famouswives.org/wp-content/uploads/2014/01/Kim-Kardashian-2.jpg);
-}
-/* Alec Resnick */
-
-#alecresnick .headshot {
-    background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
-}
-
-#alecresnick .card {
-    border-radius:none;
-}
-
-/* Sarah Ledoux */
-
-#sarahledoux .headshot {
-    background-image: url(http://sarahledoux.com/hes/dgmd27/asst3/assets/images/profilepics/sl.jpg);
-}
-
-/* Shaunalynn Duffy */
-#shaunalynn {
-    z-index: 100;
-    position:relative;
-    background-size: contain;
-}
-#shaunalynn .headshot {
-    background-image: url(https://s3.amazonaws.com/dgmde15/shduff-tuba2.jpg);
-
-}
-#shaunalynn #img-wrapper {
-    position: relative;
-}
-
-/* Bakhtiar Mikhak */
-#bakhtiar .headshot {
-    background-image: url(https://s3.amazonaws.com/dgmde15/bakhtiar_mikhak.jpg);
-}
-#bakhtiar .card:hover {
-    background-color:teal;
-    color:white;
-    transition:1s;
-}
-#bakhtiar .card:hover a {
-    color:white;
-}
-
-/* Michelle */
-#michelleb .headshot {
-    background-image: url('https://dl.dropboxusercontent.com/s/0n0ixkwvr21jghc/michelle-pic.jpg?dl=0');
-    border-radius:calc(2em/2);
-    transition: 0.5s;
-    transform: translate(0rem, .6rem) rotate(45deg);
-}
-#michelleb .headshot:hover {
-    transition: 1s;
-    transform: translate(0rem, 0rem) rotate(0deg);
-}
-#michelleb .card:hover a {
-    color: firebrick;
-}
-#michelleb .card:hover a:visited {
-    color: maroon;
-}
-#michelleb .card:hover a:hover {
-    text-decoration: underline;
-}
-
-
-/* Beth */
-#bethalt .headshot {
-    background-image: url(http://www.seas.harvard.edu/sites/default/files/images/Directory/Altringer%20SEAS%20profile%20pic%20bw.jpg);
-}
-
-/* Katie Korngold */
-#katiekorngold .headshot {
-    background-image: url(https://scontent-iad.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10978518_10152535640700806_2636457344660718336_n.jpg?oh=37526a3f186411a46babcb04bf3ea13e&oe=558CCA31);
 }
 
 /****************************************************************************/

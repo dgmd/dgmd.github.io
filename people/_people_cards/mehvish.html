@@ -1,0 +1,162 @@
+<div id='mehvish' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Mehvish Afzal</h2>
+            <div class='headshot'> </div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li>
+                    <i class="fa fa-globe"></i>
+                    <a href="popupex.html" onclick="return popitup1('popupex.html')">
+                        <span class="font1">&nbsp;Where I Come From</span>
+                    </a>
+                </li>
+                <li><i class="fa fa-bolt"></i>
+                    <a href="popupex.html" onclick="return popitup2('popupex.html')">
+                        <span class="font1">&nbsp;&nbsp;&nbsp;A Trail Blazer!</span>
+                    </a>
+                </li>
+                <li><i class="fa fa-child"></i>
+                    <a href="popupex.html" onclick="return popitup3('popupex.html')">
+                        <span class="font1">&nbsp; An Only Child <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (see family portrait)</span>
+                    </a>
+                </li>
+                <li><i class="fa fa-diamond"></i>
+                    <a href="popupex.html" onclick="return popitup4('popupex.html')">
+                        <span class="font1">My Kinda Bling!</span>
+                    </a>
+                </li>
+                <li><i class="fa fa-pie-chart"></i>
+                    <a href="popupex.html" onclick="return popitup5('popupex.html')">
+                        <span class="font1">I'm an IT Biz Analyst</span>
+                    </a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    function add(a, b) {
+        return a + b
+    }
+
+    var headshot = document.getElementById('mehvish').getElementsByClassName('headshot')[0];
+
+    var degrees = 20;
+
+    function rotate(element, degrees) {
+        element.style.transform = "rotate(" + degrees + "deg)";
+    }
+
+    // setTimeout(function() {what you want to run},  time-in-milliseconds)
+
+    headshot.addEventListener('mouseover', function() {
+        rotate(headshot, degrees);
+        setTimeout(function() {
+            rotate(headshot, -1 * degrees)
+        }, 250);
+        setTimeout(function() {
+            rotate(headshot, degrees)
+        }, 500);
+        setTimeout(function() {
+            rotate(headshot, -1 * degrees)
+        }, 750);
+        setTimeout(function() {
+            rotate(headshot, 0)
+        }, 1000)
+    });
+
+    headshot.addEventListener('mouseout', function() {
+        rotate(headshot, 0)
+    });
+
+
+    function popitup1(url) {
+        newwindow = window.open('http://tinyurl.com/gwjuyqp', '', 'height=263px,width=300px,left=500px,top=150px');
+    }
+
+    function popitup2(url) {
+        newwindow = window.open('http://tinyurl.com/j77f9fd', 'name', 'height=375,width=500,left=500px,top=150px');
+    }
+
+    function popitup3(url) {
+        newwindow = window.open('http://tinyurl.com/hdvpvma', 'name', 'height=236,width=236,left=500px,top=150px');
+    }
+
+    function popitup4(url) {
+        newwindow = window.open('http://tinyurl.com/hoenmrm', 'name', 'height=375,width=375,left=500px,top=150px');
+    }
+
+    function popitup5(url) {
+        newwindow = window.open('http://tinyurl.com/zkwnz5y', 'name', 'height=500,width=500,left=500px,top=150px');
+    }
+
+    var answer = add(1, 2);
+
+    var mehvishHeadshot = document.getElementById('mehvish').getElementsByClassName('headshot')[0];
+
+
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#mehvish');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+
+    var square = document.getElementById('mySquare');
+    var distance = function(point1, point2) {
+        // A function to calculate the distance between two points.
+        // If it doesn't make sense, try checking out http://betterexplained.com/articles/surprising-uses-of-the-pythagorean-theorem/
+        var xDelta = Math.pow((point2.x - point1.x), 2);
+        var yDelta = Math.pow((point2.y - point2.y), 2);
+        return Math.sqrt(xDelta + yDelta);
+    };
+    var mousePosition = {
+        // An empty dictionary to hold our x and y information
+        x: null,
+        y: null
+    };
+    var updateMousePosition = function(e) {
+        mousePosition.x = e.clientX || e.pageX;
+        mousePosition.y = e.clientY || e.pageY;
+    };
+    var getPosition = function(element) {
+        // Take an element and get its center point
+        return {
+            x: element.offsetLeft + element.offsetWidth / 2,
+            y: element.offsetTop - element.offsetHeight / 2
+        }
+    };
+    var setPosition = function(element, xy) {
+        // Move an element so that its center is at xy
+        element.style.position = 'relative';
+        element.style.left = xy.x - element.offsetWidth / 2;
+        element.style.top = xy.y - element.offsetHeight / 2;
+    };
+    var followMouse = function(element) {
+        // Make the position of a given element and the mouse equal
+        setPosition(element, mousePosition);
+    }
+    window.addEventListener('load', function() { // When the page loads, run this stuff
+        // Choose a random percentage between 0 and 90 for x and y
+        // Since we know that the box is 10% tall and wide, it'll never be offscreen
+        var randomX = Math.floor(Math.random() * 90) + '%'; // Notice that we append the '%' character— we're just setting a string…
+        var randomY = Math.floor(Math.random() * 90) + '%';
+        // Set the CSS positions via JS— this requires position: relative or position: absolute
+        square.style.left = randomX;
+        square.style.top = randomY;
+        window.addEventListener('mousemove', function(eventData) {
+            // Whenever the mouse moves, run this stuff
+            updateMousePosition(eventData); // update the mousePosition variable
+            if (distance(getPosition(square), mousePosition) < 100) { // If we're less than 100px to the center of the box
+                followMouse(square) // set the box position to the mouse position
+            }
+        });
+    });
+    </script>
+</div>
