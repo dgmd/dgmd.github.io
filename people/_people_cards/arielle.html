@@ -1,0 +1,33 @@
+<div id='arielle' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Arielle Winchester</h2>
+            <div id='Arielle2' class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://ariellewinchester.com/'>See Her Work</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/kanyewest'>amwinchester</a>
+                </li>
+                <li><i class="fa fa-facebook"></i><a href='https://www.facebook.com/arielle.winchester'>Become Her Friend</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:ariellem.winchester@gmail.com'>Send Her a Note</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#arielle');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>

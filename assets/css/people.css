@@ -655,8 +655,31 @@ background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/joshtransparan
   top: 62%;
     left: 47%;
   background-size: cover;
-  background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/joshbody.png)}
+  background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/joshbody.png)
+}
 
+/* Arielle Winchester */
+
+#Arielle2 {
+  background-image: url('http://i.imgur.com/Y49Du0Y.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#arielle .front.card {
+    background-color: #00b3b3;
+}
+
+#people #arielle h2 {
+    color: #66ffe0;
+    font-size: 110%;
+    font-family: Helvetica;
+}
+
+#arielle .back.card {
+    background-color: #e6faff;
+}
 
 /* Kanye West */
 
