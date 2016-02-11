@@ -189,14 +189,14 @@
 
 /* Michelle */
 #michelle .headshot {
-  background-image: url(https://scontent.fphl1-1.fna.fbcdn.net/hphotos-xpf1/v/t34.0-12/12713909_10100541054818731_1652246374_n.jpg?oh=4e4bb1b63ab4d5adb3e6786029d1aa1e&oe=56BA8FEB);
+  background-image: url(https://s3.amazonaws.com/rosalienorris/12713909_10100541054818731_1652246374_n.jpg);
 }
 
 #michelle .headshot {width: 50%;}
 
 /* Susan Cantrell */
 #susancantrell .headshot {
-  background-image: url(https://lh3.googleusercontent.com/16IOG7eNmKpCcgFBiqB8xkiyZzLGTn4X-zsJgW17kt_pRRjnjeh3jM6fNyP_chBJTxeRBIw=s85);
+  background-image: url(https://s3.amazonaws.com/dgmde15/susancantrell.png);
   width: 50%;
 }
 
@@ -357,10 +357,6 @@
     border-radius: calc(500px/2);
 }
 
-#tylermachado .front:hover .circle {
-    display: block;
-}
-
 /* Laura */
 #laura .headshot {
   background-image: url(http://www.tylermachado.com/dgmd/assets/laura.jpg);
@@ -418,6 +414,153 @@ body {
   top: 100%; /* Set the top of the image to be at the bottom (100%) of its parent container (#box) */
   transition: 1s;
 }
+
+/* Maisie */
+#maisie .headshot {
+  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAWtAAAAJGY0N2E4N2VlLWVhODYtNDc5ZS1hNGRhLTg1YzdiNDE1NjRhZA.jpg);
+}
+
+/* Molly */
+#molly .headshot {
+  background-image: url(https://s3-us-west-2.amazonaws.com/mjiap/facebook+photo.png);
+  position: relative;
+}
+
+#molly #aresnick-www {
+  font-size: .8em;
+}
+
+#molly .kale-bowl {
+  position: relative;
+  opacity: 0;
+  height: 50px;
+  width: 80px;
+}
+
+#molly .chopsticks {
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  opacity: 0;
+  height: 30px;
+  width: 60px;
+}
+
+/* Chris Hansen */
+#chrishansen .headshot {
+  background-image: url(https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1239416_10102558979087292_2094889163_n.jpg?oh=53fb0d380ff644b719d8a16b589bdffb&oe=576D8AA2);
+}
+
+#chrishansen .front {
+    background-color: lightblue;
+
+/*    width: 225px;
+    height: 225px;   shduff removed so it would fit into site */
+}
+
+#chrishansen .front:hover {
+    transition: 1s; /* This is where the action happens: it tells CSS to animate any changes in the CSS styling of these elements over one second*/
+    background-color: lightgreen;
+}
+
+/* Katie Korngold */
+#katiekorngold .headshot {
+  background-image: url(https://scontent-lga3-1.xx.fbcdn.net/hphotos-xlp1/v/t1.0-9/12294840_10153113117190806_6382295225408477605_n.jpg?oh=f8ab32e40e0d8219e34a6be2a09f7597&oe=576B76FC);
+}
+
+/* Color transition from Bakhtiar swapped to gold texture */
+
+#katiekorngold .card:hover {
+    background-image:url(http://suzicurran.github.io/foil.png);
+    background-size: cover;
+    transition:1s;
+}
+  
+/*** Shine effect below largely from http://jsfiddle.net/antontrollback/nqqc7/ ***/
+
+/* The "shine" element  */
+
+#katiekorngold .card:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover to trigger effect */
+
+#katiekorngold .card:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state for shine */
+
+#katiekorngold .card:active:after {
+  opacity: 0;
+}
+
+#katiekorngorld .front.card {
+    background-image:url("http://suzicurran.github.io/aaaaaa.png");
+}
+
+#katiekorngold i.flip {
+  z-index:5;  /* shduff added to troubleshoot on live site */
+}
+
+/* Suzi Curran */
+#suzicurran .headshot {
+  background-image: url(https://pbs.twimg.com/profile_images/663020104758743041/u0LDlSLR.png);
+}
+
+#suzicurran .back.card {
+    background-color: #ccc;
+    transform: rotateY(180deg);
+}
+#suzicurran .back li i{
+  font-size: large;
+  padding: 0;
+  margin: 0;
+}
+#suzicurran .back li{
+  padding-left: .3ex;
+}
+#suzicurran .back li .fa{
+  margin-right: 0ex;
+  color: #EB2000;
+}
+#suzicurran .back li a {
+    font-family: 'Inconsolata', monospace;
+  line-height: 1.2em;
+  letter-spacing: -0.3ex;
+  color: #EB2200;
+  text-decoration: underline;
+}
+#suzicurran  i.flip {
+    position: absolute;
+    top: 88%;
+  left: 88%;
+  font-size: large;
+}  
+#suzicurran  i.flip {
+ text-shadow: 1px 1px 5px #EEE;
+} 
 
 /* Kanye West */
 

@@ -23,6 +23,25 @@
         </div>
     </div>
     <script>
+    var tyler = document.getElementById('tylermachado');
+    var inner = tyler.querySelector('.headshot');
+
+    // Grab our circle div and store it in a variable `circle`
+    var circle = document.querySelector('.circle');
+
+    // Add an eventListener (https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) to `inner` 
+    inner.addEventListener('mouseover', function() {
+        // so that when a mouseover event is triggered on it (i.e. when someone mouses over it)
+        circle.style.display = 'block'; // We set `circle`'s display to block, showing it
+    });
+
+    // And then when we mouseout (https://developer.mozilla.org/en-US/docs/Web/Events/mouseout)
+    inner.addEventListener('mouseout', function() {
+        // Set the circle's display attribute back to `none` so that it is hidden
+        circle.style.display = 'none';
+    });
+
+
     window.addEventListener('load', function() {
         var myCard = document.querySelector('#tylermachado');
         var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
