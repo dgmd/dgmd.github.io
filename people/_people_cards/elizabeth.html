@@ -1,0 +1,37 @@
+<div id='elizabeth' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2><span class="bright">Elizabeth L Ulanova</span></h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://www.elizabethlulanova.webs.com/'>E's Website</a>
+                    <li><i class="fa fa-facebook"></i><a href='https://www.facebook.com/elizabethwaternova?fref=ts'>E's Facebook</a>
+                    </li>
+                    <li><i class="fa fa-instagram"></i><a href='https://www.instagram.com/elizabethlulanova'>E's Instagram</a>
+                    </li>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:elizabethlulanova@gmail.com'>E's @fas.harvard.edu</a>
+                    <br>
+                    <br> Californian.World Traveler.Startups.
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#elizabeth');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>
+
+<div id="meow">
+</div>

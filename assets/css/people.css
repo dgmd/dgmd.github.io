@@ -562,6 +562,33 @@ body {
  text-shadow: 1px 1px 5px #EEE;
 } 
 
+/* Elizabeth Ulanova */
+#elizabeth .headshot {
+  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/6/005/09a/272/086729b.jpg);
+}
+
+#elizabeth .bright:hover {
+  color: blue;
+}
+
+#elizabeth .fa-undo {
+  margin-left: 1.5em;
+}
+
+#meow {
+  height:200px;
+  width:250px;
+  border:solid;
+  background-size:cover;
+  background-image:url(https://s-media-cache-ak0.pinimg.com/564x/00/f1/f9/00f1f92a6d26adbc5ca1112fc51f81a5.jpg);
+  
+  transition:2s;
+}
+
+#meow:hover {
+  transform:translateX(2000px);
+}
+
 /* Kanye West */
 
 #kanyewest .headshot {
