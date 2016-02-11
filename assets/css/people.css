@@ -575,7 +575,24 @@ body {
   margin-left: 1.5em;
 }
 
-#meow {
+#elizabeth #meow {
+  /* We needed to move #meow inside #elizabeth, otherwise, it was getting
+  display in the upper left corner.  Once we put it inside #elizabeth, it would
+  be displayed underneath #elizabeth.  To put its top at the same level as
+  #elizabeth's, we set its position to `relative` (you can read more about that
+  at https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+  and then said to put its top at -100%, which moved the top to the top of 
+  #elizabeth.
+
+  Then, since we put #meow at the end inside of #elizabeth, we had to undo the
+  fact that later elements appear "on top" of earlier elements, by setting the
+  `z-index` (which you can read more about at https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+  to -1, putting it behind everything else.
+  */
+
+  position: relative;
+  top: -100%;
+  z-index: -1;
   height:200px;
   width:250px;
   border:solid;
@@ -585,7 +602,7 @@ body {
   transition:2s;
 }
 
-#meow:hover {
+#elizabeth #meow:hover {
   transform:translateX(2000px);
 }
 
