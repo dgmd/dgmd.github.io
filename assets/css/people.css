@@ -681,6 +681,54 @@ background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/joshtransparan
     background-color: #e6faff;
 }
 
+/* Liz Bright */
+#lizBright .headshot {
+  background-image: url(https://dl.dropboxusercontent.com/s/6j5qta99nzti6y3/liz.jpg?dl=0);
+}
+
+#clickMe{
+  margin-top: 3px;
+  text-align: center
+}
+
+#chocolate {
+  width: 200px;
+  height: 200px;
+  background-image:url(https://dl.dropboxusercontent.com/s/au1smn8wrxsb912/chocolate-bar.png?dl=0);
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -35px;
+  display:none;
+}
+
+#coffee{
+  width: 75px;
+  height: 79px;
+  background-image:url(https://dl.dropboxusercontent.com/s/fwno2bf8jhmnbqh/coffee-mug.png?dl=0);
+  display: block;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -40px;
+  display: none;
+}
+
+#camera{
+  width: 60px;
+  height: 60px;
+  background-image:url(https://dl.dropboxusercontent.com/s/07d3que5qd9gz7c/camera.png?dl=0);
+  display: block;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 60px;
+  display: none;
+}
+
+
+#lizBright .back li i.fa {
+  color: yellow!important;
+} 
+
 /* Kanye West */
 
 #kanyewest .headshot {
