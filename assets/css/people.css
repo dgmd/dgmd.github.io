@@ -194,6 +194,10 @@
 
 #michelle .headshot {width: 50%;}
 
+#michelle .headshot:hover {
+  background-image: url(https://s3.amazonaws.com/rosalienorris/qh5lZp.gif);
+}
+
 /* Susan Cantrell */
 #susancantrell .headshot {
   background-image: url(https://s3.amazonaws.com/dgmde15/susancantrell.png);
@@ -269,23 +273,23 @@
 
 /* Rosalie */
 #rosalien .headshot.one {
-  background-image: url(https://www.dropbox.com/s/ksl622j943pvy4x/mysterious0.png?raw=1);
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious0.png);
 }
 
 #rosalien .headshot.two {
-  background-image: url(https://www.dropbox.com/s/v476inwaftsgfqu/mysterious1.png?raw=1);
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious1.png);
 }
 
 #rosalien .headshot.three {
-  background-image: url(https://www.dropbox.com/s/553zmzbxaz23bh7/mysterious2.png?raw=1);
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious2.png);
 }
 
 #rosalien .headshot.four {
-  background-image: url(https://www.dropbox.com/s/lfh5twrjks0x2s4/mysterious3.png?raw=1);
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious3.png);
 }
 
 #rosalien .headshot.five {
-  background-image: url(https://www.dropbox.com/s/ezxmeobb6qi59nx/mysterious4.png?raw=1);
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious4.png);
 }
 
 /* Tyler Machado */
