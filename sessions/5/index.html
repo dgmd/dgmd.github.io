@@ -41,7 +41,12 @@ number: 5
     </section>
 </section>
 <section>
-    <h1>Katie K!</h1>
+    <section>
+        <h1>Katie K!</h1>
+    </section>
+    {% for i in (1..8) %}
+        <section data-background="./KatieKorngoldMockup/SkinGraph.00{{ i }}.png" data-background-size='contain'></section>
+    {% endfor %}
 </section>
 <section>
     {% include break-slide.html %}
