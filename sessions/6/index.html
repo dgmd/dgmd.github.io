@@ -12,10 +12,10 @@ number: 6
     </section>
     <section id='welcome-back-bakhtiar' data-background='./fireworks.gif' data-background-size='cover'>
         <div style='position: relative'>
-        <blink>
-            <marquee scrollamount=30 style='font-size: 8em; color: yellow; z-index: 10'>Welcome back, Bakhtiar!</marquee>
-        </blink>
-        <img style='z-index: -1' id='bearded-bakhtiar' src='./bearded-bakhtiar.png'>
+            <blink>
+                <marquee scrollamount=30 style='font-size: 8em; color: yellow; z-index: 10'>Welcome back, Bakhtiar!</marquee>
+            </blink>
+            <img style='z-index: -1' id='bearded-bakhtiar' src='./bearded-bakhtiar.png'>
         </div>
         <script>
         var marquee = document.getElementsByTagName('marquee')[0];
@@ -47,24 +47,23 @@ number: 6
         };
 
         function repeatOften() {
-            var outOfBounds = function(element) {
+            var bakhtiarShift = function(element) {
                 var coords = bakhtiar.getBoundingClientRect()
                 var topOut = coords.top < 0;
                 var bottomOut = coords.bottom > document.body.offsetHeight;
                 var leftOut = coords.left < 0;
                 var rightOut = coords.right > document.body.offsetWidth;
 
-                return topOut || bottomOut || leftOut || rightOut;
+                var outOfBounds = topOut || bottomOut || leftOut || rightOut;
+                if (topOut || bottomOut) {
+                    shift.up *= -1;
+                }
+                if (leftOut || rightOut) {
+                    shift.left *= -1;
+                }
             };
-            if (outOfBounds(bakhtiar)) {
-                console.log("out!");
-                sign = Math.random() > 0.5 ? -1 : 1;
-                shift = {
-                    'left': Math.random() * 10 * sign,
-                    'up': Math.random() * 10 * sign
-                };
-            }
 
+            bakhtiarShift(bakhtiar);
             var newLeft = parseInt(bakhtiar.style.left) + shift.left + 'px';
             var newTop = parseInt(bakhtiar.style.top) + shift.up + 'px';
             // console.log(newLeft, newTop);
