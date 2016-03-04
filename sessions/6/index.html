@@ -50,9 +50,9 @@ number: 6
             var bakhtiarShift = function(element) {
                 var coords = bakhtiar.getBoundingClientRect()
                 var topOut = coords.top < 0;
-                var bottomOut = coords.bottom > document.body.offsetHeight;
+                var bottomOut = coords.bottom + element.offsetHeight/2 > document.body.offsetHeight;
                 var leftOut = coords.left < 0;
-                var rightOut = coords.right > document.body.offsetWidth;
+                var rightOut = coords.right + element.offsetWidth/2 > document.body.offsetWidth;
 
                 var outOfBounds = topOut || bottomOut || leftOut || rightOut;
                 if (topOut || bottomOut) {
