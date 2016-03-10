@@ -1,85 +1,193 @@
 ---
 layout: slide
+number: 7
 ---
+<style>
+.warning-signs li, .solutions li {
+    list-style-type: none;
+}
+div.warning-signs,
+.warning-signs h3 {
+    color: #D46A6A;
+}
+
+div.solutions,
+.solutions h3 {
+    color: #4F628E;
+}
+
+div.warning-signs,
+div.solutions {
+    width: 50%;
+    font-size: 0.75em;
+    float: left;
+}
+</style>
 <section>
+    <h1>< 7 ></h1>
 </section>
 <section>
-    <h3><a href='dgmds15.github.io'>Creative Explorations in Screen-Based and Physical Computing</a></h3>
-    <p>DGMD S-15, Summer 2015,
-        <br>Harvard University Summer School</p>
-    <div class='date'>21 July 2015</div>
+    <h1><a href='dgmd.github.io'>Creative Explorations in Screen-Based and Physical Computing</a></h1>
+    <h3>DGMD E-15, Spring 2016</h3>
 </section>
 <section>
-    <h2>Today</h2>
+    <h2>10 March 2016</h2>
     <ol style="font-size: 1em;">
-        <li>Messing around with circles as objects</li>
-        <li>Pair programming</li>
-        <li>Reminder to write up your goals for this week &amp; highlights of a few course materials</li>
-        <li>Pair programming &amp; studio time</li>
-    </ol>
-</section>
-<section>
-    <h2>Circles</h2>
-</section>
-<section>
-    <h2>Find a pair partner and try your hand at pairing on stepping stone extension and/or a small next-step or bug for your project</h2>
-</section>
-<section id='stepping-stone-sketches'>
-    <h2>[Extended] stepping-stones</h2>
-    <ol style='float: left; width: 45%; margin-right: 0.625em'>
-        <li>(TBD) A basic gist workflow</li>
-        <li>(TBD) A basic git workflow</li>
-        <li><a href='https://gist.github.com/4fedcc22f4b5f84fe2f1'>Messing around with circles as objects</a></li>
-        <li><a href='https://gist.github.com/aresnick/81bd0369a9a663533a31'>Triggering CSS transforms</a></li>
-        <li><a href='https://gist.github.com/aresnick/53401bfde3e559bfdd1a'>Click-to-drag in JavaScript</a></li>
-        <li><a href='https://gist.github.com/aresnick/197aecc5783842653099'>Styling a <code>nav</code> bar</a></li>
-        <li><a href='https://gist.github.com/aresnick/9da14e0e0659aac3e835'>Listening for <code>mouseEvents</code> in JavaScript</a></li>
-        <li>Scraping <a href='https://gist.github.com/aresnick/778e4fb9c92a44f32459'>single</a> and <a href='https://gist.github.com/aresnick/56ff641ee9fc6a87566d'>several</a> dynamic pages</li>
-    </ol>
-    <ol start=9 style='float: left; width: 45%; margin-right: 0.625em'>
-        <li><a href='https://gist.github.com/aresnick/be85fe79e15ff1aa24c2'>Scraping a static website with <code>wget</code> <i>et al</i></a></li>
-        <li><a href='https://gist.github.com/aresnick/2035f8e3bae0cfe66eec'>Scraping an infinite, scrolling page</a></li>
-        <li><a href='https://gist.github.com/492eeadef02b9ce02632'>Collecting text input from a user</a></li>
-        <li><a href='https://gist.github.com/492eeadef02b9ce02632'>A basic up/down vote example</a></li>
-        <li><a href='http://blog.acipo.com/blob-detection-js/'>Blob detection in JavaScript</a></li>
-        <li><a href='https://gist.github.com/06774475f98f2aed76ef'>Drawing on a <code>canvas</code> element</a></li>
-        <li><a href='https://gist.github.com/cfcca667ef8c56b2ec49'>Physics simulations in <code>canvas</code></a></li>
-        <li><a href='https://gist.github.com/77e86983e92ea1fcfb01'>Interactive animation with JavaScript and CSS</a></li>
-        <li><a href='https://square.github.io/intro-to-d3/'>A small introduction to D3.js</a> (and a <a href='https://www.youtube.com/watch?v=b9s7B7HYXhc'>video</a>)</li>
-    </ol>
-</section>
-<section id='oo-and-pp'>
-    <h4>Object Orientation</h4>
-    <ul style='font-size: 0.75em; line-height: 1.25em;'>
-        <li><i>Eloquent JavaScript</i>'s <a href="http://eloquentjavascript.net/1st_edition/chapter8.html">chapter on object-oriented programming</a> and <a href="http://eloquentjavascript.net/06_object.html">"The Secret Life of Objects"</a></li>
-
-        <li>MDN's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">"Working with Objects"</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript">"Introduction to Object-Oriented JavaScript"</a></li>
-
-        <li><a href="http://stackoverflow.com/a/3658673/37772">This StackOverflow answer about the <code>new</code> keyword</a> alongside <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new">MDN's own documentation of it</a>.
+        <li>Some anti-patterns in project work</li>
+        <li>Sharing out project mockups and prototypes to get feedback, generate code snippet requests/next steps</li>
+        <li>Break</li>
+        <li>Small group play, project work
+            <ul style='color: #555'>
+                <li>HTML, CSS, &amp; JS with Shaunalynn &amp; Molly</li>
+                <li>JS and physical computing with Alec</li>
+                <li>Project brainstorming with Bakhtiar</li>
+            </ul>
         </li>
-    </ul>
-
-    <hr style='margin-top: 0.125em;'>
-
-    <h4>Pair Programming</h4>
-    <ul style='font-size: 0.75em; line-height: 1.25em;'>
-        <li>Atlassian's <a href='https://developer.atlassian.com/blog/2015/05/try-pair-programming/'>"Try Pair Programming"</a></li>
-        <li>Julia Evans's <a href='http://jvns.ca/blog/2014/03/01/pair-programming/'>"Pair Programming"</a> and <a href='http://jvns.ca/blog/2014/08/05/pair-programming-is-amazing-except-when-its-not/'>"Pair Programming is Amazing!  Except…when it's not."</a></li>
-        <li><a href='http://pivotallabs.com/pair-programming-considered-extremely-beneficial/'>Pair programming considered extremely beneficial</a></li>
-        <li><a href='http://www.wired.com/2013/11/pivotal-one/'>This</a> FastCompany profile of PivotalLabs</li>
-    </ul>
+    </ol>
 </section>
 <section>
-    <p style='font-size: 1.75em;'>If you haven't yet, please share <i>via</i> <a href="https://docs.google.com/forms/d/17coqR5VkBQLTBegReVjUVCKzcOAbMVOx6j4tUBd0iok/viewform">this form</a> details about your goals for this week.  And if you have pictures from your brainstorm yesterday, please <a href="mailto:dgmds15@gmail.com">email us</a>!
-    </p>
+    <section data-background='red-flag.jpg' data-background-size='contain'>
+    </section>
+    <section>
+        <h2 id="making-something-just-to-make-something">Making just to make</h2>
+        <div class='warning-signs'>
+            <h3 id="warning-signs">Warning Signs</h3>
+            <ul>
+                <li>You sit down to work, and you consistently find yourself distracted.</li>
+                <li>You don't know anyone personally who would benefit from what you want to make.</li>
+                <li>You think that a &quot;class project&quot; (or &quot;app&quot; or &quot;art project&quot;) has to look or sound a certain way and so reject ideas of yours before they have a chance to grow.</li>
+                <li>You <em>want to want</em> to do your project.</li>
+            </ul>
+        </div>
+        <div class='solutions'>
+            <h3 id="solutions">Solutions</h3>
+            <ul>
+                <li>Schedule a time to sit down with one of us to brainstorm your project, interests, and goals for the course!</li>
+                <li>Take one-off ideas and interests which pique you seriously, even if they don't seem like a &quot;good project.&quot;</li>
+                <li>Don't worry about the relative technical complexity of the project. In our experience, doing anything real is hard enough, and even small tweaks can incur plenty of technical work, if that's a priority for you—</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2 id="planning-instead-of-growing">Planning instead of growing</h2>
+        <div class='warning-signs'>
+            <h3 id="warning-signs-1">Warning Signs</h3>
+            <ul>
+                <li>Because it's uncomfortable to not know things (much less ask for help), you instead spend more time planning, imagining, worrying about problems two- and three- and four steps ahead.</li>
+                <li>You say to yourself, &quot;I need to learn more about <em>X</em> before I start.&quot;</li>
+                <li>You can't point to a few explorations of making small things or attempts toward sculpting your initial prototype.</li>
+            </ul>
+        </div>
+        <div class='solutions'>
+            <h3 id="solutions-1">Solutions</h3>
+            <ul>
+                <li>Tell yourself that you're going to throw this piece away, but that you're going to build it to either test out a piece of your project or learn how to do part of your project. Not everything needs to make it into the final cut.</li>
+                <li>If you're not sure how to figure out which piece that is (or how to work on just one piece), ask us!</li>
+                <li>Figure out a regular practice (of sharing mockups, )</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2 id="not-getting-stuck">Not getting stuck</h2>
+        <div class='warning-signs'>
+            <h3 id="warning-signs-2">Warning Signs</h3>
+            <ul>
+                <li>You don't have code in your journal or sitting on your computer somewhere which didn't work.</li>
+                <li>You're not sure what the next is, but you wouldn't say you're stuck.</li>
+                <li>You haven't emailed looking for help.</li>
+                <li>You haven't ended a session trying to get something work for a few hours frustrated. Or you haven't worked through a frustration after ending a session working frustrated.</li>
+            </ul>
+        </div>
+        <div class='solutions'>
+            <h3 id="solutions-2">Solutions</h3>
+            <ul>
+                <li>Sit down and articulate a milestone for the next week (or next day). Email that to us. When your deadline comes around, just share what you've tried and the progress you've made (or haven't!)</li>
+                <li>Ask to sit down and just play and explore—we <em>love</em> just sitting down to sketch and explore together, more like a jam session than a tennis lesson.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2 id="letting-yourself-stay-stuck">Letting yourself stay stuck</h2>
+        <div class='warning-signs'>
+            <h3 id="warning-signs-3">Warning signs</h3>
+            <ul>
+                <li>You watch video after video or read page after page about what you're trying to do, but don't feel like you're making progress.</li>
+                <li>You switch between possible solutions before finding out whether one works or not.</li>
+                <li>You've been stuck on the same problem for more than a day or two and haven't reached out.</li>
+            </ul>
+        </div>
+        <div class='solutions'>
+            <h3 id="solutions-3">Solutions</h3>
+            <ul>
+                <li>Post your question to Stack Overflow— Or at least sit down and write up your question and situation such that a stranger <em>could</em> understand what was going on and try to help.</li>
+                <li>And then maybe post in the <a href='https://dgmd.slack.com'>DGMD Slack channel</a>! Or <a href='mailto:dgmde15@gmail.com'>email us</a>!  Or just ask to get together with us and work through the topic—not even addressing your problem directly.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2 id="choosing-the-wrong-level-of-detail">wrong level of detail</h2>
+        <div class='warning-signs'>
+            <h3 id="warning-signs-4">Warning Signs</h3>
+            <ul>
+                <li>You find yourself drawing things out in pixel perfect detail</li>
+                <li>You find yourself saying, &quot;I'll figure this out later&quot; instead of &quot;I'll <em>do this</em> later&quot;</li>
+                <li>You've drawn something out in sufficient detail to begin using HTML/CSS/JS to prototype what you've drawn, but you spend your time refining the visual details.</li>
+            </ul>
+        </div>
+        <div class='solutions'>
+            <h3 id="solutions-4">Solutions</h3>
+        </div>
+    </section>
+    <section>
+        <h2 id="hyperfocusing-on-finding-a-tool">Hyperfocusing on the tool</h2>
+        <div class='warning-signs'>
+            <h3 id="warning-signs-5">Warning Signs</h3>
+            <ul>
+                <li>You spend more time searching for someone else who's done what you're trying to do than trying to do it yourself.</li>
+                <li>You know what your problem is and that you want a tool to solve it, but you're not sure how you would tackle the problem (meaning the tool isn't &quot;just&quot; saving you effort).</li>
+                <li>You spend more time trying to understand someone else's systme and code rather than the fundamentals of HTML, CSS, and JavaScript</li>
+            </ul>
+        </div>
+        <div class='solutions'>
+            <h3 id="solutions-5">Solutions</h3>
+            <ul>
+                <li>Sit down with us and ask what portion(s) of your project might best be done by others</li>
+                <li>Ask us for estimates of how much time—given your current skill level—different parts of your project will take.</li>
+                <li>Sit down with these materials</li>
+            </ul>
+        </div>
+    </section>
+    <section data-background='skateboard-mvp.png' data-background-size='contain'></section>
+    <section style="color: #555">
+        <p style='font-size: 1.5em; text-align: left;'>
+            In short, the biggest mistakes are <span style='color: black'>not iterating in a lightweight way</span>, and even more importantly, <span style='color: black'>not letting us help</span>.
+        </p>
+        <p style='font-size: 1.5em; text-align: left; margin-top: 1.5em;'>
+            We're always available <a href='mailto:dgmde15@gmail.com'>by email</a>, <a href='http://dgmd.slack.com/'>in #Slack</a>, and <em>especially</em> in person.
+        </p>
+    </section>
 </section>
 <section>
-    <h3>Especially good starting points</h3>
-    <ul>
-        <li><a href="/sessions/6/#/3">Stepping stone sketches from yesterday</a>, including the screencasts and extensions in each.</li>
-        <li><a href='https://github.com/dgmds15/HTML.CSS.JS-Intro'>Our screencast from last year</a> introducing HTML/CSS/JS</a>
-        </li>
-        <li><a href='/sessions/3/#/resources'>These auxiliary</a> resources for git, HTML, CSS, and JavaScript.</li>
-        <li><a href="https://github.com/orgs/dgmde15/dashboard">Example projects from previous years</a> to serve as code bases or inspirations</li>
-        <li><a href='https://gist.github.com/aresnick/20213ebaa69fc38f86a7'>These readings</a> on spec-ing and sketching out a prototype.</li>
+    <h1>Sharing out</h1>
+    <ol style='font-size: 1.5em; line-height: 1.125em; color: #555'>
+        <li>Who is the audience and how will I know if the project is good?</li>
+        <li>What's the next question I need answered?</li>
+        <li>What's the next skill I would really benefit from developing?</li>
+    </ol>
+</section>
+<section>
+    {% include break-slide.html %}
+</section>
+<section>
+    <h1>Group work</h1>
+    <div style='font-size: 1.5em'>
+        <ul style='color: #555'>
+            <li>HTML, CSS, &amp; JS (Shaunalynn &amp; Molly)</li>
+            <li>JS and physical computing (Alec)</li>
+            <li>Project brainstorming (Bakhtiar)</li>
+        </ul>
+    </div>
+</section>
+<section>
+    <h1>< /7 ></h1>
 </section>
