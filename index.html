@@ -32,7 +32,7 @@ layout: default
 <div id='table-of-contents-container'>
     <h3>Session Descriptions (and slides <i class='fa fa-slideshare'></i>)</h3>
     <ol class='leaders' id='table-of-contents'>
-        {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %} {% if session.title != null %}
+        {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date.to_s | slugify %} {% if session.title != null %}
         <li><a class='title-link' href='#{{ slug }}'><span>{{ session.title }}</span></a><a href='./sessions/{{ session.number }}'><span><i class='fa fa-slideshare'></i></span></a>
         </li>
         {% endif %} {% endfor %}
@@ -42,7 +42,7 @@ layout: default
 <hr>
 
 <section id='weeks'>
-    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date | slugify %} {% if session.title != null %}
+    {% assign sortedSessions = site.sessions | sort: 'number' %} {% for session in sortedSessions %} {% assign slug = session.date.to_s | slugify %} {% if session.title != null %}
     <section id="{{ slug }}" class='week'>
         <h2>
             <div class='session-title'>{{ forloop.index }}: {{ session.title }}</div>
