@@ -12,3 +12,4 @@ markdown: kramdown
 collections:
 - sessions
 - nextweeks
+- snippets
