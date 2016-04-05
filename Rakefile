@@ -11,7 +11,7 @@ task :update do
 	snippetRoot = File.join(currentDirectory, 'snippets')
 	delimiter = '---'
 
-	Dir.foreach(root) do |snippetFile|
+	Dir.foreach(partialRoot) do |snippetFile|
 		next if snippetFile == '.' or snippetFile == '..'
 		partialPath = File.join(partialRoot, snippetFile)
 		snippetFrontMatter = File.read(partialPath).split(delimiter)[1]
@@ -20,6 +20,6 @@ task :update do
 		snippetPath = File.join(snippetRoot, snippet['slug'])
 		snippetURL = snippet['url']
 
-		`git subtree pull --prefix #{snippetPath} #{snippetURL} master --squash`
+		puts "git subtree pull --prefix #{snippetPath} #{snippetURL} master --squash"
 	end
 end
