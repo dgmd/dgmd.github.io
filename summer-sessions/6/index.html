@@ -1,0 +1,175 @@
+---
+layout: slide
+number: 6
+---
+<section>
+    <h1>< 6 ></h1>
+</section>
+<section>
+    <section>
+        <h1><a href='dgmd.github.io'>Creative Explorations in Screen-Based and Physical Computing</a></h1>
+        <h3>DGMD E-15, Spring 2016</h3>
+    </section>
+    <section id='welcome-back-bakhtiar' data-background='./fireworks.gif' data-background-size='cover'>
+        <div style='position: relative'>
+            <blink>
+                <marquee scrollamount=30 style='font-size: 8em; color: yellow; z-index: 10'>Welcome back, Bakhtiar!</marquee>
+            </blink>
+            <img style='z-index: -1' id='bearded-bakhtiar' src='./bearded-bakhtiar.png'>
+        </div>
+        <script>
+        var marquee = document.getElementsByTagName('marquee')[0];
+        marquee.style.transition = 'color 1s, opacity 0.5s';
+        marquee.style.textTransform = 'uppercase';
+        var colorChanging = setInterval(function() {
+            var randomColor = function() {
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+                return 'rgb(' + r + ',' + g + ',' + b + ')';
+            };
+            marquee.style.color = randomColor();
+        }, 1000);
+
+        var blinking = setInterval(function() {
+            marquee.style.opacity = marquee.style.opacity == 0 ? 1 : 0;
+        }, 500);
+
+        var bakhtiar = document.querySelector('img#bearded-bakhtiar');
+        bakhtiar.style.position = 'absolute';
+        bakhtiar.style.left = '0px';
+        bakhtiar.style.top = '0px';
+
+        var sign = Math.random() > 0.5 ? -1 : 1;
+        var shift = {
+            'left': Math.random() * 10 * sign,
+            'up': Math.random() * 10 * sign
+        };
+
+        function repeatOften() {
+            var bakhtiarShift = function(element) {
+                var coords = bakhtiar.getBoundingClientRect()
+                var topOut = coords.top < 0;
+                var bottomOut = coords.bottom + element.offsetHeight/2 > document.body.offsetHeight;
+                var leftOut = coords.left < 0;
+                var rightOut = coords.right + element.offsetWidth > document.body.offsetWidth;
+
+                var outOfBounds = topOut || bottomOut || leftOut || rightOut;
+                if (topOut || bottomOut) {
+                    shift.up *= -1;
+                }
+                if (leftOut || rightOut) {
+                    shift.left *= -1;
+                }
+            };
+
+            bakhtiarShift(bakhtiar);
+            var newLeft = parseInt(bakhtiar.style.left) + shift.left + 'px';
+            var newTop = parseInt(bakhtiar.style.top) + shift.up + 'px';
+            // console.log(newLeft, newTop);
+            bakhtiar.style.left = newLeft;
+            bakhtiar.style.top = newTop;
+            requestAnimationFrame(repeatOften);
+        }
+        requestAnimationFrame(repeatOften);
+        </script>
+    </section>
+</section>
+</section>
+<section>
+    <h3>Today</h3>
+    <hr>
+    <ol style="font-size:1em;">
+        <li>So, what can we actually make with physical computing?</li>
+        <li>Workshopping Laura's project</li>
+        <li>Break</li>
+        <li>Open studio time for:
+            <ul id='studio-time-5'>
+                <style>
+                #studio-time-5 li {
+                    margin-bottom: 0;
+                    opacity: 0.75;
+                }
+                </style>
+                <li>Exploring the Arduino &amp; physical computing <b>with Alec</b></li>
+                <li>Building things with HTML/CSS/JS <b>with Shaunalynn</b></li>
+                <li>Spec'ing and mocking up your project <b>with Molly &amp; Bakhtiar</b></li>
+            </ul>
+        </li>
+    </ol>
+</section>
+<section>
+    <section>
+        <h4>So, what can you actually make, in a few months, as a beginner, that's physical?</h4>
+        <img style="border:none; box-shadow:none; width:60%; padding-top:0; margin-top:0;" src="../5/arduino1.jpg">
+    </section>
+    <section>
+        <h2><a href="http://lookingglassfactory.com/">Fire Simulation on the L3D Cube</a></h2>
+        <img width="100%" src="./l3d-fire.gif">
+    </section>
+    <section>
+        <h2><a href="http://www.programmableweb.com/api/nextbus">Bus Stop Indicator</a></h2>
+        <img src="./traffic-light.jpg">
+    </section>
+    <section>
+        <h2><a href="https://www.wunderground.com/weather/api/">LED Weatherbox</a></h2>
+        <img src="./led-weather.jpg">
+    </section>
+    <section>
+        <h2><a>Turn Signal for Bikes</a></h2>
+        <img height="500px" src="./bike-signal.jpg">
+    </section>
+    <section>
+        <h2><a>Movement-Activated Clothing</a></h2>
+        <img width="850px" src="./flashy-clothes.jpg">
+    </section>
+    <section>
+        <h2><a>Standing Desk Sensor</a></h2>
+        <img width="600px" src="./standing-desk.jpg">
+    </section>
+</section>
+<section>
+    <section>
+        <h1><a href='./laura-guillen-magnifier-presentation/laura-guillen-magnifier-presentation-v1.pdf'>Laura!</a></h1>
+    </section>
+    {% for i in (0..9) %}
+    <section data-background="./laura-guillen-magnifier-presentation/{{ i }}.png" data-background-size='contain'></section>
+    {% endfor %}
+</section>
+<section id='break-section'>
+    {% include break-slide.html %}
+</section>
+<section>
+    <h1>Specifying Your Projects</h1>
+    <hr>
+    <h4>When is it specific enough?</h4>
+</section>
+<section>
+    <section>
+        <h2>Open Studio Time</h2>
+        <ol style="font-size: 1.3em; margin-top: 0.25em; opacity: 0.75;">
+            <li>Exploring the Arduino &amp; physical computing <b>with Alec</b></li>
+            <li>Building things on the screen from scratch <b>with Shaunalynn</b></li>
+            <li>Expanding on your project's mockup &amp; spec <b>with Molly &amp; Bakhtiar</b></li>
+        </ol>
+    </section>
+    <section>
+        <h2>Arduino Demo Materials</h2>
+        <img style="border:none; box-shadow:none; width:40%; padding-top:0; margin-top:0;" src="../5/arduino1.jpg">
+        <h3><a href='https://github.com/dgmd/arduino-websocket-example'>Arduino + WebSocket</a></h2>
+        <h3><a href='https://github.com/dgmd/johnny-five-express-sample.git'>Arduino + Express</a></h2>
+    </section>
+</section>
+<section>
+    {% include nextweek.html %}
+    <section>
+        <a href='http://learn.shayhowe.com/html-css/'><img style='width: 100%; height: 100%' src='./shay-howe.png'></a>
+    </section>
+    <section>
+        <a href='http://eloquentjavascript.net/'><img style='margin-right: 2em; height: 499px;' src='./eloquent-javascript.png'></a>
+        <a href='http://shop.oreilly.com/product/0636920039303.do'><img src='./ydkjs-up-and-going.jpg'></a>
+    </section>
+</section>
+<section>
+    <h1>< /6 ></h1>
+</section>
