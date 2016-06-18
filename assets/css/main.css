@@ -206,7 +206,10 @@ header .title-wrapper {
     display: block;
     text-align: center;
     line-height: 5.75em;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
 
 header .title-wrapper a {
     line-height: calc(5em/2);
@@ -363,4 +366,9 @@ nav li i.fa {
         width: 90%;
         background-color: #eee;
     }
+}
+
+iframe {
+    overflow: hidden;
+    border: 0px;
 }

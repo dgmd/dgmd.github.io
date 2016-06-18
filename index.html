@@ -20,8 +20,10 @@ layout: default
     </p>
     {% endif %}
 </div>
+{% if site.sessions.length > 0 %}
 <hr>
 <section id='weeks'>
+    <h3>Weekly session summaries</h3>
     {% assign sortedSessions = site.sessions | sort: 'number' | reverse %} {% for session in sortedSessions %} {% assign slug = session.date | date:"%-d %B %Y" | slugify %} {% if session.title != null %}
     <section id="{{ slug }}" class='week'>
         <h2>
@@ -53,3 +55,4 @@ window.onload = function() {
     }
 };
 </script>
+{% endif %}
