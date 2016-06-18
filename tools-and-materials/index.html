@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+<p>
+    Making things requires tools. And the same surfeit of tools that makes it possible for us to make all sorts of neat stuff—digitally and physically—also can make it pretty overwhelming to get up and running. This page begins to document some of those tools and a handful of selected resources we think will make getting started easier.
+</p>
+<p>
+    A <em>remarkable</em> amount of making things is about setting up your environment and tooling. While it's wonderful and amazing how many different people and communities make the making of digital and physical stuff easier, that diversity introduces a lot of complexity. It is natural to be overwhelmed by all this. All we can say is that we feel that each of these tools [pretty quickly] end up being worth it. It's amazing how much the experience sucks, given how much rides on building things with technology.
+</p>
+<p>
+    If you are really into tooling and want to take a bit of a meandering jaunt through what's out there and why you might choose to use which things for what, feel free to read <a href="long-story.html">The Long Story</a>. The rest of this page will focus on what you will need to install and familiarize yourself within the scope of this course.
+</p>
+<section>
+    <h1 id="materials-for-this-course">Materials for this course</h1>
+    <h2>For those of you with a Mac computer</h2>
+    <p>
+        You will need to download a lot of stuff to do work in this course. Here's a quick list of some general software you should install on your machine:
+        <ol>
+            <li>Get an <a href="http://www.apple.com">Apple ID</a>.</li>
+            <li>Install <a href="https://developer.apple.com/xcode/">Xcode Developer Tools</a>.</li>
+            <li>Install <a href="http://brew.sh/">Homebrew</a>.</li>
+            <li>Install <a href="http://www.sublimetext.com/3">Sublime Text 3</a>.</li>
+            <li>Install <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a>.</li>
+            <li>Run each line of code from <a href="https://gist.github.com/aresnick/308127a1377f8c7bdd47">this gist</a> at your terminal.</li>
+            <li>Create a <a href="http://github.com">Github account</a>.</li>
+        </ol>
+    </p>
+    <h2>For those of you with a Windows machine</h2>
+    <p>
+        <ol>
+            <li>Install <a href="http://www.sublimetext.com/3">Sublime Text 3</a>.</li>
+            <li>Install <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a>.</li>
+            <li>Download and install <a href='https://nodejs.org/en/download/'>node.js</a>, an implementation of JavaScript that can run without a browser (which also has a nice community and tooling for installing a wide variety of libraries).</li>
+            <li>Download and install <a href='http://babun.github.io/'>Babun</a>, a nicely configured terminal setup for Windows.</li>
+        </ol>
+    </p>
+    <p>Some of the first projects and exercises we'll do in class will require a few more installations and account set-ups.
+    </p>
+    <h3><code>/people</code> page project</h3>
+    <p>
+        <ul>
+            <li>Create an account at <a href="http://codepen.io">Codepen.io</a>.</li>
+            <li>Fork <a href="http://codepen.io/duffles/pen/EjQLzy">this Codepen</a> and modify it to reflect information about yourself.</li>
+            <li>Now, add some CSS or Javascript effects to your card. Check out <a href="http://dgmd.github.io/people">our current people page</a> or <a href='https://gist.github.com/aresnick/8e881e01245989794c5e'>this list of effects</a> for inspiration on how to adapt your card.</li>
+            <li>When you're done with your card, <a href='http://blog.codepen.io/documentation/features/exporting-pens/#export-gist'>export it as a Github gist</a>, and post the link on your personal Github Pages site. From there, we'll incorporate it into the class website.</li>
+        </ul>
+    </p>
+    <h3>personal site &amp; journal set-up</h3>
+    <p>
+        Create a <a href="https://pages.github.com/">Github Pages</a> site for your username using the linked instructions. This site will serve as your daily journal and portfolio during the class.
+    </p>
+    <h3 id='a-story-in-pomes-setup'><code>a-story-in-pomes project</code></h3>
+    <p>
+        <ul>
+            <li>Fork the <a href="https://github.com/dgmd/a-story-in-pomes"><code>a-story-in-pomes</code></a> repository by clicking the "Fork" button in the upper left.</li>
+            <li>Next, clone it from your Github account by typing <code>git clone https://github.com/YOUR_USERNAME/a-story-in-pomes.git</code> into your terminal or by using GitHub Desktop.</li>
+            <li><code>cd</code> (change directory) in your terminal to the <code>a-story-in-pomes</code> folder</li>
+            <li>Run <code>npm install</code> in your terminal (this installs the various packages required for <code>a-story-in-pomes</code>).</li>
+            <li>Now, run <code>node server.js</code> in your terminal to start up the server.</li>
+            <li>You should now be able see the site by going to <a href="http://localhost:3000/"><code>http://localhost:3000/</code></a> in Google Chrome.</li>
+        </ul>
+    </p>
+</section>
+<section>
+    <h1 id="materials-from-previous-courses">Materials from previous courses</h1>
+    <h2 id='projects-from-previous-terms'>Sample projects used in previous terms</h2>
+    <p>This time around, we are focusing on the <code>pomes</code> project to serve as our shared code base and exemplar project. In previous versions of this course, however, we've used projects with different levels of finish, complexity, and authenticity. We wanted to make these previous projects available to you, even if we won't dig into them as a whole group, in case they speak to you, your interests, and the work you hope to do this term more directly than <code>pomes</code>.</p>
+    <ul>
+        <li><a href="https://github.com/dgmd/video-timeline">Scrolling Video Timeline</a>: This project, using a Beyonce video to demonstrate, is the skeleton for a one page app/website which can move frame-by-frame through a video based on mouse scrolling. It also indexes into the video using visual waypoints which, when activated by click or hover, move forward or backward through the video to a certain frame. If you clone this repository and open the <code>project.html</code> file in your brower, you will be able to play with it. When developed, this project was meant to serve as an inspiring structure for digital interactions with video.</li>
+        <li><a href="https://github.com/dgmd/portfolio-container">Personal Portfolio Framework</a>: Based on the Apple homepage from a couple years back, this skeleton of a project provides the basic structure for the front page of a horizontal scroll portfolio site. If you clone the repository and open the <code>index.html</code> file in your browser, you will be able to see how it works. When developed, this project was meant to serve as a portfolio for class work and provide a basic structure participants could build on to display the work they did during the course.</li>
+        <!--<li><a href="https://github.com/dgmd/spotify-tracklist">Spotify Tracklist</a>:  If you open the <code>beat.html</code> file in your browser, you will be able to see the </li>-->
+        <li><a href="https://github.com/dgmd/osmos-clone">Osmos</a>: This barebones version of <a href="http://www.osmos-game.com/">this beautiful project</a> from Hemisphere Games is a crash course in physics simulation. It's not beautiful, and it hasn't built out all of the game mechanics present in the original osmos, but it gets at some of the fundamental principles underlying the movement and interaction that makes the original game so great. If you clone the repository and open the <code>osmos.html</code> file in your browser, you will be able to play around by clicking to propel your character by ejecting mass. When developed, this project was meant to serve as an introduction to physics simulation, interactivity, and object-oriented programming.</li>
+        <li><a href="https://github.com/dgmd/twitter-2012-sotu-viz">Twitter's State of the Union</a>: This project was a stripped down implementation of <a href="https://github.com/dgmd/twitter-2012-sotu-viz/blob/master/twitter.github.io/interactive/sotu2014">a cute data visualization project</a> done visualizing Obama's 2014 SOTU address with listeners' responses on Twitter, categorized by topic, in a stacked line plot over time. If you clone this repository, follow the instructions laid out in <code>Readme.md</code> about how to open Google Chrome with a special flag, and then open <code>SOTU.html</code> in that way, you should be able to play with this project. This project was meant to be an introduction to data visualization and API usage.</li>
+        <li><a href="https://github.com/dgmd/letterpress-clone">Letterpress</a>: This is another stripped down version of a game built as a gift and demonstration. If you clone the repository and open the <code>index.html</code> file in your browser, you will be able to play the game. When developed, this project was meant to provide a compelling origin story for creating a digital project, provide a structure for building other tile-based games, and a code base on which course participants could riff and tweak.</li>
+        <li><a href="https://github.com/dgmd/3D-GIF">3D-GIF</a>: This was a project developed to act as an in-browser interface for controlling the The Looking Glass Factory's <a href="http://lookingglassfactory.com/">L3D Cube</a>. If you clone the repository and open the <code>index.html</code> file in your browser, you should be able to play with the interace. When developed, this project was meant to demonstrate how to connect in-browser code with external, physical hardware and, in the process, dabbled in 3D representation and interaction.</li>
+    </ul>
+
+    <h2 id='topical-introductions-from-previous-terms'>Topical introductions from previous terms</h2>
+    <p>In addition to creating sample projects to provide more developed code bases, we have also created a series of introductions and galleries filled with what we like to call "code snippets." These are bits of code which, in a decontextualized way, accomplish a particular effect. Our hope is that these snippets can help to illustrate some fundamental concepts that you can then rework and incorporate into projects of your own design.</p>
+    <ul>
+        <li><a href="https://github.com/dgmd/html-css-js-intro">An intro to HTML, CSS, and JS</a>: This repository contains a few files which are walked through and built up from scratch in a screencast put together by Alec. In about an hour, you'll draw shapes in your browser, make them move, and begin to get at the boundaries between those three languages. Clone the repository and check out the Youtube link in the <code>Readme.md</code> file to check it out.</li>
+        <li><a href="https://github.com/dgmd/html-css-js-gallery">A Gallery of HTML, CSS, and JS Effects</a>: This is a small gallery of effects, stripped down and implemented with as few lines of code as possible, meant to provide small sandboxes in which to draw, randomize, animate, and more in the browser. If you clone this repository and then open any of the <code>.html</code> files in your browser and Sublime Text, you will be able to mess around by tweaking and changing the code in Sublime and seeing your effects reflected on the screen.</li>
+        <li><a href="https://github.com/dgmd/oo-gallery">Object Oriented Gallery</a>: Sometimes, when you need to make many versions of the same thing (e.g. circles or words or etc.) or a custom thing (e.g. Imagine making a version of the game Pacman and wanting each of the ghosts to exhibit the same behavior and appearance) in your code, you'll build programs using a programming approach called Object Orientation. This gallery of scripts draws a collection of circles in progressively more object-oriented ways. Follow the progression laid out in <code>Readme.md</code> to get a sense for what's going on.</li>
+        <li><a href="https://github.com/dgmd/processing-intro">Processing.js Intro</a>: Processing is a graphical programming environment meant to make software literacy more accessible within the visual arts community and visual literacy more accessible within technology circles. After being used through a desktop application for a number of years, they developed an in-browser, Javascript version of their environment. This introduction to <a href="http://processingjs.org/">Processing.js</a> walks you through some of the basic tutorials for using Processing.js.</li>
+    </ul>
+
+    <h2 id='code-snippets-from-previous-terms'>Code snippets from previous terms</h2>
+    <p>And finally, here is a collection of snippets we've pulled together in response to previous participants' questions and requests. Some of them may be a bit contextual, but many of them will be quite generally applicable, and we may direct you to this list from time to time.</p> 
+    <ol>
+        <li><a href='https://gist.github.com/4fedcc22f4b5f84fe2f1'>Messing around with circles as objects</a></li>
+        <li><a href='https://gist.github.com/aresnick/81bd0369a9a663533a31'>Triggering CSS transforms</a></li>
+        <li><a href='https://gist.github.com/aresnick/53401bfde3e559bfdd1a'>Click-to-drag with JavaScript</a></li>
+        <li><a href='https://gist.github.com/aresnick/197aecc5783842653099'>Styling a <code>nav</code> bar</a></li>
+        <li><a href='https://gist.github.com/aresnick/9da14e0e0659aac3e835'>Listening for <code>mouseEvents</code> in JavaScript</a></li>
+        <li>Scraping <a href='https://gist.github.com/aresnick/778e4fb9c92a44f32459'>single</a> and <a href='https://gist.github.com/aresnick/56ff641ee9fc6a87566d'>several</a> dynamic pages</li>
+        <li><a href='https://gist.github.com/aresnick/be85fe79e15ff1aa24c2'>Scraping a static website with <code>wget</code> <i>et al</i></a></li>
+        <li><a href='https://gist.github.com/aresnick/2035f8e3bae0cfe66eec'>Scraping an infinite, scrolling page</a></li>
+        <li><a href='https://gist.github.com/492eeadef02b9ce02632'>Collecting text input from a user</a></li>
+        <li><a href='https://gist.github.com/492eeadef02b9ce02632'>A basic up/down vote example</a></li>
+        <li><a href='http://blog.acipo.com/blob-detection-js/'>Blob detection in JavaScript</a></li>
+        <li><a href='https://gist.github.com/06774475f98f2aed76ef'>Drawing on a <code>canvas</code> element</a></li>
+        <li><a href='https://gist.github.com/cfcca667ef8c56b2ec49'>Physics simulations in <code>canvas</code></a></li>
+        <li><a href='https://gist.github.com/77e86983e92ea1fcfb01'>Interactive animation with JavaScript and CSS</a></li>
+        <li><a href='https://square.github.io/intro-to-d3/'>A small introduction to D3.js</a> (and a <a href='https://www.youtube.com/watch?v=b9s7B7HYXhc'>video</a>)</li>
+    </ol>
+</section>

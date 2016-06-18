@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<p>
+    <a href="http://www.extension.harvard.edu/academics/courses/creative-explorations-screen-based-physical-computing/24025">This semester-long Harvard Extension School course</a> introduces computing as an expressive medium. We prototype, exhibit, and critique interactive, computational stories, art, and games presented as web applications and physical prototypes. We use JavaScript as a unifying language for programmatically controlling and combining audio, video, graphics, text, sensors, and actuators in these projects. Libraries like <a href='http://processingjs.org/'>Processing.js</a>, <a href='http://d3js.org/'>D3.js</a>, and <a href='http://snapsvg.io/'>Snap.svg</a> help us create data-rich, interactive visualizations, and <a href='http://tessel.io/'>Tessel</a> serves as the microcontroller platform for our physical computing work.
+</p>
+
+<hr>
+
+<div id='table-of-contents-container'>
+    <h3>Session Descriptions (and slides <i class='fa fa-slideshare'></i>)</h3>
+    <ol class='leaders' id='table-of-contents'>
+        {% assign sortedSessions = site.sessions | sort: 'number' | reverse %} {% for session in sortedSessions %} 
+        {% assign slug = session.date | date:"%-d %B %Y" | slugify %} {% if session.title != null %}
+        <li><a class='title-link' href='#{{ slug }}'><span>{{ session.title }}</span></a><a href='./sessions/{{ session.number }}'><span><i class='fa fa-slideshare'></i></span></a>
+        </li>
+        {% endif %} {% endfor %}
+    </ol>
+</div>
+
+<hr>
+
+<section id='weeks'>
+    {% assign sortedSessions = site.sessions | sort: 'number' | reverse %} {% for session in sortedSessions %} {% assign slug = session.date | date:"%-d %B %Y" | slugify %} {% if session.title != null %}
+    <section id="{{ slug }}" class='week'>
+        <h2>
+            <div class='session-title'>{{ session.number }}: {{ session.title }}</div>
+            <div class='meta'>
+                <a class='date' href='#{{ slug }}'>{{ session.date | date:"%-d %B %Y" }}</a> <br> 
+                <i class='fa fa-external-link'></i> <a class='slides' href='./sessions/{{ session.number }}'>Slides for Session {{ session.number }}</a>
+            </div>
+
+        </h2> {{ session.content | markdownify }}
+    </section>
+    {% endif %} {% endfor %}
+</section>
+
+<script>
+window.onload = function() {
+    var weeks = Array.prototype.slice.call(document.querySelectorAll('section.week'));
+    weeks.forEach(function(week) {
+        var weekDate = new Date(week.id);
+        var today = new Date();
+        if (weekDate >= today) {
+            week.classList.add('upcoming');
+        } else if (weekDate < today) {
+            week.classList.add('past');
+        }
+    });
+    var nextWeek = document.querySelectorAll('section.upcoming')[0];
+    nextWeek.classList.add('active');
+};
+</script>

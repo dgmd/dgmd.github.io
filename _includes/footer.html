@@ -1,0 +1,34 @@
+<footer id='site-footer'>
+    <div id='about' class='column col-1'>
+
+    </div>
+
+    <div id='location' class='column col-2'>
+        <p>
+        Our class sessions will be hosted Thursday evenings from 6:30-9:30PM at <b>One Brattle Square Room 202</b>. This is the same building that houses EMS. Enter through the same entrance you would use to go into EMS, take the escalator up, then turn right and enter the doors to the Extension School's wing.
+        </p>
+    </div>
+
+    <nav id='contact' class='column col-3'>
+        <ul>
+            <li><i class='fa fa-envelope'></i><a class='pre' href='mailto:dgmde15@gmail.com'>dgmde15@gmail.com</a>
+            </li>
+            <li><i class='fa fa-twitter'></i><a class='pre' href='https://twitter.com/dgmde15'>@dgmde15</a>
+            </li>
+            <li><i class='fa fa-github'></i><a class='pre' href='https://github.com/dgmd'>dgmd</a></li>
+            <!--<li><i class='fa fa-question'></i> <a href='http://slack.com'>slack channel</a></li>-->
+        </ul>
+    </nav>
+</footer>
+<script>
+window.addEventListener('load', function(){
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav.site-nav a'));
+    var currentPageId = navLinks.map(function(navLink) { return navLink.id; }).filter(function(navLinkId) {
+        return window.location.pathname.split('/').indexOf(navLinkId) != -1;        
+    })[0];
+    if (currentPageId) {
+        var currentPage = document.getElementById(currentPageId);
+        currentPage.classList.add('active');
+    }
+});
+</script>

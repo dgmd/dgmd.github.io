@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+    <div class='responsive-wrapper'>
+        {% include header.html %}
+        <div class="page-content">
+            <div class="wrapper">
+                {{ content | hyphenate }}
+            </div>
+        </div>
+        {% include footer.html %} {% include google_analytics.html %}
+    </div>
+</body>
+
+</html>

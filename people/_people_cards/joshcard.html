@@ -1,0 +1,62 @@
+<div id='joshcard' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Josh Weiss</h2>
+            <div class='headshot'></div>
+            <div class= 'palmtree'></div>
+            <div class= 'joshbody'></div>
+            <div id= 'joshhead'></div>
+            <div id= 'hula'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='https://en.wikipedia.org/wiki/Kibbeh'>Yum!</a>
+                </li>
+                <li><i class="fa fa-github"></i>
+                    <a href=''></a>
+                </li>
+                <li><i class="fa fa-twitter"></i>
+                    <a href=''></a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:jweiss55@gmail.com'>jweiss55@gmail</a>
+                </li>
+                <li><i class="fa fa-youtube"></i>
+                    <a href=''></a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#joshcard');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+
+
+    var moveRight = false;
+    var waggle = function() {
+        if (moveRight) {
+            hula.style.transform = 'translateX(20px)';
+            moveRight = false
+        } else {
+            hula.style.transform = 'translateX(-10px)';
+            moveRight = true;
+        }
+    };
+
+    // setInterval (waggle, 500)
+
+    function loop() {
+        setInterval(waggle, 500)
+    }
+
+    joshcard.addEventListener('click', loop);
+    </script>
+</div>

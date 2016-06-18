@@ -1,0 +1,15 @@
+# Site settings
+title: DGMD E-15
+email: dgmde15@gmail.com
+description: "Digital Media — Creative Explorations in Screen-Based and Physical Computing at the  Harvard Summer School"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dgmd.github.io" # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
+
+collections:
+- sessions
+- nextweeks
+- snippets

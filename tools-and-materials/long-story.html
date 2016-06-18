@@ -1,0 +1,129 @@
+---
+layout: default
+---
+
+<section>
+    <h1 id="the-long-story">The Long Story</h1>
+
+    <p>If you are really into tooling and want to take a bit of a meandering jaunt through what's out there and why you might choose to use which things for what, feel free to read on.  It's sometimes hard to keep track of which pieces of technology are responsible for what behaviors and when.  Hopefully, these descriptions will serve as pointers.</p>
+</section>
+
+<section>
+    <h2 id="javascript-html-and-css-references">JavaScript, HTML, and CSS references</h2>
+    <p>
+        There's a potentially dizzying amount of detail involved in building with JavaScript and web technologies. Different APIs, language features, browser difference, <i>etc.</i> It's important to have easy, reliable, and clear documentation on hand.
+    </p>
+    <p>
+        We recommend that you use <a href='http://devdocs.io'>devdocs.io</a> for looking up how particular functions—in node.js or JavaScript or the Web API for the browser—work. You'll notice it also has documentation for other tools and libraries you may use (including git and jQuery).
+    </p>
+    <p>
+        If you're not sure exactly what you're looking for, or you'd like to read about a function or feature in more detail, we recommend Mozilla Developer Network's (MDN) documentation on <a href='https://developer.mozilla.org/en-US/docs/Web/Reference/API'>the Web API</a> (those JavaScript interfaces defined for browsers), <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference'>JavaScript</a> (the language itself), and <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Reference'>CSS</a>.
+    </p>
+    <p>
+        But often it can be helpful to have a bit broader introduction to these ideas which goes beyond references. MDN's introductions to <a href='https://developer.mozilla.org/en-US/learn/css'>CSS</a> and <a href='https://developer.mozilla.org/en-US/learn/html'>HTML</a> are a good place to start, or if you prefer something more integrated, Shay Howe's <a href='http://learn.shayhowe.com/html-css/'>Learn to Code HTML &amp; CSS</a>.
+    </p>
+
+    <p>
+        If you're looking for a good overview and introduction to the <em>language</em> of JavaScript, we recommend you take a look at <a href='https://twitter.com/henrikjoreteg'>Henrik Joreteg</a>'s <a href='http://read.humanjavascript.com/'><i>Human JavaScript</i></a> or <a href='http://www.crockford.com/'>Douglas Crockford's</a> <a href='http://www.amazon.com/dp/0596517742'><i>JavaScript: The Good Parts</i></a>.
+    </p>
+</section>
+
+<section>
+    <h2 id='package-managers'>Package managers</h2>
+    <p>
+        The dizzying number of tools and libraries available inevitably creates a lot of complexity—what works with which version, how do you install it, uninstall it, what requirements does a particular library entail, <i>etc.</i> To manage this complexit, the software development community has the notion of a "package manager"—a program which manages the installation of other programs. For those of you using Linux machines, this is already near-and-dear to you. For those of you on a Mac, we'll be using <a href='http://brew.sh/'>Homebrew</a>. We'll also be using <a href='https://www.npmjs.com/'>npm</a> (short for "node package manager").
+    </p>
+</section>
+
+<section>
+    <h2 id="sublime-text">Sublime Text</h2>
+
+    <p>
+        You'll be spending nearly all your time either designing your program, or writing that program in a text editor. People have built tools that make it especially easy to write and format code. We'll be using a freely available text editor, <a href='http://www.sublimetext.com/3'>Sublime Text 3</a>.
+    </p>
+
+    <p>
+        It's worth your time to sit down and work through a tutorial or two to get the lay of the land when it comes to Sublime Text's capabilities. We'd suggest beginning with <a href='https://scotch.io/bar-talk/the-complete-visual-guide-to-sublime-text-3-getting-started-and-keyboard-shortcuts'>this one</a> from scotch.io and <a href='http://code.tutsplus.com/courses/perfect-workflow-in-sublime-text-2'>this one</a> from tuts+.
+    </p>
+
+    <p>
+        Outside of being free, multiplatform, and nicely designed, one of Sublime Text's biggest strengths is its plugin system and the community of developers who've created plugins for Sublime Text. To install the Package Control plugin used to search and install for other packages, click on the Sublime Text 3 tab <a href='https://packagecontrol.io/installation'>here</a> and follow the directions on that page.
+    </p>
+
+    <p>
+        You can browse available packages <a href='https://packagecontrol.io/'>here</a> or get a quick overview of some useful ones <a href='https://scotch.io/bar-talk/best-of-sublime-text-3-features-plugins-and-settings'>here</a>.
+    </p>
+
+    <p>
+        We'll be using at least these, two plugins:
+        <ul>
+            <li>
+                <a href='https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify'>HTML-CSS-JS-Prettify</a> nicely formats and indents HTML, CSS, and JavaScript.
+            </li>
+            <li>
+                <a href='https://packagecontrol.io/packages/SublimeGit'>SublimeGit</a> offers very convenient integration with <a href='http://git-scm.com/'>git</a>, the <a href='http://git-scm.com/video/what-is-version-control'>version control</a> software we'll be using.
+            </li>
+        </ul>
+    </p>
+</section>
+
+<section>
+    <h2 id="terminal">Terminal</h2>
+
+    <p>
+        Terminal applications offer a text-based way of interacting with your operating system. This means that you can do many of the basic things you do with your operating system—browse directors, move and rename files, install applications, and so on—via text. But, the terminal also gives you much broader and deeper access to many of the internals of your computer which might not have a graphical interface. As you build things, you'll find that much as it's worth making your editor a comfortable place to work, the same is true of your terminal
+    </p>
+
+    <p>
+        <a href='http://iterm2.com/'>iTerm2</a> is a nice replacement for <a href='http://en.wikipedia.org/wiki/Terminal_%28OS_X%29'>Mac OS X's default Terminal.app</a> If you're using a Windows machine, we recommend using <a href='https://msysgit.github.io/'>msysgit</a>.
+    </p>
+</section>
+
+<section>
+    <h2 id="google-chrome-development-tools">Google Chrome development tools</h2>
+
+    <p>
+        In this program, we'll be building solely for <a href='https://www.google.com/chrome/browser/desktop/index.html'>Google Chrome, version 40 or later</a>. This is to avoid inconsistencies in implementations across browsers, simplify our use of many upcoming features in JavaScript, ensure that we all share a common development environment, and give you access to the wonderful set of development tools bundled with Google Chrome.
+    </p>
+    <p>
+        To get started with Google Chrome's developer tools, after installing Google Chrome, check out <a href='http://www.html5rocks.com/en/tutorials/developertools/part1/'>this article</a> from HTML5Rocks or <a href='https://developer.chrome.com/devtools'>Chrome's overview</a>.
+    </p>
+</section>
+
+<section>
+    <h2 id="git-and-github">Git &amp; Github</h2>
+
+    <p>
+        <a href='http://git-scm.com/'>Git</a> is a piece of software we'll be using to store and share our projects. Git is used to do a mix of keep a complete, rewindable history of a set of files and collaborate on those files with others without stepping on one another's toes. It is used primarily by software developers to maintain and collaborate on code. We recommend working through <a href='http://git-scm.com/book/en/v2/Getting-Started-Git-Basics'>git's own tutorial</a>, and if you'd like a little more background, <a href='http://www.vogella.com/tutorials/Git/article.html'>Lars Vogel's tutorial</a> is a good place to start.
+    </p>
+    <p>
+        We'll be using git to maintain and share our projects with the support of a service called <a href='http://github.com'>GitHub</a>. GitHub and git are <em>different</em> tools maintained by different people. Git is the tool that lives on your computer which you use to maintain your project. GitHub is a commercial service which provides a centralized place where people can collaborate on projects maintained with git, and layers on top of git a variety of nice services and web interfaces. They have a <a href='https://education.github.com/pack'>helpful promotion</a> which we'll be taking advantage of for this program.
+
+        <a href='https://www.youtube.com/watch?v=U8GBXvdmHT4'>This video from GitHub</a> is a nice introduction to both git and GitHub, and we recommend that you work through it; you may also find <a href='https://try.github.io/levels/1/challenges/1'>this interactive tutorial</a> and <a href='https://guides.github.com/activities/hello-world/'>this article on getting started with GitHub</a> helpful.
+    </p>
+    <p>
+        After you're a bit more comfortable with what's going on with git and GitHub, please check out <a href='https://guides.github.com/features/issues/'>this introduction to GitHub Issues</a> and <a href='https://www.youtube.com/watch?v=TJlYiMp8FuY'>this video</a> on the feature. We'll be using Issues to ask questions, provide feedback, and file bugs. Then, check out <a href=''>this article</a> and <a href=''>video introduction</a> to Pull Requests, another feature of GitHub we'll be relying on for sharing work.
+    </p>
+</section>
+
+<section>
+    <h2 id="digital-ocean">Digital Ocean</h2>
+
+    <p>
+        It has become incredibly 'easy' (in comparison to the historical process) to deploy your own servers. Once upon a time, you had to set up a physical machine. Now, that physical machine has been largely abstracted away by various service providers like Amazon and Heroku. We'll be using <a href='https://www.digitalocean.com/'>Digital Ocean</a>, a provider of computers-in-the-sky. They participate in <a href='https://education.github.com/pack'>GitHub's Student Education Bundle</a>. For a quick overview of setting up a computer-in-the-sky (Digital Ocean calls them 'droplets'), check out <a href='https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server'>this article</a> or <a href='https://www.youtube.com/watch?v=mKnAIha9Q0Q'>this video</a>.
+    </p>
+</section>
+
+<section>
+    <h2 id="amazon-s3">Amazon S3</h2>
+    <p>
+        For a variety of reasons, it turns out that in addition to computers-in-the-sky, we often find ourselves wanting hard-drives-in-the-sky without the hassle of thinking of them as associated with individual computers for doing things like storing media and data that our applications access. We'll be using Amazon's Simple Storage Service (S3) for this. Unfortunately, Amazon's documentation is pretty thorny, so to get started with S3, we suggest you take a look at <a href='http://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/'>this post from Hongkiat Lim</a> and <a href='https://www.youtube.com/watch?v=VRUzevLibzQ'>this video</a>.
+    </p>
+</section>
+
+<section>
+<h2 id="tessel">Tessel &amp; L3D Cube</h2>
+<p>
+    For the physical computing and hardware portion of this program, we're going to be using the <a href='https://tessel.io/'>tessel</a> microcontroller platform and its associated <a href='https://tessel.io/modules'>modules</a>. The Tessel is programmable via JavaScript and comes with wifi access built-in. This means that you'll be able to use the same language in your digital and physical projects, and that your tessel will immediately be able to access (and be accessed by other machines on) the internet. For a short introduction, check out <a href='http://start.tessel.io/cmd'>sections 0–2 and 4</a> on Tessel's site. We'll also be using the <a href='http://www.l3dcube.com/'>L3D Cube</a> for some of our explorations with computational art, and you're welcome to use the cubes for project ideas and extensions as they come up.
+</p>
+</section>

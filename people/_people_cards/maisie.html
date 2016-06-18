@@ -1,0 +1,29 @@
+<div id='maisie' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Maisie</h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://www.mediabymaisie.com/'>mediabymaisie.com</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/maisie28'>maisie28</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#maisie');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>
