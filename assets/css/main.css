@@ -246,7 +246,7 @@ header nav li {
     text-transform: lowercase;
     list-style-type: none;
     display: inline-block;
-    padding-right: 1.25em;
+    padding-right: 2.25em;
 }
 
 header nav span {
