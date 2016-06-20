@@ -1,0 +1,876 @@
+/* Shaunalynn */
+#shaunalynn h2 {
+  font-family: 'Nothing You Could Do', cursive !important;
+}
+#shaunalynn .headshot {
+  background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-static.png);
+}
+
+#shaunalynn .headshot:hover {
+  background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-gif.gif);
+}
+
+#shaunalynn p {
+  text-align: center;
+  font-size: 0.875em;
+  font-family: 'Codystar', cursive;
+}
+
+#shaunalynn p a {
+  text-decoration: none;
+}
+
+#shaunalynn ul {
+  text-align: center;
+}
+
+#shaunalynn li {
+  display: inline-block;
+}
+
+/* Alec Resnick */
+#alecresnick .headshot {
+  background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
+  position:relative;
+}
+
+#alecresnick #aresnick-www {
+  font-size:.8em;
+}
+
+/* Bakhtiar */
+#bakhtiar .headshot {
+  background-image: url(https://s3-us-west-2.amazonaws.com/bmcard/final+scroll+for+bm+project.jpg);
+}
+
+@keyframes play {
+   0% { background-position: 0px 0%; }
+   9% { background-position:calc(4060px);}
+  17% { background-position:calc(3700px);}
+  25% {background-position:calc(3300px);}
+  33% {background-position:calc(2900px);}
+  50% {background-position:calc(2550px);}
+/*   60% {background-position:calc(2050px);} */
+  /*16.6% { background- position:calc(2.6*8.5em);}
+   100% { background-position: calc(2.6*8.5em) 0%; } */
+}
+
+#bakhtiar .headshot {
+  animation: play 4s steps(2) infinite;
+}
+
+/* Mehvish */
+
+#mehvish .headshot {
+  background-image: url(https://lh4.googleusercontent.com/-vQu938qCzhk/VpMFXP_V4WI/AAAAAAAABH4/Evu932_MRrs/w898-h1196-no/image.jpeg);
+    transition: 0.30s;
+}
+
+#mehvish .headshot:hover {
+  /*width: 250px;
+  height: 250px;*/
+  background-size:cover;
+  background-image: url(http://shcantrell.com/dgmd15/images/head1.png);
+}
+
+#mehvish a {
+  text-decoration: none;
+  target: blank;
+  color:#066;
+}
+
+#mehvish a:hover {
+  color:#8ff;
+}
+
+#mehvish a:visited {
+  color:#066;
+}
+
+#mehvish ul {
+  margin: 5px 0px 0px 2px;
+}
+
+#mehvish .front.card {
+    background-color: #2aa;
+    z-index: 2;
+}
+
+#mehvish h2{
+  color: #fff;
+}
+
+#mehvish .back.card {
+    background-color: #acc;
+}
+
+#mehvish .back li {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    line-height: 0.75em;
+}
+
+#mehvish .back li a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.875em;
+}
+
+#mehvish .back ul {
+    padding:0;
+}
+
+#mehvish .font1 {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Katie Broida */
+
+#katiebroida h2 {
+  font-family: 'Indie Flower', cursive !important;
+  font-weight: bold !important;
+  font-variant: normal !important;
+  margin-top: 5px !important;
+  margin-bottom: -5px !important;
+  text-transform: none !important;
+}
+
+#katiebroida .headshot {
+  background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAOHAAAAJDUzYjBhNzFiLTc3YjAtNGJhOC1hNDM5LWU1NmIxYjYwMWEzNw.jpg');
+  border-radius: 5px;
+}
+
+#katiebroida i.flip {
+  color: green;
+}
+
+#katiebroida .front {
+  background-color: black;
+  color: white;
+}
+
+#katiebroida p.intro {
+  font-size: .8em;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  margin-top: 30px;
+  opacity: 0;
+  padding: .25em;
+  text-align: center;
+  transition: 10s;
+}
+
+#katiebroida.flipped .back.card {
+  background-image: url(https://openclipart.org/image/750px/svg_to_png/170066/IsoWeaveBlack.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: -40% -40%;
+  font-weight: bold;
+  transition: 5s;
+}
+
+#katiebroida.flipped .intro {
+  opacity: 1;
+  color: white;
+}
+
+#katiebroida ul {
+  text-align: center;
+}
+
+#katiebroida li {
+  display: inline-block;
+}
+
+#katiebroida i {
+  color: green;
+  font-size: 1em;
+}
+
+/* Michelle */
+#michelle .headshot {
+  background-image: url(https://s3.amazonaws.com/rosalienorris/12713909_10100541054818731_1652246374_n.jpg);
+}
+
+#michelle .headshot {width: 50%;}
+
+#michelle .headshot:hover {
+  background-image: url(https://s3.amazonaws.com/rosalienorris/qh5lZp.gif);
+}
+
+/* Susan Cantrell */
+#susancantrell .headshot {
+  background-image: url(https://s3.amazonaws.com/dgmde15/susancantrell.png);
+  width: 50%;
+}
+
+#susancantrell .front.card {
+    background-color:white;
+}
+
+#susancantrell .back.card {
+    background-color: #ffa366;
+}
+
+#susancantrell a:hover { 
+    background-color:lightgrey;
+}
+
+#susancantrell, #susancantrell a {
+    color: #0a0a0f;
+    text-shadow: 0 0 3px #e6e6e6;
+}
+
+#susancantrell {
+        opacity:.5;
+}
+
+#susancantrell:hover {
+        opacity:1;
+}
+
+/* Alex Golden */
+#alexgolden .headshot {
+  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/6/000/288/122/2d080c4.jpg);
+}
+
+#frontCard {
+        background-color: lightblue;
+    }
+    #frontCard:hover {
+        transition: 1s;         
+        background-color: lightgreen;
+    }
+
+#alexgolden:hover .back {
+  transform: rotateY(0deg);
+  position: relative;
+  left: calc((70ex - 2*1em)/3 * 1);
+}
+
+#alexgolden .back {
+  transform: rotateY(0deg);
+  transition: 1s;
+  position: relative;
+  left: 0;
+}
+
+/* Maddie */
+#maddie .front {
+  background-color:white;
+}
+
+#maddie .headshot {
+  background-image: url(https://pbs.twimg.com/profile_images/3312794762/c199f5e33aac33ec3d8512e90a3236dd.jpeg);
+}
+
+#potato {
+  height:100px;
+  width:100px;
+  background-color:rgba(0,0,0,0) !important;
+  background-image:url(https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/24/1411574454561/03085543-87de-47ab-a4eb-58e7e39d022e-620x372.jpeg);
+}
+
+/* Rosalie */
+#rosalien .headshot.one {
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious0.png);
+}
+
+#rosalien .headshot.two {
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious1.png);
+}
+
+#rosalien .headshot.three {
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious2.png);
+}
+
+#rosalien .headshot.four {
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious3.png);
+}
+
+#rosalien .headshot.five {
+  background-image: url(https://s3.amazonaws.com/dgmde15/rosalien-card/mysterious4.png);
+}
+
+/* Tyler Machado */
+#tylermachado .headshot {
+  background-image: url(http://i328.photobucket.com/albums/l355/laura-guillen/tyler-portrait_zpszw8qwcff.jpg);
+}
+
+#tylermachado .headshot:hover {
+  transition: 1s;
+  top:47px;
+  width: 2.7em;
+  height:2.7em;
+  border-radius: calc(500px/2);
+  border: 7px solid white;
+      -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate; 
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.circle img {
+    position: absolute;
+    left: 78px;
+    top:-50px;
+    width:70%;
+    height:auto;
+    z-index: 1
+}
+
+.circle {
+    display: none;
+    position: absolute;
+    background-color: #2c2c2c;
+    top: 40px;
+    left: 31px;
+    height: 70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:
+      0 0 0 10px hsl(0, 5%, 25%),
+      0 0 0 15px hsl(0, 5%, 20%),
+      0 0 0 20px hsl(0, 5%, 10%),
+      0 0 0 25px hsl(0, 5%, 5%),
+      0 0 0 30px hsl(0, 5%, 0%);
+    border-radius: calc(500px/2);
+}
+
+/* Laura */
+#laura .headshot {
+  background-image: url(http://www.tylermachado.com/dgmd/assets/laura.jpg);
+}
+
+body {
+    -webkit-transition: background-color 0.7s ease-in-out;
+    -moz-transition: background-color 0.7s ease-in-out;
+    -o-transition: background-color 0.7s ease-in-out;
+    -khtml-transition: background-color 0.7s ease-in-out;
+    transition: background-color 0.7s ease-in-out;
+}
+
+/* Rachel */
+
+#rachel h2 {
+  color:#694489;
+}
+
+#rachel .back.card li a {
+    font-family: 'Arial', monospace;
+    font-size: 0.6em;
+    color:blue;
+}
+
+#rachel .headshot {
+  background-image: url(http://s27.postimg.org/9xs6uk31f/image1.jpg);
+}
+
+#rachel .front {
+    background-color: #D8BFD8;
+}
+
+#rachel .back {
+    background-color: #BDA0CB;
+}
+
+#rachel #box {
+  position: relative;
+  left: 50px;
+  top: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  overflow: hidden; /* Make sure anything inside the box that extends out of its edges is clipped/hidden */ 
+}
+
+#rachel #image {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(http://s12.postimg.org/7mrz01wcp/CT8s1_copy.png);
+  position: relative;
+ 
+  top: 100%; /* Set the top of the image to be at the bottom (100%) of its parent container (#box) */
+  transition: 1s;
+}
+
+/* Maisie */
+#maisie .headshot {
+  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAWtAAAAJGY0N2E4N2VlLWVhODYtNDc5ZS1hNGRhLTg1YzdiNDE1NjRhZA.jpg);
+}
+
+/* Molly */
+#molly .headshot {
+  background-image: url(https://s3-us-west-2.amazonaws.com/mjiap/facebook+photo.png);
+  position: relative;
+}
+
+#molly #aresnick-www {
+  font-size: .8em;
+}
+
+#molly .kale-bowl {
+  position: relative;
+  opacity: 0;
+  height: 50px;
+  width: 80px;
+}
+
+#molly .chopsticks {
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  opacity: 0;
+  height: 30px;
+  width: 60px;
+}
+
+/* Chris Hansen */
+#chrishansen .headshot {
+  background-image: url(https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1239416_10102558979087292_2094889163_n.jpg?oh=53fb0d380ff644b719d8a16b589bdffb&oe=576D8AA2);
+}
+
+#chrishansen .front {
+    background-color: lightblue;
+
+/*    width: 225px;
+    height: 225px;   shduff removed so it would fit into site */
+}
+
+#chrishansen .front:hover {
+    transition: 1s; /* This is where the action happens: it tells CSS to animate any changes in the CSS styling of these elements over one second*/
+    background-color: lightgreen;
+}
+
+/* Katie Korngold */
+#katiekorngold .headshot {
+  background-image: url(https://scontent-lga3-1.xx.fbcdn.net/hphotos-xlp1/v/t1.0-9/12294840_10153113117190806_6382295225408477605_n.jpg?oh=f8ab32e40e0d8219e34a6be2a09f7597&oe=576B76FC);
+}
+
+/* Color transition from Bakhtiar swapped to gold texture */
+
+#katiekorngold .card:hover {
+    background-image:url(http://suzicurran.github.io/foil.png);
+    background-size: cover;
+    transition:1s;
+}
+  
+/*** Shine effect below largely from http://jsfiddle.net/antontrollback/nqqc7/ ***/
+
+/* The "shine" element  */
+
+#katiekorngold .card:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover to trigger effect */
+
+#katiekorngold .card:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state for shine */
+
+#katiekorngold .card:active:after {
+  opacity: 0;
+}
+
+#katiekorngorld .front.card {
+    background-image:url("http://suzicurran.github.io/aaaaaa.png");
+}
+
+#katiekorngold i.flip {
+  z-index:5;  /* shduff added to troubleshoot on live site */
+}
+
+/* Suzi Curran */
+#suzicurran .headshot {
+  background-image: url(https://pbs.twimg.com/profile_images/663020104758743041/u0LDlSLR.png);
+}
+
+#suzicurran .back.card {
+    background-color: #ccc;
+    transform: rotateY(180deg);
+}
+#suzicurran .back li i{
+  font-size: large;
+  padding: 0;
+  margin: 0;
+}
+#suzicurran .back li{
+  padding-left: .3ex;
+}
+#suzicurran .back li .fa{
+  margin-right: 0ex;
+  color: #EB2000;
+}
+#suzicurran .back li a {
+    font-family: 'Inconsolata', monospace;
+  line-height: 1.2em;
+  letter-spacing: -0.3ex;
+  color: #EB2200;
+  text-decoration: underline;
+}
+#suzicurran  i.flip {
+    position: absolute;
+    top: 88%;
+  left: 88%;
+  font-size: large;
+}  
+#suzicurran  i.flip {
+ text-shadow: 1px 1px 5px #EEE;
+} 
+
+/* Elizabeth Ulanova */
+#elizabeth .headshot {
+  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/6/005/09a/272/086729b.jpg);
+}
+
+#elizabeth .bright:hover {
+  color: blue;
+}
+
+#elizabeth .fa-undo {
+  margin-left: 1.5em;
+}
+
+#elizabeth #meow {
+  /* We needed to move #meow inside #elizabeth, otherwise, it was getting
+  display in the upper left corner.  Once we put it inside #elizabeth, it would
+  be displayed underneath #elizabeth.  To put its top at the same level as
+  #elizabeth's, we set its position to `relative` (you can read more about that
+  at https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+  and then said to put its top at -100%, which moved the top to the top of 
+  #elizabeth.
+
+  Then, since we put #meow at the end inside of #elizabeth, we had to undo the
+  fact that later elements appear "on top" of earlier elements, by setting the
+  `z-index` (which you can read more about at https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+  to -1, putting it behind everything else.
+  */
+
+  position: relative;
+  top: -100%;
+  z-index: -1;
+  height:200px;
+  width:250px;
+  border:solid;
+  background-size:cover;
+  background-image:url(https://s-media-cache-ak0.pinimg.com/564x/00/f1/f9/00f1f92a6d26adbc5ca1112fc51f81a5.jpg);
+  
+  transition:2s;
+}
+
+#elizabeth #meow:hover {
+  transform:translateX(2000px);
+}
+
+/* Josh Weiss */
+
+.palmtree {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/palmleaf.png);
+  background-size: cover;}
+
+.palmtree:hover 
+{transform: rotate(20deg);
+transition: .1s ease-in-out;}
+
+
+#hula {
+  width: 150px;
+  height: 100px;
+  position: fixed;
+  transition: .5s;
+  top: 40%;
+  left: 5%;
+  background-size: cover; 
+transition: .5s ease-in-out;
+  background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/hulaarms1.png)} 
+
+#joshcard .headshot {
+  background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/joshdiamondhead.png);
+}
+
+#joshhead {
+  width: 120px;
+  height: 150px;
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  background-size: cover; 
+background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/joshtransparant.png)
+}
+
+.joshbody {
+  width: 100px;
+  height: 40px;
+  position: fixed;
+  border-radius: 20%;
+  top: 62%;
+    left: 47%;
+  background-size: cover;
+  background-image: url(https://s3-us-west-2.amazonaws.com/joshcard/joshbody.png)
+}
+
+/* Arielle Winchester */
+
+#Arielle2 {
+  background-image: url('http://i.imgur.com/Y49Du0Y.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#arielle .front.card {
+    background-color: #00b3b3;
+}
+
+#people #arielle h2 {
+    color: #66ffe0;
+    font-size: 110%;
+    font-family: Helvetica;
+}
+
+#arielle .back.card {
+    background-color: #e6faff;
+}
+
+/* Liz Bright */
+#lizBright .headshot {
+  background-image: url(https://dl.dropboxusercontent.com/s/6j5qta99nzti6y3/liz.jpg?dl=0);
+}
+
+#clickMe{
+  margin-top: 3px;
+  text-align: center
+}
+
+#chocolate {
+  width: 200px;
+  height: 200px;
+  background-image:url(https://dl.dropboxusercontent.com/s/au1smn8wrxsb912/chocolate-bar.png?dl=0);
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -35px;
+  display:none;
+}
+
+#coffee{
+  width: 75px;
+  height: 79px;
+  background-image:url(https://dl.dropboxusercontent.com/s/fwno2bf8jhmnbqh/coffee-mug.png?dl=0);
+  display: block;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -40px;
+  display: none;
+}
+
+#camera{
+  width: 60px;
+  height: 60px;
+  background-image:url(https://dl.dropboxusercontent.com/s/07d3que5qd9gz7c/camera.png?dl=0);
+  display: block;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 60px;
+  display: none;
+}
+
+
+#lizBright .back li i.fa {
+  color: yellow!important;
+} 
+
+/* Kanye West */
+
+#kanyewest .headshot {
+    background-image: url(http://media.cmgdigital.com/shared/img/photos/2014/10/27/2d/9e/kanye-west-smile.jpg);
+}
+
+/* Kim Kardashian */
+
+#kimkardashian .headshot {
+    background-image: url(http://famouswives.org/wp-content/uploads/2014/01/Kim-Kardashian-2.jpg);
+}
+
+/****************************************************************************/
+/* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
+/****************************************************************************/
+
+.person {
+    width: calc((70ex - 2*1em)/3);
+    height: calc((70ex - 2*1em)/3);
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+.person:first-child, .person:nth-child(3n+1) {
+    margin-left: 0;
+}
+.person:nth-child(3n) {
+    margin-right: 0;
+}
+#people h2 {
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    line-height: 1em;
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 0.5em #000;
+    border-radius: 0.5em;
+}
+.card i.flip {
+    position: absolute;
+    top: 85%;
+}
+/**********************/
+/* front of the cards */
+
+.front.card {
+    background-color: #aaa;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.person .headshot {
+    box-shadow: inset 0 0 0.625em #000;
+    width: 6.5em;
+    height: 6.5em;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 3.75%;
+}
+/*********************/
+/* back of the cards */
+
+.back.card {
+    background-color: #ccc;
+    transform: rotateY(180deg);
+}
+.back ul {
+    padding:0;
+}
+.back li {
+    list-style-type: none;
+    padding-left: 1ex;
+}
+.back li i.fa {
+    margin-right: 1ex;
+}
+#people .back {
+    padding: 0.25em;
+}
+#people .back li {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    line-height: 0.75em;
+}
+#people .back li a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.875em;
+}
+/***********************************/
+/* Flipping behavior for the cards */
+
+i.flip {
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: calc((70ex - 2*1em)/3 - 4.25em);
+}
+.flip-container {
+    perspective: 1000;
+}
+.flip-container.flipped .flipper {
+    transform: rotateY(180deg);
+}
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/***********************************/
+/* Flipping behavior for the cards */
+
+@media screen and (max-width: 480px) {
+
+.person {
+  float:none;
+  /*padding-left:2em; should be replaced with relative number*/
+}
+
+}
+
+
+/*You use a library to accomplish what you want, a framework uses your code to accomplish what you want.*/
