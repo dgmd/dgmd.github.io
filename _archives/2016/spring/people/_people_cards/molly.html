@@ -1,0 +1,88 @@
+<div id='molly' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Molly Josephs</h2>
+            <div class='headshot'>
+            </div>
+            <img class="kale-bowl" src="http://imagegalleryjw.weebly.com/uploads/2/3/8/4/23842978/8602529_orig.png">
+            <img class="chopsticks" src="http://kindersay.com/files/images/chopsticks.png">
+            <!--dysfunctional kale piece
+        <img class="kale-piece" src= "http://i0.wp.com/churchbrothers.com/content/wp-content/uploads/2014/07/kale-fieldpack.png">
+   end of dysfunctional kale piece-->
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a id="aresnick-www" href='http://alecresnick.com/'>alecresnick.com</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/aresnick'>aresnick</a>
+                </li>
+                <li><i class="fa fa-twitter"></i><a href='https://twitter.com/aresnick'>@aresnick</a>
+                </li>
+                <li><i class="fa fa-leaf"></i><a href='http://thesprouts.org'>sprout & co.</a>
+                </li>
+                <li><i class="fa fa-bicycle"></i><a href='https://www.youtube.com/watch?v=xt0V0_1MS0Q'>bicycle race</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    var molly = document.querySelector('#molly');
+    var mollyFrontCard = molly.getElementsByClassName('front')[0];
+    var mollyHeadshot = molly.getElementsByClassName('headshot')[0];
+    var kaleBowl = molly.getElementsByClassName('kale-bowl')[0];
+    var chopsticks = molly.getElementsByClassName('chopsticks')[0];
+    var audio = new Audio('http://www.pacdv.com/sounds/voices/mmm-1.wav');
+
+    //makes kale bowl appear and slide up
+    mollyFrontCard.addEventListener("mouseover", function() {
+        kaleBowl.style.opacity = "1";
+        kaleBowl.style.transition = "transform 2s cubic-bezier(.02,.75,.41,1.57)";
+        kaleBowl.style.boxShadow = "none";
+        kaleBowl.style.transform = "translateY(-50px)";
+
+        //makes chopsticks appear and slide up     
+        chopsticks.style.opacity = "1";
+        chopsticks.style.transition = "transform 0s, 2s cubic-bezier(.02,.75,.41,1.57)";
+        chopsticks.style.boxShadow = "none";
+        chopsticks.style.transform = "translateY(-40px)";
+        chopsticks.style.transitionDelay = "1s";
+    });
+
+    //first click translates chopsticks to bowl
+    mollyFrontCard.addEventListener("click", function() {
+        chopsticks.style.transition = "transform 1s";
+        chopsticks.style.transform = "translate(-80px, -40px)";
+
+        //second click feeds Molly kale        
+        mollyFrontCard.addEventListener("click", function() {
+            chopsticks.style.transition = "transform 0.5s";
+            chopsticks.style.transform = " translate(-50px, -30px) rotate(30deg)";
+            audio.play();
+        });
+    });
+
+    mollyFrontCard.addEventListener("mouseout", function() {
+        kaleBowl.style.transition = "transform 0s";
+        kaleBowl.style.transform = "translate(0px, 0px)";
+        kaleBowl.style.opacity = "0";
+
+        chopsticks.style.transition = "transform 0s";
+        chopsticks.style.transform = "translate(0px, 0px)";
+        chopsticks.style.opacity = "0";
+    });
+
+    // Flipping function for the card
+
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#molly');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>

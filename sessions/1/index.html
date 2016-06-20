@@ -7,7 +7,7 @@ number: 1
 </section>
 <section>
     <h1><a href='http://dgmd.github.io'>Creative Explorations in Screen-Based and Physical Computing</a></h1>
-    <h2 style='margin-top: 1.25em; color: #aaa;'>DGMD E-15, Spring 2016</h>
+    <h2 style='margin-top: 1.25em; color: #aaa;'>DGMD E-15, Summer 2016</h2>
 </section>
 <section data-background='/sessions/1/slides-on-site.png' data-background-size='contain'></section>
 <section>
@@ -26,6 +26,14 @@ number: 1
         </ol>
     </section>
     <section>
+        <h1>During our sessions, this means time for...</h1>
+        <ol>
+            <li>Discussion</li>
+            <li>Design</li>
+            <li>Studio</li>
+        </ol>
+    </section>
+    <section>
         <h1>What we do</h1>
         <ol style='font-size: 1.25em;'>
             <li>…build new stuff every week (and store it on GitHub)</li>
@@ -38,9 +46,8 @@ number: 1
         <!-- <script async defer src="https://slack.dgmd-slackin.herokuapp.com/slackin.js?large"></script> -->
         <ol style='font-size: 1.25em;'>
             <li>…anytime on <a href='https://dgmd.herokuapp.com/'>the course's Slack Channel</a></li>
-            <li>…anytime at <a href='mailto:dgmde15@gmail.com'><code>dgmde15@gmail.com</code></a></li>
-            <li>…every Saturday from 9AM-1PM at <a href="https://www.google.com/maps/place/7+Holyoke+St,+Cambridge,+MA+02138/@42.3726988,-71.1183948,17z/data=!3m1!4b1!4m2!3m1!1s0x89e37742d9e7522d:0x2462b213b935acd3">Clover in Harvard Square</a></li>
-            <li>…for a bit after each class Thursday evening at <a href="https://www.google.com/maps/place/Felipe's+Taqueria/@42.3735324,-71.1204853,17z/data=!3m1!4b1!4m2!3m1!1s0x89e37742a1c33c35:0xcb1d9161db47116f">Felipe's in Harvard Square</a></li>
+            <li>…anytime at <a href='mailto:{{ site.email }}'><code>{{ site.email }}</code></a></li>
+            <li>…after each session on Mondays and Wednesdays from 3-5PM at <a href="https://www.google.com/maps/place/7+Holyoke+St,+Cambridge,+MA+02138/@42.3726988,-71.1183948,17z/data=!3m1!4b1!4m2!3m1!1s0x89e37742d9e7522d:0x2462b213b935acd3">Clover in Harvard Square</a></li>
         </ol>
     </section>
 </section>
@@ -48,22 +55,30 @@ number: 1
     <section>
         <h1>Why do we code?</h1>
     </section>
-    <section data-background='/sessions/1/apple-facebook.jpeg'></section>
-    <section>
-        <video height='100%' width='100%' controls>
-            <source data-src='/sessions/1/FaceTime.mp4'>
-        </video>
-    </section>
-    <section>
-        <video height='100%' width='100%' controls>
-            <source data-src='/sessions/1/FacebookHome.mp4'>
-        </video>
-    </section>
     <section data-background='/sessions/1/tinder-okcupid-eharmony.jpeg' data-background-size='contain'></section>
     <section data-background='/sessions/1/tinder.jpeg' data-background-size='contain'></section>
     <section data-background='/sessions/1/okcupid.jpeg' data-background-size='contain'></section>
     <section data-background='/sessions/1/eharmony.jpeg' data-background-size='contain'></section>
-    <section data-background='/sessions/1/food-products.png' data-background-size='contain'></section>
+    <section>
+        <style scoped>
+            .logo {
+                float:left;
+            }
+        </style>
+        <img alt='Saxophone' class="logo" src="sax.jpg">
+        <img alt='Trombone' class="logo" width="400" src="bone.jpg">
+        <img alt='Turntable' class="logo" width="300" src="turntable.jpg">
+        <img alt='Ableton' width="250" src="ableton.jpg">
+        <img alt='Piano' class="logo" src="piano.jpg">
+        <img alt='Technium' class="logo" width="450" src="technium.jpg">
+    </section>
+    <section>
+        <img alt='Soylent' class="logo" width="400" src="soylent.png">
+        <br>
+        <img alt='Weight Watchers' class="logo" width="400" src="ww.jpg">
+        <img alt='FitBit' class="logo" width="400" src="fitbit.jpg">
+    </section>
+
 </section>
 
 <section id='break-section'>
@@ -82,14 +97,19 @@ number: 1
         <h1>What we'll <br> build today</h1>
     </section>
     <section data-background='/sessions/1/people-page.png' data-background-size='contain'>
-        <a href='/people'><div style='width: 1024px; height: 960px;'></div></a>
+        <a href='/people'>
+            <div style='width: 1024px; height: 960px;'>
+            </div>
+        </a>
     </section>
     <section>
-        <h2>GitHub Journal</h2>
-        <ol style='font-size: 1.125em;'>
-            <li>Head over to <a href='https://github.com'>GitHub</a> and sign up for an account</li>
-            <li>Set up a GitHub Pages repository for your journal by following the directions <a href='http://pages.github.com'>here</a>.</li>
-            <li>It's fine for it to be empty right now, but if you'd like, you can take a look at <a href='http://duffles.github.io/'>Shaunalynn</a> and <a href='http://aresnick.github.io/'>Alec</a>'s journals to see how they're set up, too.</li>
+        <h2>Designing /people cards</h2>
+        <ol>
+            <li>Pair up with someone in the room.</li>
+            <li>Get to know each other a little bit. (Really take some time to chat; you'll be seeing a lot of each other over the next 7 weeks! Go get a coffee across the street if you'd like.)</li>
+            <li>Based on what you learn about them, come up with <em>at least</em> three ideas for effects you might apply to their <code>/people</code> card. (Don't let your skill with HTML/CSS/JS influence your design too much!)</li>
+            <li>Have your partner choose which one they like the most. (This might happen after class today, so be sure to exchange email addresses with your partner.)</li>
+            <li>Post your mock-ups to your personal journal by Wednesday after class. (Details about this are on next slide.)</li>
         </ol>
     </section>
     <section>
@@ -100,41 +120,14 @@ number: 1
         <ol>
             <li>Create an account at <a href="http://codepen.io">Codepen.io</a>.</li>
             <li>Fork <a href="http://codepen.io/duffles/pen/EjQLzy">this Codepen</a> and modify it to reflect what you've learned about your partner.</li>
-            <li>Now, add some CSS or JavaScript effects to your card. Check out <a href="http://dgmds15.github.io/people">our current people page</a> or <a href='https://gist.github.com/aresnick/8e881e01245989794c5e'>this list of effects</a> for inspiration on how to adapt your card.</li>
-            <li>When you're done with your card, post a link to it on your GitHub Pages journal and send us a link to your journal at <code>dgmde15@gmail.com</code>.  If you'd like, you can take a look at <a href='http://duffles.github.io/'>Shaunalynn</a> and <a href='http://aresnick.github.io/'>Alec</a>'s journals to see how they're set up, too.</li>
+            <li>Now, add some CSS or JavaScript effects to your card. Check out <a href="http://dgmds15.github.io/people">our current people page</a> or <a href='https://gist.github.com/aresnick/8e881e01245989794c5e'>this list of effects</a> for inspiration on how to adapt your card. <b>Please read the comments in the Codepen, as they provide instructions on how to make a card that will be easily incorporated into the course website.</b></li>
+            <li>When you're done with your card, post a link to it on your GitHub Pages journal and send us a link to your journal at <code>{{ site.email }}</code>.  If you'd like, you can take a look at <a href='http://duffles.github.io/'>Shaunalynn</a> and <a href='http://aresnick.github.io/'>Alec</a>'s journals to see how they're set up, too.</li>
         </ol>
     </section>
 </section>
-<!-- <section>
-    <h2><a href="http://dgmds15.github.io/tools-and-materials/#the-short-story">Setting Up Your Personal Computer To Code</a></h2>
-</section>
-<section>
-    <img width='200' src='http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Windows_logo_-_2002%E2%80%932012_(Black).svg/1165px-Windows_logo_-_2002%E2%80%932012_(Black).svg.png'>
-    <ol>
-        <li>Get <a href='https://msysgit.github.io/'>msysGit</a></li>
-        <li>Install <a href='brew.sh/'>Homebrew</a></li>
-        <li>Signup @ <a href-'GitHub'>GitHub</a>, <a href='StackOverflow'>StackOverflow</a>, and <a href='http://dgmde15.github.io/forum'>Discourse</a></li>
-        <li>Install <a href='www.sublimetext.com/3'>Sublime Text 3</a></li>
-    </ol>
 
-    <p style="font-size:18px">more detailed instructions @ <a href='http://dgmde15.github.io'>dgmde15.github.io</a> under Session 1</p>
-</section> 
-<section>
-    <h2><a href="http://dgmds15.github.io/a-story-in-pomes">a-story-in-pomes</a></h2>
-    <hr>
-    <p style='font-size:24px;'>To get you thinking about what is possible with these digital tools and what it looks like to design something for another person, we will be looking at this sample project, presented as a gift last year. To look at its insides you will need to:</p>
-    <hr>
-    <ol style='font-size:22px;'>
-        <li>Fork the the git repository by clicking "Fork" in the upper right of <a href="https://github.com/dgmds15/a-story-in-pomes">this page</a>.</li>
-        <li>Now, clone the project by typing <code>git clone https://github.com/YOUR-USERNAME/a-story-in-pomes.git</code> at your terminal.</li>
-        <li>Change directory into the repository by typing <code>cd a-story-in-pomes</code> at your terminal.</li>
-        <li>From inside the directory, run <code>git checkout gh-pages</code> to switch to the active branch of the project.</li>
-        <li>Run <code>python -m SimpleHTTPServer</code>. You should now be able to go to <code>localhost:8000</code> in Google Chrome to view the website.</li>
-        <li>Now, if you make changes to the project, you will see them reflected when you refresh this local page, but you will not effect the online version of the project. Try this out by opening the files you downloaded and changing one of the files.</li>
-    </ol>
-</section>-->
 <section class='nextweek'>
-    <style>
+    <style scoped>
         .reveal .slides section.nextweek ol {
             font-size: 0.675em;
         }

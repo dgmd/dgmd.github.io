@@ -1,0 +1,366 @@
+html {
+    font-size: 1.375em;
+}
+
+@font-face {
+    font-family: 'Latin Modern Roman';
+    src: url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.eot');
+    src: url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.woff') format('woff'), url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.ttf') format('truetype'), url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.svg#latin_modern_roman10_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 70ex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body .page-content {
+    margin-top: 7em;
+    min-height: 1600px;
+}
+
+a {
+    color: cadetblue;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    /*    font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
+    /*font-variant: small-caps;*/
+    font-size: 1.5em;
+    margin-top: 1.25em;
+    margin-bottom: 0.375em;
+    color: #666;
+}
+
+#table-of-contents-container li {
+    margin-left: 0;
+}
+
+
+/*Using leaders workaround from http://www.w3.org/Style/Examples/007/leaders.en.html */
+
+ol.leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none
+}
+
+ol.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+}
+
+ol.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white;
+}
+
+ol.leaders span + span {
+    padding-left: 0.33em;
+    background: white;
+}
+
+ol.leaders a:last-child {
+    float: right;
+}
+
+h2,
+h3,
+.meta {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    color: #888;
+}
+
+.page-content ul > li,
+.page-content ol > li {
+    margin-left: 6ex;
+    margin-bottom: 0.625em;
+}
+
+.session-container {
+    display: table;
+}
+
+.week h2 div.meta {
+    font-size: 0.375em;
+    text-transform: uppercase;
+    color: #888;
+    margin-top: calc(2.5em/4);
+    line-height: calc(2.5em/2);
+    text-align: right;
+}
+
+.week h2 .meta-container {
+    width: 25%;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+blockquote {
+    padding: 0.25em 1.5em 0.25em 1.5em;
+    color: #777;
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+blockquote cite {
+    font-style: normal;
+    padding-left: 75%;
+}
+
+blockquote cite:before {
+    content: "—";
+}
+
+body {
+    font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1.125em;
+}
+
+hr {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+section.week:first-child {
+    margin-top: 0em;
+}
+
+section.week {
+    margin-top: 5em;
+    opacity: 0.375;
+}
+
+section.week.active {
+    opacity: 0.875;
+}
+
+section.week.past {
+    opacity: 1.0;
+}
+
+span.initial {
+    font-variant: small-caps;
+}
+
+#site-footer {
+    margin-top: 2em;
+    background-color: #ddd;
+    height: 20em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+#site-footer .column {
+    height: calc(100%-2*1em);
+    float: left;
+    padding: 1em;
+}
+
+#site-footer .col-1,
+#site-footer .col-3 {
+    width: calc((100% - 70ex)/2 - 3em);
+}
+
+#site-footer .col-2 {
+    width: 70ex;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5em;
+    background-color: #eee;
+    width: 100%;
+}
+
+header .title-wrapper {
+    width: calc((100% - 70ex)/2);
+    display: inline-block;
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 5.75em;
+}
+
+header .title-wrapper a {
+    line-height: calc(5em/2);
+}
+
+header nav {
+    width: calc(100% - (100% - 70ex)/2);
+    float: left;
+    display: block;
+    line-height: 2.75em;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+header nav .active {
+    text-decoration: underline;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+
+/*header nav li#home {
+    width: 0.5em;
+} Removed because messes up centering on mobile view and doesn't seem to be doing anything.*/
+
+header nav li {
+    font-size: 1.125em;
+    text-transform: lowercase;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 1.25em;
+}
+
+header nav span {
+    font-size: 0.75em;
+}
+
+header nav li a {
+    text-decoration: none;
+}
+
+.title-wrapper div {
+    font-size: 2em;
+    line-height: calc(5em/2);
+    text-decoration: none;
+    font-family: 'Codystar', cursive;
+}
+
+body > .page-content {
+    margin-top: calc(1.5*5em);
+}
+
+#faq-wrapper section p {
+    margin-left: 1em;
+}
+
+#faq-wrapper section {
+    margin-top: 3em;
+}
+
+#faq-wrapper ul {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 1em;
+}
+
+header nav li,
+.pre {
+    font-family: 'Inconsolata', monospace;
+}
+
+nav li i.fa {
+    margin-right: 1ex;
+}
+
+.upcoming:not(.active) {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .responsive-wrapper {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        overflow-x: hidden;
+    }
+    body {
+        width: 100%;
+        padding: 0;
+    }
+    header {
+        min-height: 4em;
+    }
+    header .title-wrapper {
+        width: 100%;
+        display: block;
+    }
+    header nav {
+        float: none;
+        width: 90%;
+        padding: 0 5% .2em 5%;
+        display: block;
+        background-color: #eee;
+        line-height: 1.75em;
+    }
+    header nav li #home {
+        padding: 0 !important;
+    }
+    header nav li i.fa {
+        margin-right: 0 !important;
+    }
+    header nav li {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    body .page-content {
+        margin-top: 19em;
+        padding: 0.375em;
+    }
+    .page-content ol > li,
+    .page-content ul > li {
+        margin-left: 5px;
+    }
+    #site-footer .column {
+        float: none;
+    }
+    #site-footer .col-1 {
+        display: none;
+    }
+    #site-footer .col-2,
+    #site-footer .col-3 {
+        width: 90%;
+        background-color: #eee;
+    }
+}

@@ -1,0 +1,25 @@
+.reveal .slides p {
+	text-align:center;
+}
+.reveal .slides .summary {
+    opacity: 0.625;
+    text-align: left;
+}
+code {
+	font-family: "Courier new", monospace;
+	opacity: 0.875;
+}
+
+.reveal .slides section .date {
+	position: fixed;
+	bottom: calc(-100% + 110px/2 + 1em/2);
+	right: 0;
+	opacity: 0.5;
+	font-size: 0.5em;
+}
+
+.file-data table {
+	width: 100%;
+	margin-left: 3em !important;
+	margin-right: 3em !important;
+}
