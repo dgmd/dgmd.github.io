@@ -83,7 +83,7 @@ h3 {
     margin-top: 1.25em;
     margin-bottom: 0.5em;
     font-size: 1.25em;
-    color: #888;
+    color: #555;
 }
 
 .page-content ul > li,
@@ -96,11 +96,20 @@ h3 {
     display: table;
 }
 
+.week h2 {
+    font-size: 1.125em;
+}
+
+.week h3 {
+    margin-top: 2em;
+    font-size: 0.95em;
+}
+
 .week h2 div.meta {
-    font-size: 0.375em;
+    font-size: 0.5em;
     text-transform: uppercase;
     color: #888;
-    margin-top: calc(2.5em/4);
+    margin-top: -2.25em;
     line-height: calc(2.5em/2);
     text-align: right;
 }
@@ -150,16 +159,16 @@ section.week:first-child {
 }
 
 section.week {
-    margin-top: 5em;
+    margin-top: 2em;
     opacity: 0.375;
 }
 
 section.week.active {
-    opacity: 0.875;
+    opacity: 1;
 }
 
 section.week.past {
-    opacity: 1.0;
+    opacity: 0.875;
 }
 
 span.initial {
