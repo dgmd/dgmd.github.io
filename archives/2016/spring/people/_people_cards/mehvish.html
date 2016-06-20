@@ -43,6 +43,7 @@
     }
 
     var headshot = document.getElementById('mehvish').getElementsByClassName('headshot')[0];
+    
 
     var degrees = 20;
 
@@ -108,55 +109,55 @@
         });
     });
 
-    var square = document.getElementById('mySquare');
-    var distance = function(point1, point2) {
-        // A function to calculate the distance between two points.
-        // If it doesn't make sense, try checking out http://betterexplained.com/articles/surprising-uses-of-the-pythagorean-theorem/
-        var xDelta = Math.pow((point2.x - point1.x), 2);
-        var yDelta = Math.pow((point2.y - point2.y), 2);
-        return Math.sqrt(xDelta + yDelta);
-    };
-    var mousePosition = {
-        // An empty dictionary to hold our x and y information
-        x: null,
-        y: null
-    };
-    var updateMousePosition = function(e) {
-        mousePosition.x = e.clientX || e.pageX;
-        mousePosition.y = e.clientY || e.pageY;
-    };
-    var getPosition = function(element) {
-        // Take an element and get its center point
-        return {
-            x: element.offsetLeft + element.offsetWidth / 2,
-            y: element.offsetTop - element.offsetHeight / 2
-        }
-    };
-    var setPosition = function(element, xy) {
-        // Move an element so that its center is at xy
-        element.style.position = 'relative';
-        element.style.left = xy.x - element.offsetWidth / 2;
-        element.style.top = xy.y - element.offsetHeight / 2;
-    };
-    var followMouse = function(element) {
-        // Make the position of a given element and the mouse equal
-        setPosition(element, mousePosition);
-    }
-    window.addEventListener('load', function() { // When the page loads, run this stuff
-        // Choose a random percentage between 0 and 90 for x and y
-        // Since we know that the box is 10% tall and wide, it'll never be offscreen
-        var randomX = Math.floor(Math.random() * 90) + '%'; // Notice that we append the '%' character— we're just setting a string…
-        var randomY = Math.floor(Math.random() * 90) + '%';
-        // Set the CSS positions via JS— this requires position: relative or position: absolute
-        square.style.left = randomX;
-        square.style.top = randomY;
-        window.addEventListener('mousemove', function(eventData) {
-            // Whenever the mouse moves, run this stuff
-            updateMousePosition(eventData); // update the mousePosition variable
-            if (distance(getPosition(square), mousePosition) < 100) { // If we're less than 100px to the center of the box
-                followMouse(square) // set the box position to the mouse position
-            }
-        });
-    });
+    // var square = document.getElementById('mySquare');
+    // var distance = function(point1, point2) {
+    //     // A function to calculate the distance between two points.
+    //     // If it doesn't make sense, try checking out http://betterexplained.com/articles/surprising-uses-of-the-pythagorean-theorem/
+    //     var xDelta = Math.pow((point2.x - point1.x), 2);
+    //     var yDelta = Math.pow((point2.y - point2.y), 2);
+    //     return Math.sqrt(xDelta + yDelta);
+    // };
+    // var mousePosition = {
+    //     // An empty dictionary to hold our x and y information
+    //     x: null,
+    //     y: null
+    // };
+    // var updateMousePosition = function(e) {
+    //     mousePosition.x = e.clientX || e.pageX;
+    //     mousePosition.y = e.clientY || e.pageY;
+    // };
+    // var getPosition = function(element) {
+    //     // Take an element and get its center point
+    //     return {
+    //         x: element.offsetLeft + element.offsetWidth / 2,
+    //         y: element.offsetTop - element.offsetHeight / 2
+    //     }
+    // };
+    // var setPosition = function(element, xy) {
+    //     // Move an element so that its center is at xy
+    //     element.style.position = 'relative';
+    //     element.style.left = xy.x - element.offsetWidth / 2;
+    //     element.style.top = xy.y - element.offsetHeight / 2;
+    // };
+    // var followMouse = function(element) {
+    //     // Make the position of a given element and the mouse equal
+    //     setPosition(element, mousePosition);
+    // }
+    // window.addEventListener('load', function() { // When the page loads, run this stuff
+    //     // Choose a random percentage between 0 and 90 for x and y
+    //     // Since we know that the box is 10% tall and wide, it'll never be offscreen
+    //     var randomX = Math.floor(Math.random() * 90) + '%'; // Notice that we append the '%' character— we're just setting a string…
+    //     var randomY = Math.floor(Math.random() * 90) + '%';
+    //     // Set the CSS positions via JS— this requires position: relative or position: absolute
+    //     square.style.left = randomX;
+    //     square.style.top = randomY;
+    //     window.addEventListener('mousemove', function(eventData) {
+    //         // Whenever the mouse moves, run this stuff
+    //         updateMousePosition(eventData); // update the mousePosition variable
+    //         if (distance(getPosition(square), mousePosition) < 100) { // If we're less than 100px to the center of the box
+    //             followMouse(square) // set the box position to the mouse position
+    //         }
+    //     });
+    // });
     </script>
 </div>

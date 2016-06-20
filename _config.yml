@@ -12,6 +12,6 @@ gems:
 markdown: kramdown
 
 collections:
-- sessions
-- nextweeks
-- snippets
+  - sessions
+  - nextweeks
+  - snippets
