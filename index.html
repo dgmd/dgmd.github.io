@@ -3,24 +3,23 @@ layout: default
 ---
 
 <div id='table-of-contents-container'>
-    {% if site.sessions.length > 0 %}
+
     <h3>Session Descriptions (and slides <i class='fa fa-slideshare'></i>)</h3>
     <ol class='leaders' id='table-of-contents'>
-        {% assign sortedSessions = site.sessions | sort: 'number' | reverse %} {% for session in sortedSessions %} {% assign slug = session.date | date:"%-d %B %Y" | slugify %} {% if session.title != null %}
-        <li><a class='title-link' href='#{{ slug }}'><span>{{ session.title }}</span></a><a href='./sessions/{{ session.number }}'><span><i class='fa fa-slideshare'></i></span></a>
-        </li>
-        {% endif %} {% endfor %}
-    </ol>
-    {% else %}
+        {% assign sortedSessions = site.sessions | sort: 'number' | reverse %}
 
-    {% include about.html %}
-    
-    <p>
-        Watch this site for upcoming course information and materials! And please email us at <a class='code' href='mailto:{{ site.email }}'>{{ site.email }}</a> if you have any questions!
-    </p>
-    {% endif %}
+        {% for session in sortedSessions %}
+            {% assign slug = session.date | date:"%-d %B %Y" | slugify %}
+                {% if session.title != null %}
+                    <li>
+                        <a class='title-link' href='#{{ slug }}'><span>{{ session.title }}</span></a><a href='./sessions/{{ session.number }}'><span><i class='fa fa-slideshare'></i></span></a>
+                    </li>
+                {% endif %}
+        {% endfor %}
+    </ol>    
+
 </div>
-{% if site.sessions.length > 0 %}
+{% if site.sessions | size > 0 %}
 <hr>
 <section id='weeks'>
     <h3>Weekly session summaries</h3>

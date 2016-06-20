@@ -1,13 +1,13 @@
 <section class='nextweek'>
     <style scoped>
         .reveal .slides section.nextweek ol {
-            font-size: 0.675em;
+            font-size: 0.6em;
         }
     </style>
 
     {% for week in site.nextweeks %}
 		{% if week.number == page.number %}
-		    <h2 class='next-week' id='next-week-{{ week.number }}'>For next week</h2>
+		    <h2 class='next-week' id='next-week-{{ week.number }}'>For next session</h2>
 			{{ week.content }}
 		{% endif %}
 

@@ -18,24 +18,27 @@ number: 1
         <h1>How do we <br> run this course?</h1>
     </section>
     <section>
-        <h1>What we look at</h1>
-        <ol style='font-size: 1.5em;'>
+        <h1>We will look at...</h1>
+        <hr>
+        <ol style='font-size: 1.3em;'>
             <li>…projects in the world</li>
             <li>…projects by us</li>
             <li>…projects by you</li>
         </ol>
     </section>
     <section>
-        <h1>During our sessions, this means time for...</h1>
-        <ol>
+        <h2>During our sessions, <br> this means time for...</h2>
+        <hr>
+        <ol style="font-size:1.3em;">
             <li>Discussion</li>
             <li>Design</li>
             <li>Studio</li>
         </ol>
     </section>
     <section>
-        <h1>What we do</h1>
-        <ol style='font-size: 1.25em;'>
+        <h2>Outside of sessions, <br> this means you'll be...</h2>
+        <hr>
+        <ol style='font-size: 1em;'>
             <li>…build new stuff every week (and store it on GitHub)</li>
             <li>…read materials related to building stuff every week (from a mixture of suggested resources and independent investigations)</li>
             <li>…reflect on and refine work every week (and document that process in your journal)</li>
@@ -43,7 +46,7 @@ number: 1
     </section>
     <section>
         <h1>We're available!</h1>
-        <!-- <script async defer src="https://slack.dgmd-slackin.herokuapp.com/slackin.js?large"></script> -->
+        <hr>
         <ol style='font-size: 1.25em;'>
             <li>…anytime on <a href='https://dgmd.herokuapp.com/'>the course's Slack Channel</a></li>
             <li>…anytime at <a href='mailto:{{ site.email }}'><code>{{ site.email }}</code></a></li>
@@ -59,42 +62,23 @@ number: 1
     <section data-background='/sessions/1/tinder.jpeg' data-background-size='contain'></section>
     <section data-background='/sessions/1/okcupid.jpeg' data-background-size='contain'></section>
     <section data-background='/sessions/1/eharmony.jpeg' data-background-size='contain'></section>
-    <section>
-        <style scoped>
-            .logo {
-                float:left;
-            }
-        </style>
-        <img alt='Saxophone' class="logo" src="sax.jpg">
-        <img alt='Trombone' class="logo" width="400" src="bone.jpg">
-        <img alt='Turntable' class="logo" width="300" src="turntable.jpg">
-        <img alt='Ableton' width="250" src="ableton.jpg">
-        <img alt='Piano' class="logo" src="piano.jpg">
-        <img alt='Technium' class="logo" width="450" src="technium.jpg">
+    <section data-background="music.png" data-background-size="contain">
     </section>
-    <section>
-        <img alt='Soylent' class="logo" width="400" src="soylent.png">
-        <br>
-        <img alt='Weight Watchers' class="logo" width="400" src="ww.jpg">
-        <img alt='FitBit' class="logo" width="400" src="fitbit.jpg">
+    <section data-background="food.png" data-background-size="contain">
     </section>
 
-</section>
-
-<section id='break-section'>
-    {% include break-slide.html %}
 </section>
 
 <section>
     <section>
-        <h1>What we'll <br> build next week</h1>
+        <h1><a href="http://github.com/dgmd/a-story-in-pomes">What we'll <br> build next week</a></h1>
     </section>
     <section data-background='/sessions/1/pomes.png' data-background-size='contain'>
     </section>
 </section>
 <section>
     <section>
-        <h1>What we'll <br> build today</h1>
+        <h1>What we'll <br> do today</h1>
     </section>
     <section data-background='/sessions/1/people-page.png' data-background-size='contain'>
         <a href='/people'>
@@ -108,8 +92,8 @@ number: 1
             <li>Pair up with someone in the room.</li>
             <li>Get to know each other a little bit. (Really take some time to chat; you'll be seeing a lot of each other over the next 7 weeks! Go get a coffee across the street if you'd like.)</li>
             <li>Based on what you learn about them, come up with <em>at least</em> three ideas for effects you might apply to their <code>/people</code> card. (Don't let your skill with HTML/CSS/JS influence your design too much!)</li>
-            <li>Have your partner choose which one they like the most. (This might happen after class today, so be sure to exchange email addresses with your partner.)</li>
-            <li>Post your mock-ups to your personal journal by Wednesday after class. (Details about this are on next slide.)</li>
+            <li><em>Before next session,</em> have your partner choose which one they like the most. (This might happen after class today, so be sure to exchange email addresses with your partner.)</li>
+            <li>Bring your mock-ups with you to class on Wednesday.</li>
         </ol>
     </section>
     <section>
@@ -127,14 +111,7 @@ number: 1
 </section>
 
 <section class='nextweek'>
-    <style scoped>
-        .reveal .slides section.nextweek ol {
-            font-size: 0.675em;
-        }
-    </style>
-
-    <h2>For next week</h2>
-    {% for week in site.nextweeks %} {% if week.number == page.number %} {{ week.content }} {% endif %} {% endfor %}
+    {% include nextweek.html %}
 </section>
 <section>
     <h1>&lt; /1 &gt;</h1>
