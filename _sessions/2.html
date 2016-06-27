@@ -1,11 +1,12 @@
 ---
-title: Journals, code snippets, & coding our /people cards
+title: Journals, code snippets, &amp; coding our /people cards
 date: June 22, 2016
 number: 2
 ---
 
 setting up our GitHub Pages journals • a little about git and GitHub • what are code snippets and how can you request them? • studio time for building our <a href="http://codepen.io/duffles/pen/EjQLzy">/people cards</a>
 
-### For next week
 
-{% for week in site.nextweeks %} {% if week.number == page.number %} {{ week.content }} {% endif %} {% endfor %}
+<h3>For next week</h3>
+
+{% for week in site.nextweeks %}{% if week.number == page.number %}{{ week.content }}{% endif %}{% endfor %}
