@@ -1,3 +1,197 @@
+/* atul */
+#Atul .headshot {
+  background-image: url(https://s31.postimg.org/4bi66omah/20160622_154151.jpg);
+  z-index:1;
+}
+
+ #toolbox { 
+background-image: url(http://rafabene.com/deltaspike-cdi-toolbox/images/toolbox.png);
+  position:relative;
+Background-size: cover;
+Height: 65px;
+width: 65px;
+ z-index: 2;
+ top: 165px;
+  left: 115px;
+  opacity: 0; 
+  transition: 1.5s;
+ 
+  
+}
+#Atul:hover #toolbox {
+  transform:translateY(-45px)
+    
+}
+#Atul #front {
+ z-index:1;
+}
+
+#Atul:hover #toolbox {
+  opacity: 1;
+}
+
+/* elise */
+#elisecorrado .headshot {
+  background-image: url(https://photos-2.dropbox.com/t/2/AACvOlzMu-VtSRMlm4AhOZUna1CFiy73HVYFTHLvmsFuKg/12/578099903/jpeg/32x32/1/_/1/2/eliseBW.jpg/EO6c9tIEGBAgAigC/4trYGXpCgLpuFLpyBuu9s45j7cZPPX4HHGuxnie5lQo?size_mode=5);
+  background-size: cover;
+}
+
+#elisecorrado:hover {
+  transition: 1s;
+  transform: rotate(720deg);
+}
+
+#elisecorrado .headshot:hover {
+  background-image: url(https://photos-2.dropbox.com/t/2/AABHfKTYwn_PNWijAReZIrCpEQv0mstYc7CooCn_BE7Tqw/12/578099903/jpeg/32x32/1/_/1/2/blueprint.jpg/EO6c9tIEGAYgAigC/zf9cvPNqIrlGRc-JR7tt05yY1jeYCCMlUy1sPR6DY2E?size=1280x960&size_mode=3);
+}
+#elisecorrado #offshoot{
+  height: 150px;
+  width: 150px;
+  
+}
+
+/* mandy */
+#mandy .headshot {
+  background-image: url(https://s32.postimg.org/dscau081x/mdgmd.jpg);
+}
+
+/* eric */
+#jasper {
+  position: absolute;
+  left: 107px;
+  top: 107px;
+  z-index:1;
+  opacity:1;
+}
+
+#Eric {
+  position: absolute;
+    left: 23px;
+    top: 32px;
+    z-index: 0;
+}
+
+#woof {
+  position: absolute;
+  left: 113px;
+  top: 38px;
+  @keyframes {
+    0% {z-index:0;}
+    25% {z-index:5;}
+    50% {z-index:0;}
+    75% {z-index:5;}
+    100% {z-index:0}
+  }
+  opacity:1;
+}
+
+#wallpaper .headshot {
+  background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KS4TF5G/final-_brown_wall_paper.jpg);
+position: absolute;
+    left: 30px;
+    top: 39px;
+    z-index: 0;
+}
+
+#linespacing {
+    line-height: 21px;
+}
+
+/* margaret */
+#margaret .headshot {
+  background-image: url(https://raw.githubusercontent.com/MandyHagee/MandyHagee.github.io/master/Stick%20Margaret.png);
+}
+
+/* anushri */
+#anushri .headshot {
+  background-image: url("https://github.com/khanniie/khanniie.github.io/blob/master/anushri%203.jpg?raw=true");
+}
+
+#slideholder {
+  transition-duration: 3s;
+  height:100%;
+  width:100%;
+}
+
+.sliderbutton{
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0; 
+}
+
+/* chrissy */
+#chrissy .headshot {
+  background-image: url(http://chrissyclary.com/wp-content/uploads/2016/06/chrissy.png);
+}
+
+#chrissy:hover .headshot {
+  background-image: url(https://pbs.twimg.com/profile_images/581256969807364096/8rtwHzh4.jpg);
+}
+
+#chrissy:hover .front.card h2 {
+  font-family: 'Chelsea Market', cursive;
+  font-weight: bold; 
+  font-color: yellow; 
+}
+#chrissy:hover .front.card {
+  background-image: url(http://rlv.zcache.com/bohemian_mod_tile-rbbb8e3e80f9d451ebb5f3b0377d3a6a1_agtbm_8byvr_324.jpg);
+  background-position: -15px -15px;
+}
+
+/* shelly */
+#shellyu .headshot {
+  background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KDW0Q7P/screen-shot-2015-04-06-at-3.41.55-pm.png);
+}
+#shellyu #lady{top:50px;
+  position:relative;
+  width:50px;
+  height:50px;
+  background-image:url('https://files.slack.com/files-pri/T086L74T1-F1KCVEN1F/cartoon-lady-running-and-losing-her-shoes-by-ron-leishman-10888.png');
+  background-size:contain;
+  animation-name:running;
+  animation-iteration-count:infinite;
+  animation-duration:1s;
+  opacity:0.0;
+}
+@keyframes running{
+  0%{transform:translateX(0px)}
+  50%{transform:translateX(100px)}
+  100%{transform:translateX(0px)}
+}
+
+#shellyu #candy{
+  width:100px;
+  height:35px;
+  background-image:url(https://files.slack.com/files-pri/T086L74T1-F1KCYAE3A/candy.png);
+   background-size:contain;
+  background-repeat:no-repeat;
+  position:relative;
+  top:-30%;
+  left:15px;
+  animation-name:dropping;
+  animation-iteration-count:infinite;
+  animation-duration:2s;
+  animation-timing-function:ease-in;
+}
+@keyframes dropping{
+  0%{transform:translateY(0px)}
+  100%{transform:translateY(100px);}
+}
+
+/* Evon */
+
+#evonPerez .headshot {
+  background-image: url('https://ajkramer12-s15.github.io/card/img/evon.jpg');
+}
+.baseImages {
+    opacity: 0;
+}
+
 /* Shaunalynn */
 #shaunalynn h2 {
   font-family: 'Nothing You Could Do', cursive !important;

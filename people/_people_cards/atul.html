@@ -1,0 +1,36 @@
+ <div id='Atul' class='person flip-container'>
+    <div class='flipper'>
+      <div id='front' class='front card'>
+        <h2>Atul Khanna</h2>
+        <div class='headshot'></div>
+        <i class="fa fa-undo flip"></i>
+      </div>
+      <div id="toolbox"></div>
+      <div class='back card'>
+        <ul>
+          <li><i class="fa fa-home"></i><a href='atu1khanna.github.io/'>Github Journal</a>
+          </li>
+          <li><i class="fa fa-github"></i><a href='https://github.com/kanyewest'>Atul Khanna</a>
+          </li>
+          <li><i class="fa fa-twitter"></i><a href='https://twitter.com/kanyewest'>@AtulK</a>
+          </li>
+          <li><i class="fa fa-envelope"></i><a href='mailto:AtulK@gmail.com'>AtulK@gmail</a>
+          </li>
+          <li><i class="fa fa-youtube"></i><a href='https://www.youtube.com/watch?v=GIfUmGxSgpY&t=8m18s'>AtulVEVO</a>
+          </li>
+        </ul>
+        <i class="fa fa-undo flip"></i>
+      </div>
+    </div>
+  </div>
+  <script>
+  window.addEventListener('load', function() {
+  var myCard = document.querySelector('#kanyewest');
+  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+  flipButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      myCard.classList.toggle('flipped');
+    });
+  });
+});
+  </script>

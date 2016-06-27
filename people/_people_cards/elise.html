@@ -1,0 +1,84 @@
+  <div id='elisecorrado' class='person flip-container'>
+    <div class='flipper'>
+      <div class='front card'>
+        <h2>Elise Corrado</h2>
+        <div class='headshot'>
+          <div id='offshoot'></div>
+<!--         <div class='art'></div>
+          <div class='computer'></div>
+         <div class='languages'></div>
+         <div class='mechanical'></div>
+        <div class='music'></div>
+          <div class='poetry'></div>
+          <div class='intrsets'></div> -->
+        </div>
+        
+        
+        
+        <i class="fa fa-undo flip"></i>
+      </div>
+      <div class='back card'>
+        <ul>
+          <li><i class="fa fa-home"></i><a href=''></a>
+          </li>
+          <li><i class="fa fa-github"></i><a href=''></a>
+          </li>
+          <li><i class="fa fa-twitter"></i><a href=''></a>
+          </li>
+          <li><i class="fa fa-envelope"></i><a href=''></a>
+          </li>
+          <li><i class="fa fa-youtube"></i><a href=''></a>
+          </li>
+        </ul>
+        <i class="fa fa-undo flip"></i>
+      </div>
+    </div>
+  </div>
+  <script>
+  // TEXT THAT IS GREYED OUT INDICATED A COMMENT IN THE CODE. PLEASE READ THE COMMENTS AS, IN THIS TEMPLATE, THEY ARE NOTES TO YOU ABOUT HOW TO ALTER THIS /PEOPLE CARD IN A WAY THAT WILL REMAIN COMPATIBLE WITH THE COURSE WEBSITE! 
+
+// Add your Javascript effects here.
+var imageList=[];
+imageList.push("https://photos-5.dropbox.com/t/2/AADZ0h2Q5gDvBIfEber6CZMNVi-6O5f_IdSdWwCCUvqZTQ/12/578099903/png/32x32/1/_/1/2/arts.png/EO6c9tIEGAYgAigC/eXuguH7qLLu4Pz-2J2yEz1O53dUCDiApb3HXVl2vicI?size_mode=5");
+imageList.push("https://photos-4.dropbox.com/t/2/AACGlmWGFTvUSpckABV-aLYdNDALwft8T0qK6ikmC8iOig/12/578099903/png/32x32/1/_/1/2/computerCode.png/EO6c9tIEGAYgAigC/FiJvojZ842ETkKleMuSFE2Qri5x8EYMednbqaBdEL5Q?size=1280x960&size_mode=3");
+imageList.push("https://photos-4.dropbox.com/t/2/AABJwxpRqgJPmCt6Kj8mLOLusCYCzW_0eF9t3L5eF2ivNQ/12/578099903/png/32x32/1/_/1/2/mechanical.png/EO6c9tIEGBAgAigC/ySmf0DHftGY_tbtXguyrbAzI78OVBWBcZPCWZHQHE7g?size=1600x1200&size_mode=3");
+imageList.push("https://photos-3.dropbox.com/t/2/AABOv77CYSO2BP-yeRjrbDUQiD52XXZggL86VvB7n_er_g/12/578099903/png/32x32/1/_/1/2/languages.png/EO6c9tIEGBAgAigC/2-mURo_1g4BMUaKZniy9hZ6NiBePm2UZQ4y5m9WpAzE?size=1600x1200&size_mode=3")
+imageList.push("https://photos-2.dropbox.com/t/2/AADS05-FtkOhtEW5m53eoYpv59CGnQkjfCaoAD6YZU7knQ/12/578099903/png/32x32/1/_/1/2/musicalNotes.png/EO6c9tIEGBAgAigC/Ecplz-OTCc8N49ANusMMXb3QI_poPB_G9jApXhy7fLA?size=1600x1200&size_mode=3");
+imageList.push("https://photos-5.dropbox.com/t/2/AAD8SeNOsbiP42DuVIkoY3geOvdWUva67FPGzPLAYNylIg/12/578099903/png/32x32/1/_/1/2/fractal.png/EO6c9tIEGBAgAigC/drEXi3DaTKFKl-u1_5QBFE_fm9_crqf4QrGitbOk_x4?size=1600x1200&size_mode=3");
+imageList.push("https://photos-6.dropbox.com/t/2/AABjD1xkbI05UvD8dql5VG-AiXbYC2_l76GYcNTOuhANEg/12/578099903/png/32x32/1/_/1/2/intersectingSets%20copy.png/EO6c9tIEGBAgAigC/dUWImarfOXb3QsGohPa9_EO_16P-K8J7PGG04e09R7w?size=1600x1200&size_mode=3");
+imageList.push("https://photos-6.dropbox.com/t/2/AAB9IUrtyxNpM_741e5GWObR4eCKtR7hyMLNDrEQCGs9aw/12/578099903/png/32x32/1/_/1/2/poetry.png/EO6c9tIEGBAgAigC/DsYrkEd6-f1sMA9Qwr0szN8_iveMIRWrioy8NXE6Img?size=1600x1200&size_mode=3");
+imageList.push("https://photos-3.dropbox.com/t/2/AAByGRegnTQsPtOBQXTvSoyzj2SjSFU-hMBuziQsNJfcAA/12/578099903/png/32x32/1/_/1/2/interdisciplinary.png/EO6c9tIEGBAgAigC/4s4k7--rwqTcSpUh6jNvYI22Z1JZxH4vMA2otto87T8?size=1600x1200&size_mode=3");
+imageList.push("https://photos-5.dropbox.com/t/2/AAByNo_JDpnQQQFwxlceCAUwguZMjYK7g5gVgsxUaQwdhw/12/578099903/png/32x32/1/_/1/2/translation.png/EO6c9tIEGBAgAigC/Rz72T6vuoE2_89GRzyGVfb-jBHvVDajo2sMi6882BvA?size=1600x1200&size_mode=3");
+
+
+
+var offshoot=document.getElementById("offshoot");
+var elise=document.getElementById("elisecorrado");
+elise.addEventListener('dblclick', function(){
+  var index=Math.floor(Math.random() * (imageList.length));
+  //console.log(index);
+ var image=imageList[index];
+  
+ offshoot.style.backgroundImage="url('" + image + "')";             
+  offshoot.style.backgroundSize='cover';
+  offshoot.style.transition= '2s'; 
+  offshoot.style.transform='translateX(200px)';
+                          });
+                         
+elise.addEventListener('mouseleave', function(){
+  offshoot.style.backgroundImage='none';
+   offshoot.style.transform='translateX(0px)';
+});
+
+
+// Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
+window.addEventListener('load', function() {
+  var myCard = document.querySelector('#elisecorrado');
+  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+  flipButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      myCard.classList.toggle('flipped');
+    });
+  });
+});
+  </script>
