@@ -1,93 +1,110 @@
 /* atul */
+
 #Atul .headshot {
-  background-image: url(https://s31.postimg.org/4bi66omah/20160622_154151.jpg);
-  z-index:1;
+    background-image: url(https://s31.postimg.org/4bi66omah/20160622_154151.jpg);
+    z-index: 1;
 }
 
- #toolbox { 
-background-image: url(http://rafabene.com/deltaspike-cdi-toolbox/images/toolbox.png);
-  position:relative;
-Background-size: cover;
-Height: 65px;
-width: 65px;
- z-index: 2;
- top: 165px;
-  left: 115px;
-  opacity: 0; 
-  transition: 1.5s;
- 
-  
+#toolbox {
+    background-image: url(http://rafabene.com/deltaspike-cdi-toolbox/images/toolbox.png);
+    position: relative;
+    Background-size: cover;
+    Height: 65px;
+    width: 65px;
+    z-index: 2;
+    top: 165px;
+    left: 115px;
+    opacity: 0;
+    transition: 1.5s;
 }
+
 #Atul:hover #toolbox {
-  transform:translateY(-45px)
-    
+    transform: translateY(-45px)
 }
+
 #Atul #front {
- z-index:1;
+    z-index: 1;
 }
 
 #Atul:hover #toolbox {
-  opacity: 1;
+    opacity: 1;
 }
 
-/* elise */
+#elisecorrado {
+  z-index: 100;
+}
+
 #elisecorrado .headshot {
-  background-image: url(https://photos-2.dropbox.com/t/2/AACvOlzMu-VtSRMlm4AhOZUna1CFiy73HVYFTHLvmsFuKg/12/578099903/jpeg/32x32/1/_/1/2/eliseBW.jpg/EO6c9tIEGBAgAigC/4trYGXpCgLpuFLpyBuu9s45j7cZPPX4HHGuxnie5lQo?size_mode=5);
-  background-size: cover;
+    background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/eliseBW.jpg);
+    background-size: cover;
 }
 
 #elisecorrado:hover {
-  transition: 1s;
-  transform: rotate(720deg);
+    transition: 1s;
+    transform: rotate(720deg);
 }
 
 #elisecorrado .headshot:hover {
-  background-image: url(https://photos-2.dropbox.com/t/2/AABHfKTYwn_PNWijAReZIrCpEQv0mstYc7CooCn_BE7Tqw/12/578099903/jpeg/32x32/1/_/1/2/blueprint.jpg/EO6c9tIEGAYgAigC/zf9cvPNqIrlGRc-JR7tt05yY1jeYCCMlUy1sPR6DY2E?size=1280x960&size_mode=3);
+    background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/blueprint.jpg);
 }
-#elisecorrado #offshoot{
-  height: 150px;
-  width: 150px;
-  
+
+#elisecorrado #offshoot {
+    height: 150px;
+    width: 150px;
 }
+
 
 /* mandy */
+
 #mandy .headshot {
-  background-image: url(https://s32.postimg.org/dscau081x/mdgmd.jpg);
+    background-image: url(https://s32.postimg.org/dscau081x/mdgmd.jpg);
 }
 
+
 /* eric */
+
 #jasper {
-  position: absolute;
-  left: 107px;
-  top: 107px;
-  z-index:1;
-  opacity:1;
+    position: absolute;
+    left: 107px;
+    top: 107px;
+    z-index: 1;
+    opacity: 1;
 }
 
 #Eric {
-  position: absolute;
+    position: absolute;
     left: 23px;
     top: 32px;
     z-index: 0;
 }
 
 #woof {
-  position: absolute;
-  left: 113px;
-  top: 38px;
-  @keyframes {
-    0% {z-index:0;}
-    25% {z-index:5;}
-    50% {z-index:0;}
-    75% {z-index:5;}
-    100% {z-index:0}
-  }
-  opacity:1;
+    position: absolute;
+    left: 113px;
+    top: 38px;
+    @keyframes {
+        0% {
+            z-index: 0;
+        }
+        25% {
+            z-index: 5;
+        }
+        50% {
+            z-index: 0;
+        }
+        75% {
+            z-index: 5;
+        }
+        100% {
+            z-index: 0
+        }
+    }
+    opacity:1;
 }
 
 #wallpaper .headshot {
-  background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KS4TF5G/final-_brown_wall_paper.jpg);
-position: absolute;
+    background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KS4TF5G/final-_brown_wall_paper.jpg);
+    position: absolute;
     left: 30px;
     top: 39px;
     z-index: 0;
@@ -97,187 +114,234 @@ position: absolute;
     line-height: 21px;
 }
 
+
 /* margaret */
+
 #margaret .headshot {
-  background-image: url(https://raw.githubusercontent.com/MandyHagee/MandyHagee.github.io/master/Stick%20Margaret.png);
+    background-image: url(https://raw.githubusercontent.com/MandyHagee/MandyHagee.github.io/master/Stick%20Margaret.png);
 }
 
+
 /* anushri */
+
 #anushri .headshot {
-  background-image: url("https://github.com/khanniie/khanniie.github.io/blob/master/anushri%203.jpg?raw=true");
+    background-image: url("https://github.com/khanniie/khanniie.github.io/blob/master/anushri%203.jpg?raw=true");
 }
 
 #slideholder {
-  transition-duration: 3s;
-  height:100%;
-  width:100%;
+    transition-duration: 3s;
+    height: 100%;
+    width: 100%;
 }
 
-.sliderbutton{
-  position: absolute;
+.sliderbutton {
+    position: absolute;
     top: 0;
     left: 0;
     height: 80%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    z-index: 0; 
+    z-index: 0;
 }
 
+
 /* chrissy */
+
 #chrissy .headshot {
-  background-image: url(http://chrissyclary.com/wp-content/uploads/2016/06/chrissy.png);
+    background-image: url(http://chrissyclary.com/wp-content/uploads/2016/06/chrissy.png);
 }
 
 #chrissy:hover .headshot {
-  background-image: url(https://pbs.twimg.com/profile_images/581256969807364096/8rtwHzh4.jpg);
+    background-image: url(https://pbs.twimg.com/profile_images/581256969807364096/8rtwHzh4.jpg);
 }
 
 #chrissy:hover .front.card h2 {
-  font-family: 'Chelsea Market', cursive;
-  font-weight: bold; 
-  font-color: yellow; 
+    font-family: 'Chelsea Market', cursive;
+    font-weight: bold;
+    font-color: yellow;
 }
+
 #chrissy:hover .front.card {
-  background-image: url(http://rlv.zcache.com/bohemian_mod_tile-rbbb8e3e80f9d451ebb5f3b0377d3a6a1_agtbm_8byvr_324.jpg);
-  background-position: -15px -15px;
+    background-image: url(http://rlv.zcache.com/bohemian_mod_tile-rbbb8e3e80f9d451ebb5f3b0377d3a6a1_agtbm_8byvr_324.jpg);
+    background-position: -15px -15px;
 }
+
 
 /* shelly */
+
 #shellyu .headshot {
-  background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KDW0Q7P/screen-shot-2015-04-06-at-3.41.55-pm.png);
-}
-#shellyu #lady{top:50px;
-  position:relative;
-  width:50px;
-  height:50px;
-  background-image:url('https://files.slack.com/files-pri/T086L74T1-F1KCVEN1F/cartoon-lady-running-and-losing-her-shoes-by-ron-leishman-10888.png');
-  background-size:contain;
-  animation-name:running;
-  animation-iteration-count:infinite;
-  animation-duration:1s;
-  opacity:0.0;
-}
-@keyframes running{
-  0%{transform:translateX(0px)}
-  50%{transform:translateX(100px)}
-  100%{transform:translateX(0px)}
+    background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KDW0Q7P/screen-shot-2015-04-06-at-3.41.55-pm.png);
 }
 
-#shellyu #candy{
-  width:100px;
-  height:35px;
-  background-image:url(https://files.slack.com/files-pri/T086L74T1-F1KCYAE3A/candy.png);
-   background-size:contain;
-  background-repeat:no-repeat;
-  position:relative;
-  top:-30%;
-  left:15px;
-  animation-name:dropping;
-  animation-iteration-count:infinite;
-  animation-duration:2s;
-  animation-timing-function:ease-in;
+#shellyu #lady {
+    top: 50px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://files.slack.com/files-pri/T086L74T1-F1KCVEN1F/cartoon-lady-running-and-losing-her-shoes-by-ron-leishman-10888.png');
+    background-size: contain;
+    animation-name: running;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    opacity: 0.0;
 }
-@keyframes dropping{
-  0%{transform:translateY(0px)}
-  100%{transform:translateY(100px);}
+
+@keyframes running {
+    0% {
+        transform: translateX(0px)
+    }
+    50% {
+        transform: translateX(100px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
 }
+
+#shellyu #candy {
+    width: 100px;
+    height: 35px;
+    background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KCYAE3A/candy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -30%;
+    left: 15px;
+    animation-name: dropping;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes dropping {
+    0% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+
 
 /* Evon */
 
 #evonPerez .headshot {
-  background-image: url('https://ajkramer12-s15.github.io/card/img/evon.jpg');
+    background-image: url('https://ajkramer12-s15.github.io/card/img/evon.jpg');
 }
+
 .baseImages {
     opacity: 0;
 }
 
+
 /* Shaunalynn */
+
 #shaunalynn h2 {
-  font-family: 'Nothing You Could Do', cursive !important;
+    font-family: 'Nothing You Could Do', cursive !important;
 }
+
 #shaunalynn .headshot {
-  background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-static.png);
+    background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-static.png);
 }
 
 #shaunalynn .headshot:hover {
-  background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-gif.gif);
+    background-image: url(http://dgmde15githubio.s3.amazonaws.com/shaunalynn-gif.gif);
 }
 
 #shaunalynn p {
-  text-align: center;
-  font-size: 0.875em;
-  font-family: 'Codystar', cursive;
+    text-align: center;
+    font-size: 0.875em;
+    font-family: 'Codystar', cursive;
 }
 
 #shaunalynn p a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #shaunalynn ul {
-  text-align: center;
+    text-align: center;
 }
 
 #shaunalynn li {
-  display: inline-block;
+    display: inline-block;
 }
 
+
 /* Alec Resnick */
+
 #alecresnick .headshot {
-  background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
-  position:relative;
+    background-image: url(https://pbs.twimg.com/profile_images/423087116827230209/wu7cZV8G.jpeg);
+    position: relative;
 }
 
 #alecresnick #aresnick-www {
-  font-size:.8em;
+    font-size: .8em;
 }
 
+
 /* Bakhtiar */
+
 #bakhtiar .headshot {
-  background-image: url(https://s3-us-west-2.amazonaws.com/bmcard/final+scroll+for+bm+project.jpg);
+    background-image: url(https://s3-us-west-2.amazonaws.com/bmcard/final+scroll+for+bm+project.jpg);
 }
 
 @keyframes play {
-   0% { background-position: 0px 0%; }
-   9% { background-position:calc(4060px);}
-  17% { background-position:calc(3700px);}
-  25% {background-position:calc(3300px);}
-  33% {background-position:calc(2900px);}
-  50% {background-position:calc(2550px);}
-/*   60% {background-position:calc(2050px);} */
-  /*16.6% { background- position:calc(2.6*8.5em);}
+    0% {
+        background-position: 0px 0%;
+    }
+    9% {
+        background-position: calc(4060px);
+    }
+    17% {
+        background-position: calc(3700px);
+    }
+    25% {
+        background-position: calc(3300px);
+    }
+    33% {
+        background-position: calc(2900px);
+    }
+    50% {
+        background-position: calc(2550px);
+    }
+    /*   60% {background-position:calc(2050px);} */
+    /*16.6% { background- position:calc(2.6*8.5em);}
    100% { background-position: calc(2.6*8.5em) 0%; } */
 }
 
 #bakhtiar .headshot {
-  animation: play 4s steps(2) infinite;
+    animation: play 4s steps(2) infinite;
 }
 
+
 /* Molly */
+
 #molly .headshot {
-  background-image: url(https://s3-us-west-2.amazonaws.com/mjiap/facebook+photo.png);
-  position: relative;
+    background-image: url(https://s3-us-west-2.amazonaws.com/mjiap/facebook+photo.png);
+    position: relative;
 }
 
 #molly #molly-www {
-  font-size: .8em;
+    font-size: .8em;
 }
 
 #molly .kale-bowl {
-  position: relative;
-  opacity: 0;
-  height: 50px;
-  width: 80px;
+    position: relative;
+    opacity: 0;
+    height: 50px;
+    width: 80px;
 }
 
 #molly .chopsticks {
-  position: relative;
-  float: right;
-  margin-right: 20px;
-  opacity: 0;
-  height: 30px;
-  width: 60px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    opacity: 0;
+    height: 30px;
+    width: 60px;
 }
+
 
 /* Kanye West */
 
@@ -285,14 +349,20 @@ position: absolute;
     background-image: url(http://media.cmgdigital.com/shared/img/photos/2014/10/27/2d/9e/kanye-west-smile.jpg);
 }
 
+
 /* Kim Kardashian */
 
 #kimkardashian .headshot {
     background-image: url(http://famouswives.org/wp-content/uploads/2014/01/Kim-Kardashian-2.jpg);
 }
 
+
 /****************************************************************************/
+
+
 /* Do not modify anything BELOW this line; insert your CSS above this.  Be sure to prefix all of your selectors with your id; e.g. if your name is Kanye West and you want to style the h2 element, use #kanyewest h2 { …styling… } */
+
+
 /****************************************************************************/
 
 .person {
@@ -301,13 +371,18 @@ position: absolute;
     margin-right: 1em;
     margin-bottom: 1em;
     float: left;
+    z-index: 0;
 }
-.person:first-child, .person:nth-child(3n+1) {
+
+.person:first-child,
+.person:nth-child(3n+1) {
     margin-left: 0;
 }
+
 .person:nth-child(3n) {
     margin-right: 0;
 }
+
 #people-cards h2 {
     text-align: center;
     text-transform: lowercase;
@@ -320,7 +395,9 @@ position: absolute;
     margin: 0;
     padding: 0;
 }
-.front, .back {
+
+.front,
+.back {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -332,18 +409,24 @@ position: absolute;
     box-shadow: 0 0 0.5em #000;
     border-radius: 0.5em;
 }
+
 .card i.flip {
     position: absolute;
     top: 85%;
 }
+
+
 /**********************/
+
+
 /* front of the cards */
 
 .front.card {
     background-color: #aaa;
-    z-index: 2;
+    z-index: 0;
     transform: rotateY(0deg);
 }
+
 .person .headshot {
     box-shadow: inset 0 0 0.625em #000;
     width: 6.5em;
@@ -354,36 +437,50 @@ position: absolute;
     position: relative;
     top: 3.75%;
 }
+
+
 /*********************/
+
+
 /* back of the cards */
 
 .back.card {
     background-color: #ccc;
     transform: rotateY(180deg);
 }
+
 .back ul {
-    padding:0;
+    padding: 0;
 }
+
 .back li {
     list-style-type: none;
     padding-left: 1ex;
 }
+
 .back li i.fa {
     margin-right: 1ex;
 }
+
 #people-cards .back {
     padding: 0.25em;
 }
+
 #people-cards .back li {
     margin-bottom: 0.5em;
     margin-left: 0;
     line-height: 0.75em;
 }
+
 #people-cards .back li a {
     font-family: 'Inconsolata', monospace;
     font-size: 0.875em;
 }
+
+
 /***********************************/
+
+
 /* Flipping behavior for the cards */
 
 i.flip {
@@ -392,12 +489,15 @@ i.flip {
     top: 5px;
     left: calc((70ex - 2*1em)/3 - 4.25em);
 }
+
 .flip-container {
     perspective: 1000;
 }
+
 .flip-container.flipped .flipper {
     transform: rotateY(180deg);
 }
+
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
@@ -406,18 +506,18 @@ i.flip {
     height: 100%;
 }
 
+
 /***********************************/
+
+
 /* Flipping behavior for the cards */
 
 @media screen and (max-width: 480px) {
-
-.person {
-  float:none;
-  /*padding-left:2em; should be replaced with relative number*/
-}
-
+    .person {
+        float: none;
+        /*padding-left:2em; should be replaced with relative number*/
+    }
 }
 
 
 /*You use a library to accomplish what you want, a framework uses your code to accomplish what you want.*/
-
