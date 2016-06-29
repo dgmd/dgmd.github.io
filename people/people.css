@@ -32,6 +32,7 @@
 
 #elisecorrado {
   z-index: 100;
+  position:relative;
 }
 
 #elisecorrado .headshot {
