@@ -1,36 +1,34 @@
-<div id='elisecorrado' class='person flip-container'>
+  <div id='elisecorrado' class='person flip-container'>
     <div class='flipper'>
-        <div class='front card'>
-            <h2>Elise Corrado</h2>
-            <div class='headshot'>
-                <div id='offshoot'></div>
-            </div>
-            <i class="fa fa-undo flip"></i>
+      <div class='front card'>
+        <h2>Elise</h2>
+        <div class='headshot'>
+          <div id='offshoot'></div>
         </div>
-        <div class='back card'>
-            <ul>
-                <li><i class="fa fa-home"></i>
-                    <a href=''></a>
-                </li>
-                <li><i class="fa fa-github"></i>
-                    <a href=''></a>
-                </li>
-                <li><i class="fa fa-twitter"></i>
-                    <a href=''></a>
-                </li>
-                <li><i class="fa fa-envelope"></i>
-                    <a href=''></a>
-                </li>
-                <li><i class="fa fa-youtube"></i>
-                    <a href=''></a>
-                </li>
-            </ul>
-            <i class="fa fa-undo flip"></i>
-        </div>
+        
+        
+        
+        <i class="fa fa-undo flip"></i>
+      </div>
+      <div class='back card'>
+        <ul>
+          <li><i class="fa fa-home"></i><a href=''></a>
+          </li>
+          <li><i class="fa fa-github"></i><a href='https://lil33.github.io'>lil33</a>
+          </li>
+          <li><i class="fa fa-twitter"></i><a href=''></a>
+          </li>
+          <li><i class="fa fa-envelope"></i><a href=''></a>
+          </li>
+          <li><i class="fa fa-youtube"></i><a href=''></a>
+          </li>
+        </ul>
+        <i class="fa fa-undo flip"></i>
+      </div>
     </div>
-</div>
-<script>
-var imageList = [];
+  </div>
+  <script>
+  var imageList=[];
 imageList.push("https://raw.githubusercontent.com/selimtezel/images_project1/master/arts.png");
 imageList.push("https://raw.githubusercontent.com/selimtezel/images_project1/master/computerCode.png");
 imageList.push("https://raw.githubusercontent.com/selimtezel/images_project1/master/mechanical.png");
@@ -44,35 +42,35 @@ imageList.push("https://raw.githubusercontent.com/selimtezel/images_project1/mas
 
 
 
-var offshoot = document.getElementById("offshoot");
-var elise = document.getElementById("elisecorrado");
-elise.addEventListener('dblclick', function() {
-    var index = Math.floor(Math.random() * (imageList.length));
-    //console.log(index);
-    var image = imageList[index];
-
-    offshoot.style.backgroundImage = "url('" + image + "')";
-    offshoot.style.backgroundSize = 'cover';
-    offshoot.style.transition = '2s';
-    offshoot.style.transform = 'translateX(400px)';
-    offshoot.style.zIndex = '100';
-    offshoot.style.position = 'relative';
-});
-
-elise.addEventListener('mouseleave', function() {
-    offshoot.style.backgroundImage = 'none';
-    offshoot.style.transform = 'translateX(0px)';
+var offshoot=document.getElementById("offshoot");
+var elise=document.getElementById("elisecorrado");
+elise.addEventListener('dblclick', function(){
+  var index=Math.floor(Math.random() * (imageList.length));
+  //console.log(index);
+ var image=imageList[index];
+  
+ offshoot.style.backgroundImage="url('" + image + "')";             
+  offshoot.style.backgroundSize='cover';
+  offshoot.style.transition= '2s'; 
+  offshoot.style.transform='translateX(200px)';
+  offshoot.style.zIndex='100';
+  offshoot.style.position='relative';
+                          });
+                         
+elise.addEventListener('mouseleave', function(){
+  offshoot.style.backgroundImage='none';
+   offshoot.style.transform='translateX(0px)';
 });
 
 
 // Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
 window.addEventListener('load', function() {
-    var myCard = document.querySelector('#elisecorrado');
-    var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
-    flipButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            myCard.classList.toggle('flipped');
-        });
+  var myCard = document.querySelector('#elisecorrado');
+  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+  flipButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      myCard.classList.toggle('flipped');
     });
+  });
 });
-</script>
+  </script>

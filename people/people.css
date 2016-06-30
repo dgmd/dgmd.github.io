@@ -30,28 +30,28 @@
     opacity: 1;
 }
 
+/* Elise Corrado */
 #elisecorrado {
-  z-index: 100;
-  position:relative;
+    z-index: 100;  
+    position:relative;
 }
-
 #elisecorrado .headshot {
-    background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/eliseBW.jpg);
-    background-size: cover;
+  background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/eliseBW.jpg);
+  background-size: cover;
 }
 
 #elisecorrado:hover {
-    transition: 1s;
-    transform: rotate(720deg);
+  transition: 1s;
+  transform: rotate(720deg);
 }
 
 #elisecorrado .headshot:hover {
-    background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/blueprint.jpg);
+  background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/blueprint.jpg);
 }
-
-#elisecorrado #offshoot {
-    height: 150px;
-    width: 150px;
+#elisecorrado #offshoot{
+  height: 150px;
+  width: 150px;
+  
 }
 
 
@@ -126,7 +126,7 @@
 /* anushri */
 
 #anushri .headshot {
-    background-image: url("https://github.com/khanniie/khanniie.github.io/blob/master/anushri%203.jpg?raw=true");
+    background-image: url("https://github.com/khanniie/khanniie.github.io/blob/master/person%20card/anushri%203.jpg?raw=true");
 }
 
 #slideholder {
@@ -228,9 +228,8 @@
 /* Evon */
 
 #evonPerez .headshot {
-    background-image: url('https://ajkramer12-s15.github.io/card/img/evon.jpg');
+  background-image: url('http://ajkramer12-s15.github.io/card/img/evon.jpg');
 }
-
 .baseImages {
     opacity: 0;
 }
