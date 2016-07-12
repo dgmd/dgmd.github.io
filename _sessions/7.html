@@ -1,0 +1,11 @@
+---
+title: Workshopping your project
+date: July 13, 2016
+number: 7
+---
+
+brainstorming next questions • small-group workshopping • studio time
+
+<h3>For next session</h3>
+
+{% for week in site.nextweeks %}{% if week.number == page.number %}{{ week.content }}{% endif %}{% endfor %}
