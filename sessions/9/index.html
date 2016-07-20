@@ -1,0 +1,68 @@
+---
+layout: slide
+number: 9
+---
+
+<section>
+    <h1>&lt; {{ page.number }} &gt;</h1>
+</section>
+<section>
+    <h1><a href='http://dgmd.github.io'>Creative Explorations in Screen-Based and Physical Computing</a></h1>
+    <h2 style='margin-top: 1.25em; color: #aaa;'>DGMD S-15, Spring 2016</h2>
+</section>
+<section>
+    <section data-background='arduino.jpg' data-background-size='contain'></section>
+    <section>
+        <a href='https://gist.github.com/aresnick/0c329519109bc9da82ac55a53ca2e40d' style='font-size: 3em;'>Arduino's <code>A0</code> as <code>generateInput</code></a>
+    </section>
+    <section>
+        <h2>2 sensors</h2>
+        <img src='./switch-and-led.jpg' style='width: 75%'>
+    </section>
+    <section>
+        <h2>2 sensors 1 pin</h2>
+        <img id='led-and-switch-in-arduino' src='led-in-arduino.png' style='width: 75%'>
+        <script>
+        var img = document.querySelector('#led-and-switch-in-arduino');
+        var newSrc = null;
+        setInterval(function() {
+            if (img.src.includes('led-in-arduino.png')) {
+                newSrc = 'switch-in-arduino.png';
+            } else {
+                newSrc = 'led-in-arduino.png';
+            }
+            img.src = newSrc;
+        }, 750);
+        </script>
+    </section>
+    <section>
+        <a href='https://gist.github.com/aresnick/0c329519109bc9da82ac55a53ca2e40d' style='font-size: 3em;'>Arduino's <code>A0</code> as <code>generateInput</code></a>
+    </section>
+    <section data-background='arduino-computer-flowchart.png' data-background-size='contain'>
+    </section>
+    <section>
+        <ol style='font-size: 1em;'>
+            <li>Download <a href='https://gist.github.com/aresnick/0c329519109bc9da82ac55a53ca2e40d'>this gist</a> and follow the instructions in the <code>README</code> to get it set up and running on your computer.</li>
+            <li>Pair up with someone [if you'd like!] and tackle connecting one of the two sensors we've brought (an LED, a potentiometer, or a switch) to your browser.</li>
+            <li>Get the reading from that component printing out in your browser's console.</li>
+            <li>And then hook it up to your own visualization and calibrate it appropriately!</li>
+            <li>(And if you're interested, try flipping the LED around and using it as an output, <i>i.e.</i> turning it on and off from the web).</li>
+        </ol>
+    </section>
+    <section data-background='sunfounder-sensor-kit.jpg' data-background-size='contain'>
+    </section>
+</section>
+<section>
+    <h1>Studio Time</h1>
+    <hr>
+    <p style='font-size: 1.5em; color: #555; margin-top: 0.5em;'>In your journal…</p>
+    <ol style='font-size: 1.25em; width: 100%; margin-top: 0.75em;'>
+        <li>What did you accomplish today?</li>
+        <li>What do you aim to have done by next session?</li>
+        <li>What can we do to help?</li>
+    </ol>
+</section>
+{% include nextweek.html %}
+<section>
+    <h1>&lt; /{{ page.number }} &gt;</h1>
+</section>
