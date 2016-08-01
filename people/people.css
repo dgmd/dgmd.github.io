@@ -8,8 +8,8 @@
 #toolbox {
     background-image: url(http://rafabene.com/deltaspike-cdi-toolbox/images/toolbox.png);
     position: relative;
-    Background-size: cover;
-    Height: 65px;
+    background-size: cover;
+    height: 65px;
     width: 65px;
     z-index: 2;
     top: 165px;
@@ -64,47 +64,23 @@
 
 /* eric */
 
-#jasper {
+/*#jasper {
     position: absolute;
     left: 107px;
     top: 107px;
     z-index: 1;
     opacity: 1;
 }
-
-#Eric {
+*/
+#EricSketch {
     position: absolute;
     left: 23px;
     top: 32px;
     z-index: 0;
 }
 
-#woof {
-    position: absolute;
-    left: 113px;
-    top: 38px;
-    @keyframes {
-        0% {
-            z-index: 0;
-        }
-        25% {
-            z-index: 5;
-        }
-        50% {
-            z-index: 0;
-        }
-        75% {
-            z-index: 5;
-        }
-        100% {
-            z-index: 0
-        }
-    }
-    opacity:1;
-}
-
-#wallpaper .headshot {
-    background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KS4TF5G/final-_brown_wall_paper.jpg);
+#eric .headshot {
+    background-image: url(https://cl.ly/0n1a1X353815/final-_brown_wall_paper.jpg);
     position: absolute;
     left: 30px;
     top: 39px;

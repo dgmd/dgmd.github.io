@@ -1,48 +1,42 @@
-  <div id='wallpaper' class='person flip-container'>
+<div id='eric' class='person flip-container'>
+    <!-- Original Codepen, unimplemented: http://codepen.io/Maisie28/pen/Bzpxwg -->
     <div class='flipper'>
-      <div class='front card'>
-        <h2>Eric Jonassen</h2>
-        <div class='headshot'></div>
-        
-        <!-- Woof  -->  
-        <div id='woof'><img src="https://files.slack.com/files-pri/T086L74T1-F1LALBMK4/final--woof_dialogue_v.2.png" alt= "Woof"style="width:87px;height:80px;"></div>
-        <!-- Woof  --> 
-        
-        <!-- Jasper  --> 
-         <div id='jasper'><img src="https://files.slack.com/files-tmb/T086L74T1-F1LAWC6Q2-94ea4755a4/jasper_crop_1024.png" alt= "Woof"style="width:75px;height:75px;"></div> 
-        <!-- Jasper  --> 
-        
-        <!-- Eric Sketch -->  
-        <div id='Eric'><img src="https://files.slack.com/files-pri/T086L74T1-F1KRLDG8N/final-_eric_cut_out.png" alt="Eric Sketch" style="width:135px;height:150px;"></div>
-<!-- Eric Sketch --> 
-        
-        <i class="fa fa-undo flip"></i>
-      </div>
-      <div class='back card'>
-        <ul>
-          <li><i class="fa fa-github"></i><a href='https://github.com/ejonassen'>ejonassen</a>
-          </li>
-          <li><i class="fa fa-envelope"></i><a href='mailto:jonassen.eric@gmail.com'>Eric's Gmail</a>
-          </li>
-          <p></p>
-          <li>
-          <div id='linespacing'
-          <li>Likes: scuba diving, video games, steak, and his pet beagle named Jasper 
-      </div>
-          </li>
-        </ul>
-        <i class="fa fa-undo flip"></i>
-      </div>
+        <div class='front card'>
+            <h2>Eric Jonassen</h2>
+            <div class='headshot'></div>
+            <!-- Woof  -->
+            <!-- <div id='woof'><img src="https://cl.ly/0w0l180I2L0I/Final--Woof%20Dialogue%20copy.png" alt= "Woof"style="width:87px;height:80px;"></div> -->
+            <!-- Woof  -->
+            <!-- Jasper  -->
+            <!-- <div id='jasper'><img src="https://files.slack.com/files-tmb/T086L74T1-F1LAWC6Q2-94ea4755a4/jasper_crop_1024.png" alt= "Woof"style="width:75px;height:75px;"></div>  -->
+            <!-- Jasper  -->
+            <!-- Eric Sketch -->
+            <div id='EricSketch'><img src="https://cl.ly/3f353n2v192V/final-_eric_cut_out.png" alt="Eric Sketch" style="width:135px;height:150px;"></div>
+            <!-- Eric Sketch -->
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-github"></i><a href='https://github.com/ejonassen'>ejonassen</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:jonassen.eric@gmail.com'>Eric's Gmail</a>
+                </li>
+                <li>
+                    Likes: scuba diving, video games, steak, and his pet beagle named Jasper
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
     </div>
-  </div>
-  <script>
-  window.addEventListener('load', function() {
-  var myCard = document.querySelector('#wallpaper');
-  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
-  flipButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      myCard.classList.toggle('flipped');
+</div>
+<script>
+window.addEventListener('load', function() {
+    var myCard = document.querySelector('#eric');
+    var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+    flipButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            myCard.classList.toggle('flipped');
+        });
     });
-  });
 });
-  </script>
+</script>
