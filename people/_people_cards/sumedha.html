@@ -1,0 +1,40 @@
+<div id='sumedhasood' class='person flip-container'>
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>sumedha sood</h2>
+            <div class='headshot'></div>
+            <div id="about" class="spinner">
+                <span class="text-content">  
+            <span>echo "I am sumedha sood";<br/></span>
+                <span>echo "I come from India";<br/></span>
+                <span>echo "I love eating noodles";</span>
+                </span>
+            </div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-github"></i><a href='https://github.com/kanyewest'>sumedha</a>
+                </li>
+                <li><i class="fa fa-facebook"></i><a href='https://www.facebook.com/sumedha.sood.1'>facebook</a>
+                </li>
+                <li><i class="fa fa-linkedin"></i><a href='https://www.linkedin.com/in/sumedha-sood-1353873a?trk=nav_responsive_tab_profile_pic'>linkedin</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='sood.sumedha15@gmail.com'>email</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+</div>
+<script>
+window.addEventListener('load', function() {
+    var myCard = document.querySelector('#sumedhasood');
+    var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+    flipButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            myCard.classList.toggle('flipped');
+        });
+    });
+});
+</script>

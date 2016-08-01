@@ -1,3 +1,249 @@
+/* ben */
+
+#cpassehl.person .front {
+    background-color: red;
+}
+
+#play a:hover {
+    display: once;
+}
+
+#cpassehl .headshot {
+    box-shadow: none;
+}
+
+#symbols1 {
+    align: top;
+    color: blue;
+    font-size: 48px;
+    margin-top: -19px;
+    margin-bottom: -270px;
+}
+
+#symbols2 {
+    padding: -75px;
+    color: white;
+    font-size: 115px;
+    margin: 15px;
+}
+
+
+/* sumedha */
+
+#sumedhasood .headshot {
+    background-image: url(https://dolphia85.github.io/sumedha.jpg);
+}
+
+.spinner {
+    /* hide width
+        width: 50%;
+    */
+    height: 200px;
+    transition: 1s;
+    /* This is where the action happens: it tells CSS to animate any changes in the CSS styling of these elements over one second*/
+    /* Setting some of the text's styling to make it fill up the card */
+    /*font-family: "Courier New", monospace;*/
+    /* Set a font, with a fallback */
+    /*text-transform: uppercase;*/
+    /* capitalize everything */
+    /*font-size: 4.5em;
+    line-height: calc(500px/4);*/
+    /* Since we set the height to 500px, we can make the line height 1/4 to fill up four lines */
+    text-align: left;
+    /*z-index: 100;*/
+    color: rgba(0, 0, 0, 0);
+    background-color: none;
+}
+
+.spinner:hover {
+    /*transform: rotate(180deg);*/
+    transition: 1s cubic-bezier(.25, .1, .3, 1.5) transform;
+    transform-origin: 1.4em -.4em;
+    transform: translateY(100px);
+    transform: scale(10, 10, 10);
+    color: rgba(70%, 10%, 10%, .9);
+    text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.8);
+    width: 100%;
+    /*z-index: 10;*/
+}
+
+.spinner p {
+    color: rgba(0, 0, 0, 0);
+}
+
+#about {
+    width: 100%;
+    height: 200px;
+    font-size: 1em;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 200px;
+    /*line-height:10px;*/
+    /*border:1px solid red;*/
+}
+
+.text-content {
+    font-family: 'Baskerville, Palatino, serif';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* selim */
+
+#selim .headshot {
+    background-image: url(https://files.slack.com/files-pri/T086L74T1-F1M71E84U/stezelphoto.jpg?pub_secret=929038c63e);
+}
+
+#selim .back {
+    font-size: .8em;
+}
+
+
+/* bela */
+
+#bela .headshot {
+    background-image: url(http://static.wixstatic.com/media/15d5f8_525bfe2421b24a1dae6beabd7796db34.jpg_srz_745_600_85_22_0.50_1.20_0.00_jpg_srz);
+}
+
+
+/* connie */
+
+#connieye .headshot {
+    background-image: url(http://i.imgur.com/QaRBdGn.png);
+}
+
+
+/* dolphia */
+
+#dolphia-body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -100;
+}
+
+#dolphia-body.hide-bg {
+    background-image: none;
+}
+
+#dolphia h1 {
+    font-family: 'Spirax', cursive;
+    font-size: 1.8em;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}
+
+#dolphia .headshot {
+    background-image: url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1466559499/dolphia_1_n3zvzz.jpg');
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    position: relative;
+    z-index: 1000;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 244px;
+        top: 100px;
+    }
+    50% {
+        left: 488px;
+        top: 0px;
+    }
+    100% {
+        left: 900px;
+        top: 100px;
+    }
+}
+
+@-webkit-keyframes new {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes wave2 {
+    0% {
+        left: 900px;
+        top: 100px;
+    }
+    25% {
+        left: 488px;
+        top: 0px;
+    }
+    50% {
+        left: 244px;
+        top: 100px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+/* nitya */
+
+#nitya .headshot {
+    background-image: url(http://static.boredpanda.com/blog/wp-content/uploads/2015/06/dog-sleeping-bed-funny-104__605.jpg);
+}
+
+#nitya:hover {
+    background-color: black;
+    /*   transition: background-color .3s ease-in; */
+    transition: 1s;
+    transform: translate(500px)
+}
+
+
+/* meteb */
+
+#MetebAlmadi.headshot {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/ee/Unknown-person.gif);
+}
+
+@font-face {
+    font-family: 'Latin Modern Roman';
+    src: url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.eot');
+    src: url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.woff') format('woff'), url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.ttf') format('truetype'), url('https://s3.amazonaws.com/dgmde15githubio/lmroman10-regular-webfont.svg#latin_modern_roman10_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body #MetebAlmadi {
+    font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+#car {
+    background-image: url("http://roadincorporated.com/images/uploads/Pagani_Zonda_Cinque/side.png");
+    position: relative;
+    background-size: contain;
+    height: 100px;
+    width: 200px;
+    transition: 1s;
+    top: -40%;
+    transform: translateX(800px);
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+
 /* atul */
 
 #Atul .headshot {
@@ -30,28 +276,31 @@
     opacity: 1;
 }
 
+
 /* Elise Corrado */
+
 #elisecorrado {
-    z-index: 100;  
-    position:relative;
+    z-index: 100;
+    position: relative;
 }
+
 #elisecorrado .headshot {
-  background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/eliseBW.jpg);
-  background-size: cover;
+    background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/eliseBW.jpg);
+    background-size: cover;
 }
 
 #elisecorrado:hover {
-  transition: 1s;
-  transform: rotate(720deg);
+    transition: 1s;
+    transform: rotate(720deg);
 }
 
 #elisecorrado .headshot:hover {
-  background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/blueprint.jpg);
+    background-image: url(https://raw.githubusercontent.com/selimtezel/images_project1/master/blueprint.jpg);
 }
-#elisecorrado #offshoot{
-  height: 150px;
-  width: 150px;
-  
+
+#elisecorrado #offshoot {
+    height: 150px;
+    width: 150px;
 }
 
 
@@ -64,23 +313,45 @@
 
 /* eric */
 
-/*#jasper {
+#dog {
     position: absolute;
     left: 107px;
     top: 107px;
-    z-index: 1;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
+#ericCard:hover #dog, #ericCard:hover #woof {
     opacity: 1;
 }
-*/
-#EricSketch {
+
+#Eric {
     position: absolute;
     left: 23px;
     top: 32px;
     z-index: 0;
 }
 
-#eric .headshot {
-    background-image: url(https://cl.ly/0n1a1X353815/final-_brown_wall_paper.jpg);
+@keyframes scale {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+#woof {
+    position: absolute;
+    left: 113px;
+    top: 38px;
+    opacity: 0;
+    animation: scale 1.2s infinite;
+}
+
+#wallpaper .headshot {
+    background-image: url(https://files.slack.com/files-pri/T086L74T1-F1KS4TF5G/final-_brown_wall_paper.jpg?pub_secret=a3424097e9);
     position: absolute;
     left: 30px;
     top: 39px;
@@ -204,8 +475,9 @@
 /* Evon */
 
 #evonPerez .headshot {
-  background-image: url('http://ajkramer12-s15.github.io/card/img/evon.jpg');
+    background-image: url('http://ajkramer12-s15.github.io/card/img/evon.jpg');
 }
+
 .baseImages {
     opacity: 0;
 }
