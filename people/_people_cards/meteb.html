@@ -1,0 +1,44 @@
+<div id='MetebAlmadi' class='person flip-container'>
+    <div class='flipper'>
+      <div class='front card'>
+        <h2>Meteb Almadi</h2>
+        <div class='headshot'></div>
+        <div id="car"></div>
+ <i class="fa fa-undo flip"></i>
+        </div>
+      <div class='back card'>
+        <ul>
+         
+        <li><i class="fa fa-envelope"></i><a   href='mailto:nitya@gmail.com'>xyz@gmail.com</a>
+          </li>
+          <li><i class="fa fa-birthday-cake"></i><a>DD/MM/YYYY</a>
+          </li>
+          <li><i class="fa fa-institution"></i><a>XYZ</a>
+          </li>
+          <li><i class="fa fa-hotel"></i><a>Canaday Hall</a>
+          </li>
+          
+          <li><i class="fa fa-mobile-phone"></i><a> 123-456-7890</a>
+          </li>
+          
+        </ul>
+        <i class="fa fa-undo flip"></i>
+      </div>
+    </div>
+  </div>
+  <script>
+window.addEventListener('load', function() {
+  var myCard = document.querySelector('#MetebAlmadi');
+  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+  flipButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      myCard.classList.toggle('flipped');
+    });
+  });
+});
+
+var car = document.getElementById("car");
+
+var MetebAlmadi = document.getElementById("MetebAlmadi")                                    ;
+MetebAlmadi.addEventListener("click",function(){car.style.transform = "translateX(15px)"});
+  </script>

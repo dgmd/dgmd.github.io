@@ -1,17 +1,17 @@
-<div id='eric' class='person flip-container'>
-    <!-- Original Codepen, unimplemented: http://codepen.io/Maisie28/pen/Bzpxwg -->
+<div id='wallpaper' class='person flip-container'>
+    <audio id="dogsound" src="http://f.cl.ly/items/0U1n2m333E2t3Q3T2Y1t/woofsound.mp3"></audio>
     <div class='flipper'>
-        <div class='front card'>
+        <div id="ericCard" class='front card'>
             <h2>Eric Jonassen</h2>
             <div class='headshot'></div>
             <!-- Woof  -->
-            <!-- <div id='woof'><img src="https://cl.ly/0w0l180I2L0I/Final--Woof%20Dialogue%20copy.png" alt= "Woof"style="width:87px;height:80px;"></div> -->
+            <div id='woof'><img src="https://files.slack.com/files-pri/T086L74T1-F1LALBMK4/final--woof_dialogue_v.2.png?pub_secret=caa537069a" alt="Woof" style="width:87px;height:80px;"></div>
             <!-- Woof  -->
             <!-- Jasper  -->
-            <!-- <div id='jasper'><img src="https://files.slack.com/files-tmb/T086L74T1-F1LAWC6Q2-94ea4755a4/jasper_crop_1024.png" alt= "Woof"style="width:75px;height:75px;"></div>  -->
+            <div id='dog'><img src="https://files.slack.com/files-pri/T086L74T1-F1LAWC6Q2/jasper_crop.png?pub_secret=8449c585b4" alt="Woof" style="width:75px;height:75px;"></div>
             <!-- Jasper  -->
             <!-- Eric Sketch -->
-            <div id='EricSketch'><img src="https://cl.ly/3f353n2v192V/final-_eric_cut_out.png" alt="Eric Sketch" style="width:135px;height:150px;"></div>
+            <div id='Eric'><img src="https://files.slack.com/files-pri/T086L74T1-F1KRLDG8N/final-_eric_cut_out.png?pub_secret=4f106f3a7e" alt="Eric Sketch" style="width:135px;height:150px;"></div>
             <!-- Eric Sketch -->
             <i class="fa fa-undo flip"></i>
         </div>
@@ -21,8 +21,10 @@
                 </li>
                 <li><i class="fa fa-envelope"></i><a href='mailto:jonassen.eric@gmail.com'>Eric's Gmail</a>
                 </li>
+                <p></p>
                 <li>
-                    Likes: scuba diving, video games, steak, and his pet beagle named Jasper
+                    <div id='linespacing' <li>Likes: scuba diving, video games, steak, and his pet beagle named Jasper
+                    </div>
                 </li>
             </ul>
             <i class="fa fa-undo flip"></i>
@@ -30,13 +32,32 @@
     </div>
 </div>
 <script>
+// TEXT THAT IS GREYED OUT INDICATED A COMMENT IN THE CODE. PLEASE READ THE COMMENTS AS, IN THIS TEMPLATE, THEY ARE NOTES TO YOU ABOUT HOW TO ALTER THIS /PEOPLE CARD IN A WAY THAT WILL REMAIN COMPATIBLE WITH THE COURSE WEBSITE! 
+
+// Add your Javascript effects here.
+var woof = document.getElementById("woof");
+var dog = document.getElementById("dog");
+var ericCard = document.getElementById("ericCard");
+ericCard.addEventListener("click", function() {
+    woof.style.opacity = "1.0";
+    dog.style.opacity = "1.0";
+});
+var dogsound =
+    document.getElementById("dogsound");
+document.addEventListener("keypress", function() {
+    console.log("test");
+    dogsound.play();
+});
+
+// Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
 window.addEventListener('load', function() {
-    var myCard = document.querySelector('#eric');
+    var myCard = document.querySelector('#wallpaper');
     var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
     flipButtons.forEach(function(button) {
         button.addEventListener('click', function() {
             myCard.classList.toggle('flipped');
         });
     });
+    // document.getElementById("myBtn").addEventListener("mouseover", myFunction);
 });
 </script>
