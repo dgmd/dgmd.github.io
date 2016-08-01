@@ -1,0 +1,11 @@
+---
+title: Prepping a final presentation
+date: August 1, 2016
+number: 12
+---
+
+sharing out your presentation in small groups • our last studio time!
+
+<h3>For next session</h3>
+
+{% for week in site.nextweeks %}{% if week.number == page.number %}{{ week.content }}{% endif %}{% endfor %}
