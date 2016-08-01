@@ -21,43 +21,42 @@
                 </li>
                 <li><i class="fa fa-envelope"></i><a href='mailto:jonassen.eric@gmail.com'>Eric's Gmail</a>
                 </li>
-                <p></p>
                 <li>
-                    <div id='linespacing' <li>Likes: scuba diving, video games, steak, and his pet beagle named Jasper
+                    <div id='linespacing'>Likes: scuba diving, video games, steak, and his pet beagle named Jasper
                     </div>
                 </li>
             </ul>
             <i class="fa fa-undo flip"></i>
         </div>
     </div>
-</div>
-<script>
-// TEXT THAT IS GREYED OUT INDICATED A COMMENT IN THE CODE. PLEASE READ THE COMMENTS AS, IN THIS TEMPLATE, THEY ARE NOTES TO YOU ABOUT HOW TO ALTER THIS /PEOPLE CARD IN A WAY THAT WILL REMAIN COMPATIBLE WITH THE COURSE WEBSITE! 
+    <script>
+    // TEXT THAT IS GREYED OUT INDICATED A COMMENT IN THE CODE. PLEASE READ THE COMMENTS AS, IN THIS TEMPLATE, THEY ARE NOTES TO YOU ABOUT HOW TO ALTER THIS /PEOPLE CARD IN A WAY THAT WILL REMAIN COMPATIBLE WITH THE COURSE WEBSITE! 
 
-// Add your Javascript effects here.
-var woof = document.getElementById("woof");
-var dog = document.getElementById("dog");
-var ericCard = document.getElementById("ericCard");
-ericCard.addEventListener("click", function() {
-    woof.style.opacity = "1.0";
-    dog.style.opacity = "1.0";
-});
-var dogsound =
-    document.getElementById("dogsound");
-document.addEventListener("keypress", function() {
-    console.log("test");
-    dogsound.play();
-});
-
-// Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
-window.addEventListener('load', function() {
-    var myCard = document.querySelector('#wallpaper');
-    var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
-    flipButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            myCard.classList.toggle('flipped');
-        });
+    // Add your Javascript effects here.
+    var woof = document.getElementById("woof");
+    var dog = document.getElementById("dog");
+    var ericCard = document.getElementById("ericCard");
+    ericCard.addEventListener("click", function() {
+        woof.style.opacity = "1.0";
+        dog.style.opacity = "1.0";
     });
-    // document.getElementById("myBtn").addEventListener("mouseover", myFunction);
-});
-</script>
+    var dogsound =
+        document.getElementById("dogsound");
+    document.addEventListener("keypress", function() {
+        console.log("test");
+        dogsound.play();
+    });
+
+    // Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#wallpaper');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+        // document.getElementById("myBtn").addEventListener("mouseover", myFunction);
+    });
+    </script>
+</div>

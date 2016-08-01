@@ -1,66 +1,62 @@
-<div id="dolphia-body">
-  </div>
-  <div id='bg'>
-  
-  </div>
-  <div id='dolphia' class='person flip-container'>
-    <div class='flipper'>
-      <div class='front card'>
-        <h2>Dolphia</h2>
-        <div class='headshot'></div>
-        <i class="fa fa-undo flip"></i>
-      </div>
-      <div class='back card'>
-        <ul>
-          <li><i class="fa fa-home"></i><a href='https://www.storyofcooks.com/'>storyofcooks.com</a>
-          </li>
-          <li><i class="fa fa-github"></i><a href='https://github.com/dolphia'>dolphia</a>
-          </li>
-          <li><i class="fa fa-twitter"></i><a href='https://twitter.com/dolphianandi'>@dolphianandi</a>
-          </li>
-        </ul>
-        <i class="fa fa-undo flip"></i>
-      </div>
+<div id='dolphia' class='person flip-container'>
+    <div id="dolphia-body">
     </div>
-  </div>
-
-  <script>
-  var body = document.getElementById("dolphia-body");
-body.addEventListener("click", function() {
-  body.backgroundImage = "url(http://res.cloudinary.com/dcyahf5xs/image/upload/v1466621939/imag_phyroz.png)";
-});
-
-var headshot = document.getElementById('dolphia').getElementsByClassName('headshot')[0];
-
-headshot.addEventListener("click", function() {
-  headshot.style.WebkitAnimation = "slide 4s 1";
-  headshot.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1467055384/new1_ui9aey.png')";
-  
-body.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1466902934/varwwwclientsclient1web2tmpphpl871vW_srjc9f.png')";
-});
-
-headshot.addEventListener('animationend', function() {
-  headshot.style.WebkitAnimation = "wave2 4s 1";
-  headshot.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1467055017/Untitled_n5igca.png')";
-});
-
-var dolphia = document.querySelector('#dolphia');
-var FrontCard = dolphia.getElementsByClassName('front')[0];
-FrontCard.addEventListener("mouseout", function() {
-headshot.style.transition = "transform 0s";
-headshot.style.WebkitAnimation = "new 3s infinite";
-headshot.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1466559499/dolphia_1_n3zvzz.jpg')";
-body.style.background="none";
-});
-
-// Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
-window.addEventListener('load', function() {
-  var myCard = document.querySelector('#dolphia');
-  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
-  flipButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      myCard.classList.toggle('flipped');
+    <div class='flipper'>
+        <div class='front card'>
+            <h2>Dolphia</h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='https://www.storyofcooks.com/'>storyofcooks.com</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://github.com/dolphia'>dolphia</a>
+                </li>
+                <li><i class="fa fa-twitter"></i><a href='https://twitter.com/dolphianandi'>@dolphianandi</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
+    </div>
+    <script>
+    var body = document.getElementById("dolphia-body");
+    body.addEventListener("click", function() {
+        body.backgroundImage = "url(http://res.cloudinary.com/dcyahf5xs/image/upload/v1466621939/imag_phyroz.png)";
     });
-  });
-});
-  </script>
+
+    var headshot = document.getElementById('dolphia').getElementsByClassName('headshot')[0];
+
+    headshot.addEventListener("click", function() {
+        headshot.style.WebkitAnimation = "slide 4s 1";
+        headshot.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1467055384/new1_ui9aey.png')";
+
+        body.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1466902934/varwwwclientsclient1web2tmpphpl871vW_srjc9f.png')";
+    });
+
+    headshot.addEventListener('animationend', function() {
+        headshot.style.WebkitAnimation = "wave2 4s 1";
+        headshot.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1467055017/Untitled_n5igca.png')";
+    });
+
+    var dolphia = document.querySelector('#dolphia');
+    var FrontCard = dolphia.getElementsByClassName('front')[0];
+    FrontCard.addEventListener("mouseout", function() {
+        headshot.style.transition = "transform 0s";
+        headshot.style.WebkitAnimation = "new 3s infinite";
+        headshot.style.backgroundImage = "url('http://res.cloudinary.com/dcyahf5xs/image/upload/v1466559499/dolphia_1_n3zvzz.jpg')";
+        body.style.background = "none";
+    });
+
+    // Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#dolphia');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
+    });
+    </script>
+</div>

@@ -1,31 +1,31 @@
-  <div id='mandy' class='person flip-container'>
+<div id='mandy' class='person flip-container'>
     <div class='flipper'>
-      <div class='front card'>
-        <h2>Mandy Hagee</h2>
-        <div class='headshot'></div>
-        <i class="fa fa-undo flip"></i>
-      </div>
-      <div class='back card'>
-        <ul>
-          <li><i class="fa fa-home"></i><a href='#'>phone #</a>
-          </li>
-          <li><i class="fa fa-github"></i><a href='https://mandyhagee.github.io/'>mandyhagee</a>
-          </li>
-          <li><i class="fa fa-envelope"></i><a href='mailto:mandy.hagee@gmail.com'>mandy.hagee@ gmail.com</a>
-          </li>
-        </ul>
-        <i class="fa fa-undo flip"></i>
-      </div>
+        <div class='front card'>
+            <h2>Mandy Hagee</h2>
+            <div class='headshot'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='#'>phone #</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://mandyhagee.github.io/'>mandyhagee</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:mandy.hagee@gmail.com'>mandy.hagee@ gmail.com</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
     </div>
-  </div>
-  <script>
-  window.addEventListener('load', function() {
-  var myCard = document.querySelector('#mandy');
-  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
-  flipButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      myCard.classList.toggle('flipped');
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#mandy');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
     });
-  });
-});
-  </script>
+    </script>
+</div>

@@ -1,4 +1,3 @@
-<!--added -->
 <div id='anushri' class='person flip-container'>
     <div id="slideholder">
         <div class='flipper'>
@@ -28,48 +27,47 @@
         </div>
     </div>
     <div id='trainer'></div>
-</div>
-<script>
-// TEXT THAT IS GREYED OUT INDICATED A COMMENT IN THE CODE. PLEASE READ THE COMMENTS AS, IN THIS TEMPLATE, THEY ARE NOTES TO YOU ABOUT HOW TO ALTER THIS /PEOPLE CARD IN A WAY THAT WILL REMAIN COMPATIBLE WITH THE COURSE WEBSITE! 
+    <script>
+    // TEXT THAT IS GREYED OUT INDICATED A COMMENT IN THE CODE. PLEASE READ THE COMMENTS AS, IN THIS TEMPLATE, THEY ARE NOTES TO YOU ABOUT HOW TO ALTER THIS /PEOPLE CARD IN A WAY THAT WILL REMAIN COMPATIBLE WITH THE COURSE WEBSITE! 
 
-// Add your Javascript effects here.
+    // Add your Javascript effects here.
 
 
-// Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
-var clickcounter = 0;
+    // Below this line, you must change the id below ('#kanyewest') to reflect the id you created in the html panel for your partner ('#yourpartner')
+    var clickcounter = 0;
 
-window.addEventListener('load', function() {
-    var myCard = document.querySelector('#anushri');
-    var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
-    flipButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            myCard.classList.toggle('flipped');
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#anushri');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
 
+            });
         });
     });
-});
 
-var sb = document.querySelector('.sliderbutton');
-sb.addEventListener('click', function() {
-    var cardblock = document.querySelector('#slideholder');
+    var sb = document.querySelector('.sliderbutton');
+    sb.addEventListener('click', function() {
+        var cardblock = document.querySelector('#slideholder');
 
-    var trainer = document.querySelector('#trainer');
-    clickcounter += 1;
-    if (clickcounter % 2 == 0) {
-        cardblock.style.transform = "translate(350px, 0px)";
-        trainer.style.width = "300px";
-        trainer.style.opacity = "1";
-        trainer.style.display = "block";
+        var trainer = document.querySelector('#trainer');
+        clickcounter += 1;
+        if (clickcounter % 2 == 0) {
+            cardblock.style.transform = "translate(350px, 0px)";
+            trainer.style.width = "300px";
+            trainer.style.opacity = "1";
+            trainer.style.display = "block";
 
-    }
+        }
 
-    if (clickcounter % 2 == 1) { /*cardblock.style.transform =    scale(4.5, 4.5)";*/
-        cardblock.style.transform = "translate(0px, 0px)";
-        trainer.style.width = "150px";
-        trainer.style.opacity = "0";
-    }
+        if (clickcounter % 2 == 1) { /*cardblock.style.transform =    scale(4.5, 4.5)";*/
+            cardblock.style.transform = "translate(0px, 0px)";
+            trainer.style.width = "150px";
+            trainer.style.opacity = "0";
+        }
 
-    /* $(document).ready(function(){
+        /* $(document).ready(function(){
     var x;
     $("#person").click(function(){
        if(clickcounter % 2 ==0 )
@@ -79,5 +77,6 @@ sb.addEventListener('click', function() {
        });
 });
 */
-});
-</script>
+    });
+    </script>
+</div>

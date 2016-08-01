@@ -1,49 +1,48 @@
 <div id='selim' class='person flip-container'>
     <div class='flipper'>
-      <div class='front card'>
-        <h2>Selim Tezel</h2>
-        <div class='headshot' onmouseover='init()' <!--onclick='selimVideo()'--> <!--onclick='slideShow()'--></div>
-        <i class="fa fa-undo flip"></i>
-      </div>
-      <div class='back card'>
-        <ul>
-          <li><i class="fa fa-home"></i><a href='http://www.selimtezel.com/'>www.selimtezel.com</a>
-          </li>
-          <li><i class="fa fa-github"></i><a href='https://selimtezel.github.io/'>selimtezel</a>
-          </li>
-          <li><i class="fa fa-twitter"></i><a href='https://twitter.com/SelimTezel'>@SelimTezel</a>
-          </li>
-          <li><i class="fa fa-envelope"></i><a href='mailto:selim_tezel@hotmail.com'>selim_tezel@hotmail.com</a>
-          </li>
-          <li><i class="fa fa-youtube"></i><a href='https://www.youtube.com/user/STezelLivingMathProj'>STezelLivingMathProj</a>
-          </li>
-        </ul>
-        <i class="fa fa-undo flip"></i>
-      </div>
+        <div class='front card'>
+            <h2>Selim Tezel</h2>
+            <div class='headshot' onmouseover='init()'></div>
+            <i class="fa fa-undo flip"></i>
+        </div>
+        <div class='back card'>
+            <ul>
+                <li><i class="fa fa-home"></i><a href='http://www.selimtezel.com/'>www.selimtezel.com</a>
+                </li>
+                <li><i class="fa fa-github"></i><a href='https://selimtezel.github.io/'>selimtezel</a>
+                </li>
+                <li><i class="fa fa-twitter"></i><a href='https://twitter.com/SelimTezel'>@SelimTezel</a>
+                </li>
+                <li><i class="fa fa-envelope"></i><a href='mailto:selim_tezel@hotmail.com'>selim_tezel@hotmail.com</a>
+                </li>
+                <li><i class="fa fa-youtube"></i><a href='https://www.youtube.com/user/STezelLivingMathProj'>STezelLivingMathProj</a>
+                </li>
+            </ul>
+            <i class="fa fa-undo flip"></i>
+        </div>
     </div>
-  </div>
-  <script>
-  window.addEventListener('load', function() {
-  var myCard = document.querySelector('#selim');
-  var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
-  flipButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      myCard.classList.toggle('flipped');
+    <script>
+    window.addEventListener('load', function() {
+        var myCard = document.querySelector('#selim');
+        var flipButtons = Array.prototype.slice.call(myCard.querySelectorAll('i.flip'));
+        flipButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                myCard.classList.toggle('flipped');
+            });
+        });
     });
-  });
-});
 
 
-// Add your Javascript effects here.
+    // Add your Javascript effects here.
 
 
-function init() {
-  var selim = document.querySelector('#selim .headshot');
-  selim.style.backgroundImage = 'url(https://files.slack.com/files-pri/T086L74T1-F1Q85KTD2/s28.jpg?pub_secret=b821d50c9a)';
-  
-   selim.addEventListener('onmouseout', function() { //this isn't working...
-   selim.style.backgroundImage = 'url(https://files.slack.com/files-pri/T086L74T1-F1M71E84U/stezelphoto.jpg?pub_secret=929038c63e)';
-  });   
- };
+    function init() {
+        var selim = document.querySelector('#selim .headshot');
+        selim.style.backgroundImage = 'url(https://files.slack.com/files-pri/T086L74T1-F1Q85KTD2/s28.jpg?pub_secret=b821d50c9a)';
 
-  </script>
+        selim.addEventListener('onmouseout', function() { //this isn't working...
+            selim.style.backgroundImage = 'url(https://files.slack.com/files-pri/T086L74T1-F1M71E84U/stezelphoto.jpg?pub_secret=929038c63e)';
+        });
+    };
+    </script>
+</div>
