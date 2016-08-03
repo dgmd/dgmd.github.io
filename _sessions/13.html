@@ -1,0 +1,11 @@
+---
+title: Farewell!
+date: August 3, 2016
+number: 13
+---
+
+Farewell!
+
+<h3>For next session</h3>
+
+{% for week in site.nextweeks %}{% if week.number == page.number %}{{ week.content }}{% endif %}{% endfor %}
