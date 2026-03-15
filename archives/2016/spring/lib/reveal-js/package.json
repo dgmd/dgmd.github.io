@@ -41,5 +41,8 @@
     "node-sass": "~8.0.0"
   },
   
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "tar": "^7.5.11"
+  }
 }
